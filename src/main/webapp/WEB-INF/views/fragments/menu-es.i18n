@@ -20,6 +20,12 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 
+
+# master.menu.jbl0107 #######################################################
+
+master.menu.jbl0107 = Jesús
+master.menu.jbl0107.favourite-link = 29495863L: Ballestero López, Jesús
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
