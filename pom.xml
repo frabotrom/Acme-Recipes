@@ -22,8 +22,8 @@
 	<description>This is a the Acme Recipes project by students of group S2 for Design &amp; Testing.</description>
 
 	<groupId>Acme</groupId>	
-	<artifactId>Acme-Recipes-22.7</artifactId>
-	<version>22.7</version>
+	<artifactId>Acme-Recipes-22.8</artifactId>
+	<version>22.8</version>
 	<packaging>war</packaging>
 
 	<parent>
