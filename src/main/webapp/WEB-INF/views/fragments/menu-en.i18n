@@ -31,6 +31,11 @@ master.menu.jbl0107.favourite-link = 29495863L: Ballestero López, Jesús
 master.menu.antsermen = Roberto
 master.menu.antsermen.favourite-link = 53916052G: Serrano Mena, Antonio Roberto
 
+# master.menu.antsuagar #######################################################
+
+master.menu.antsuagar = Antonio
+master.menu.antsuagar.favourite-link = 20102473J: Suárez García, Antonio José
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
