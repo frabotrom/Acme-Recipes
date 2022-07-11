@@ -9,3 +9,11 @@
 # they accept any liabilities with respect to them.
 
 - Rafael Corchuelo (corchu@us.es)
+
+Members of the S02 project group:
+- Ballestero López, Jesús (jesballop@alum.us.es)
+- Botello Romero, Francisco (frabotrom@alum.us.es)
+- León Valderrama, Juan José (jualeoval@alum.us.es)
+- Moreno Pérez, Juan Carlos (juamorper2@alum.us.es)
+- Serrano Mena, Antonio Roberto (antsermen@alum.us.es)
+- Suárez García, Antonio José (antsuagar@alum.us.es)
