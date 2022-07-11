@@ -21,20 +21,23 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 
 
-# master.menu.jbl0107 #######################################################
-
 master.menu.jbl0107 = Jesús
 master.menu.jbl0107.favourite-link = 29495863L: Ballestero López, Jesús
 
-# master.menu.antsermen #######################################################
+master.menu.frabotrom = Fran
+master.menu.frabotrom.favourite-link = 29618084H: Botello Romero, Francisco
+
+
+
+master.menu.juamorper2 = Juan Carlos
+master.menu.juamorper2.favourite-link = 44068800H: Moreno Pérez, Juan Carlos
 
 master.menu.antsermen = Roberto
 master.menu.antsermen.favourite-link = 53916052G: Serrano Mena, Antonio Roberto
 
-# master.menu.antsuagar #######################################################
-
 master.menu.antsuagar = Antonio
 master.menu.antsuagar.favourite-link = 20102473J: Suárez García, Antonio José
+
 
 # master.menu.administrator ###################################################
 

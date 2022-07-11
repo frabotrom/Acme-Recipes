@@ -19,8 +19,9 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
-			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-suboption code="master.menu.jbl0107.favourite-link" action="https://www.twitch.tv"/>
+			<acme:menu-suboption code="master.menu.frabotrom.favourite-link" action="https://www.reddit.com/r/moviescirclejerk"/>
+			
 			<acme:menu-suboption code="master.menu.antsermen.favourite-link" action="https://www.leagueoflegends.com/es-es/champions/miss-fortune/"/>
 			<acme:menu-suboption code="master.menu.juamorper2.favourite-link" action="https://playvalorant.com/es-es/"/>
 			<acme:menu-suboption code="master.menu.antsuagar.favourite-link" action="https://www.youtube.com/watch?v=_lIdodcgk24"/>
