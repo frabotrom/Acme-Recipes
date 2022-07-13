@@ -3,6 +3,7 @@ package acme.entities.finedish;
 import java.util.Date;
 
 import javax.persistence.Column;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
@@ -54,5 +55,16 @@ public class FineDish extends AbstractEntity{
 	protected String			moreInfo;
 	
 	protected boolean published;
+	
+	
+	@NotNull
+	@Valid
+	@ManyToOne(optional = false)
+	protected Epicure epicure;
+
+	@NotNull
+	@Valid
+	@ManyToOne(optional = false)
+	protected Chef chef;
 
 }
