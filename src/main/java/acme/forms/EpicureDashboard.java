@@ -23,15 +23,15 @@ public class EpicureDashboard implements Serializable{
 
 	// Attributes -------------------------------------------------------------
 
-	protected Map<Status, Integer> numberOfFineDishesByStatus;
+	Map<Status, Integer> numberOfFineDishesByStatus;
 
-	protected Map<Pair<Status, String>, Double>	averageNumberOfBudgetsByCurrencyAndStatus;
+	Map<Pair<Status, String>, Double>	averageNumberOfBudgetsByCurrencyAndStatus;
 
-	protected Map<Pair<Status, String>, Double>	deviationOfBudgetsByCurrencyAndStatus;
+	Map<Pair<Status, String>, Double>	deviationOfBudgetsByCurrencyAndStatus;
 
-	protected Map<Pair<Status, String>, Double>		maxBudgetByCurrencyAndStatus;
+	Map<Pair<Status, String>, Double>		maxBudgetByCurrencyAndStatus;
 
-	protected Map<Pair<Status, String>, Double>		minBudgetByCurrencyAndStatus;
+	Map<Pair<Status, String>, Double>		minBudgetByCurrencyAndStatus;
 	
 	
 	
