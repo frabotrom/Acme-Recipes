@@ -17,6 +17,8 @@ import org.hibernate.validator.constraints.URL;
 
 import acme.framework.datatypes.Money;
 import acme.framework.entities.AbstractEntity;
+import acme.roles.Chef;
+import acme.roles.Epicure;
 
 public class FineDish extends AbstractEntity{
 	
