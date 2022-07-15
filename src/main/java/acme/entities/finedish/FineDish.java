@@ -3,6 +3,7 @@ package acme.entities.finedish;
 import java.util.Date;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -20,6 +21,12 @@ import acme.framework.entities.AbstractEntity;
 import acme.roles.Chef;
 import acme.roles.Epicure;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Getter
+@Setter
 public class FineDish extends AbstractEntity{
 	
 	protected static final long	serialVersionUID	= 1L;
