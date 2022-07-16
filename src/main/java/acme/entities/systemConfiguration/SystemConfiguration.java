@@ -28,9 +28,11 @@ public class SystemConfiguration extends AbstractEntity {
 	@Pattern(regexp = "^[A-Z]{3}$")
 	protected String systemCurrency;
 	
-	protected String spamTerm;
+	@NotBlank
+	protected String spamTermsEn;
 	
-	protected String spamWeight;
+	@NotBlank
+	protected String spamTermsEs;
 	
 	@Range(min=0,max=1)
 	protected double spamThreshold;
