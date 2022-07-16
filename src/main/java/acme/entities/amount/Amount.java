@@ -24,7 +24,7 @@ public class Amount extends AbstractEntity{
 	// Attributes -------------------------------------------------------------
 		
 	@Min(1)
-	protected int amount;
+	protected int quantity;
 	
 	@NotBlank
 	protected Unit unit;
