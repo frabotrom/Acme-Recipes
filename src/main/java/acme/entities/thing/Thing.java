@@ -53,6 +53,8 @@ public class Thing extends AbstractEntity{
 				
 	@URL
 	protected String info;
+	
+	protected boolean published;
 		
 	// Relationships ----------------------------------------------------------
 	
