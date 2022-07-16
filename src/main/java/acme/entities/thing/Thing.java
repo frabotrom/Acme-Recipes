@@ -1,7 +1,9 @@
-package acme.entities.ingredient;
+package acme.entities.thing;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -18,39 +20,40 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Ingredient extends AbstractEntity{
-
+public class Thing extends AbstractEntity{
+	
 	// Serialisation identifier -----------------------------------------------
 
 	protected static final long	serialVersionUID	= 1L;
-	
+		
 	// Attributes -------------------------------------------------------------
+	
+	@NotNull
+	@Enumerated(EnumType.STRING)
+	protected ThingType thingType;
 	
 	@NotBlank
 	@Length(min = 0, max = 100)
 	protected String name;
-	
+		
 	@Column(unique=true)
 	@NotBlank
 	@Pattern(regexp="^([A-Z]{2}:)?[A-Z]{3}-[0-9]{3}$")
 	protected String code;
-	
+		
 	@NotBlank
 	@Length(min = 0, max = 255)
 	protected String description;
-	
+		
 	@NotNull
 	@Valid
 	protected Money retailPrice;
-			
+				
 	@URL
 	protected String info;
-	
+		
 	// Relationships ----------------------------------------------------------
 	
-	/*@NotNull
-	@Valid
-	@ManyToOne(optional = false)
-	protected Chef chef;*/
+	
 	
 }
