@@ -7,6 +7,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+import acme.entities.recipe.Recipe;
 import acme.entities.thing.Thing;
 import acme.framework.entities.AbstractEntity;
 import lombok.Getter;
@@ -31,10 +32,10 @@ public class Amount extends AbstractEntity{
 		
 	// Relationships ----------------------------------------------------------
 
-	/*@NotNull
+	@NotNull
 	@Valid
 	@ManyToOne
-	protected Repice recipe;*/
+	protected Recipe recipe;
 	
 	@NotNull
 	@Valid
