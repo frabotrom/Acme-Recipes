@@ -1,6 +1,6 @@
-key,status,code,request,budget,creation-moment,start-date,end-date,more-info,key:epicure,key:chef
-fine-dish-01,ACCEPTED,JC:AQW-908,Fish and chips,EUR 120.00, 2021/07/14 19:00, 2021/07/14 19:30, 2021/07/15 10:00,http://www.example.com,epicure-01,chef-02
-fine-dish-02,ACCEPTED,KC:AQW-909,Montadito de tortilla ,EUR 420.50, 2021/07/15 13:00, 2021/07/15 13:30, 2021/07/15 14:00,http://www.example.com,epicure-01,chef-01
-fine-dish-03,ACCEPTED,LC:AQW-910,Patatas cuatro salsas,EUR 200.00, 2021/07/15 13:00, 2021/07/15 14:30, 2021/07/15 15:30,http://www.example.com,epicure-01,chef-01
-fine-dish-04,PROPOSED,ZC:AQW-911,Palomitas de queso,EUR 500.00, 2021/07/15 16:00, 2021/07/15 16:10, 2021/07/15 16:30,http://www.example.com,epicure-01,chef-02
-fine-dish-05,PROPOSED,XC:AQW-912,Ensalada cesar,EUR 220.00, 2021/07/15 19:00, 2021/07/15 19:30, 2021/07/15 20:30,http://www.example.com,epicure-01,chef-02
+key,status,code,request,budget,creation-moment,start-date,end-date,more-info,key:epicure,key:chef,published
+fine-dish-01,ACCEPTED,JC:AQW-908,Fish and chips,EUR 120.00, 2021/07/14 19:00, 2021/07/14 19:30, 2021/07/15 10:00,http://www.example.com,epicure-01,chef-02,true
+fine-dish-02,ACCEPTED,KC:AQW-909,Montadito de tortilla ,EUR 420.50, 2021/07/15 13:00, 2021/07/15 13:30, 2021/07/15 14:00,http://www.example.com,epicure-01,chef-01,true
+fine-dish-03,ACCEPTED,LC:AQW-910,Patatas cuatro salsas,EUR 200.00, 2021/07/15 13:00, 2021/07/15 14:30, 2021/07/15 15:30,http://www.example.com,epicure-01,chef-01,true
+fine-dish-04,PROPOSED,ZC:AQW-911,Palomitas de queso,EUR 500.00, 2021/07/15 16:00, 2021/07/15 16:10, 2021/07/15 16:30,http://www.example.com,epicure-01,chef-02,true
+fine-dish-05,PROPOSED,XC:AQW-912,Ensalada cesar,EUR 220.00, 2021/07/15 19:00, 2021/07/15 19:30, 2021/07/15 20:30,http://www.example.com,epicure-01,chef-02,false

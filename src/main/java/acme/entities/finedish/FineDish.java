@@ -62,6 +62,8 @@ public class FineDish extends AbstractEntity{
 	@URL
 	protected String			moreInfo;
 	
+	protected boolean published;
+	
 	
 	@NotNull
 	@Valid
