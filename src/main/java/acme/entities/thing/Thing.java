@@ -35,7 +35,7 @@ public class Thing extends AbstractEntity{
 	protected ThingType thingType;
 	
 	@NotBlank
-	@Length(min = 0, max = 100)
+	@Length(min = 1, max = 100)
 	protected String name;
 		
 	@Column(unique=true)
@@ -44,7 +44,7 @@ public class Thing extends AbstractEntity{
 	protected String code;
 		
 	@NotBlank
-	@Length(min = 0, max = 255)
+	@Length(min = 1, max = 255)
 	protected String description;
 		
 	@NotNull
