@@ -1,3 +1,9 @@
 key,instantiationMoment,heading,text,critical,link
 bulletin-001,"2022/07/16 12:00","Recetario completo","Se ha completado el recetario",true,
-bulletin-002,"2022/07/16 12:00","Nuevo equipamiento","Se ha añadido nuevo equipamiento de cocina",false,
+bulletin-002,"2022/07/16 12:00","Nuevo equipamiento","Se ha añadido nuevo equipamiento de cocina",false,http://www.example.com
+bulletin-003,"2022/07/16 12:00","Buenas noticias","Descubierto un nuevo tipo de azúcar sin calorías",false,https://www.theonion.com/
+bulletin-004,"2022/07/16 12:00","Malas noticias","El azúcar sin calorías produce cáncer instantáneo",true,https://www.theonion.com/
+bulletin-005,"2022/07/16 12:00","Noticias reguleras","Nuevo tipo de azúcar sin calorías descubierto, pero está amargo",false,https://www.theonion.com/
+bulletin-006,"2022/07/16 12:00","Boletín informativo","Descubierto nuevo tipo de endulzante que elimina el amargor del nuevo nuevo tipo de azúcar sin calorías",false,https://www.theonion.com/
+bulletin-007,"2022/07/16 12:00","Hoy no hay noticias","De momento el azúcar sin calorías no produce cáncer",false,
+bulletin-008,"2022/07/16 12:00","Hoy sí hay noticias","Siete nuevas recetas que utilizan azúcar sin calorías!",true,
