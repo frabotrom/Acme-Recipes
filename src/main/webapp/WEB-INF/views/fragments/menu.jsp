@@ -26,6 +26,9 @@
 			<acme:menu-suboption code="master.menu.juamorper2.favourite-link" action="https://playvalorant.com/es-es/"/>
 			<acme:menu-suboption code="master.menu.antsuagar.favourite-link" action="https://www.youtube.com/watch?v=_lIdodcgk24"/>
 			<acme:menu-suboption code="master.menu.jualeoval.favourite-link" action="https://matias.ma/nsfw/"/>
+			
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.list-user-accounts" action="/any/user-account/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
