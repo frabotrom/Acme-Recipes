@@ -1,0 +1,30 @@
+package acme.testing.any.peep;
+
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+
+import acme.testing.TestHarness;
+
+public class AnyPeepListTest extends TestHarness{
+
+	@ParameterizedTest
+	@CsvFileSource(resources = "/any/peep/list-recent.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@Order(10)
+	public void positiveTestComponents(final int recordIndex, final String instantiationMoment, final String heading, final String writer, final String text, 
+		 final String email) {
+
+		// Tener cuidado con los test que los datos que se muestran dependen de una fecha reciente
+		
+		super.clickOnMenu("Any","Peeps Recent list");
+		super.checkListingExists();
+		super.sortListing(0, "asc");
+		
+		super.checkColumnHasValue(recordIndex, 0, instantiationMoment);
+		super.checkColumnHasValue(recordIndex, 1, heading);
+		super.checkColumnHasValue(recordIndex, 2, writer);
+		super.checkColumnHasValue(recordIndex, 3, text);
+		super.checkColumnHasValue(recordIndex, 4, email); 
+	}
+	
+}
