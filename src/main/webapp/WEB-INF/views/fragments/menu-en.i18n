@@ -17,7 +17,7 @@ master.menu.sign-out = Sign out
 
 # master.menu.anonymous #######################################################
 
-master.menu.anonymous = Anonymous
+master.menu.anonymous = Any
 master.menu.anonymous.favourite-link = Favourite link
 
 
@@ -41,6 +41,7 @@ master.menu.antsuagar.favourite-link = 20102473J: Suárez García, Antonio José
 master.menu.jualeoval = Juan José
 master.menu.jualeoval.favourite-link = 77928276K: León Valderrama, Juan José
 
+master.menu.anonymous.list-user-accounts = User accounts list
 
 # master.menu.administrator ###################################################
 
