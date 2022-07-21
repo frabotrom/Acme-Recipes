@@ -18,7 +18,7 @@
 
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
-		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
+		<acme:menu-option code="master.menu.anonymous">
 			<acme:menu-suboption code="master.menu.jbl0107.favourite-link" action="https://www.twitch.tv"/>
 			<acme:menu-suboption code="master.menu.frabotrom.favourite-link" action="https://www.reddit.com/r/moviescirclejerk"/>
 			
@@ -28,6 +28,9 @@
 			<acme:menu-suboption code="master.menu.jualeoval.favourite-link" action="https://matias.ma/nsfw/"/>
 			
 			<acme:menu-separator/>
+
+			<acme:menu-suboption code="master.menu.anonymous.list-peeps" action="/any/peep/list"/>
+
 			<acme:menu-suboption code="master.menu.anonymous.list-user-accounts" action="/any/user-account/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.all-ingredients-published" action="/any/thing/list-published-ingredients"/>
 			<acme:menu-suboption code="master.menu.anonymous.all-kitchen-utensils-published" action="/any/thing/list-published-kitchen-utensils"/>
