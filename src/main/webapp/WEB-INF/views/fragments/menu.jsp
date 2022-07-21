@@ -18,7 +18,7 @@
 
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
-		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
+		<acme:menu-option code="master.menu.anonymous">
 			<acme:menu-suboption code="master.menu.jbl0107.favourite-link" action="https://www.twitch.tv"/>
 			<acme:menu-suboption code="master.menu.frabotrom.favourite-link" action="https://www.reddit.com/r/moviescirclejerk"/>
 			
