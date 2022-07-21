@@ -28,7 +28,11 @@
 			<acme:menu-suboption code="master.menu.jualeoval.favourite-link" action="https://matias.ma/nsfw/"/>
 			
 			<acme:menu-separator/>
+
 			<acme:menu-suboption code="master.menu.anonymous.list-peeps" action="/any/peep/list"/>
+
+			<acme:menu-suboption code="master.menu.anonymous.list-user-accounts" action="/any/user-account/list"/>
+
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
@@ -47,7 +51,13 @@
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.epicure" access="hasRole('Epicure')">
+			<acme:menu-suboption code="master.menu.epicure.dashboard" action="/epicure/epicure-dashboard/show"/>
+		</acme:menu-option>
 	</acme:menu-left>
+	
+	
 
 	<acme:menu-right>
 		<acme:menu-option code="master.menu.sign-up" action="/anonymous/user-account/create" access="isAnonymous()"/>

@@ -43,6 +43,7 @@ master.menu.jualeoval.favourite-link = 77928276K: León Valderrama, Juan José
 
 master.menu.anonymous.list-peeps = Peeps Recent list
 
+master.menu.anonymous.list-user-accounts = User accounts list
 
 # master.menu.administrator ###################################################
 
@@ -62,6 +63,12 @@ master.menu.provider.favourite-link = Favourite link
 
 master.menu.consumer = Consumer
 master.menu.consumer.favourite-link = Favourite link
+
+
+# master.menu.epicure ########################################################
+
+master.menu.epicure = Epicure
+master.menu.epicure.dashboard = Dashboard
 
 # master.menu.user-account ####################################################
 
