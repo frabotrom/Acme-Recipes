@@ -1,5 +1,8 @@
 package acme.features.authenticated.bulletin;
 
+import java.util.Calendar;
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,10 +23,20 @@ public class AuthenticatedBulletinShowService implements AbstractShowService<Aut
 	@Override
 	public boolean authorise(final Request<Bulletin> request) {
 		assert request != null;
+
+		final int bulletinId = request.getModel().getInteger("id");
+		final Bulletin bulletin = this.repository.findOneBulletinById(bulletinId);
 		
-		// No hace falta dado que el sistema ya comprueba que el usuario este autentificados
+		final Calendar calendar = Calendar.getInstance();
+		calendar.add(Calendar.MONTH, -1);
+		final Date deadline = calendar.getTime();
 		
-		return true;
+		if(bulletin.getInstantiationMoment().after(deadline)) {
+			return true;
+		}else {
+			return false;
+		}
+
 	}
 	
 	@Override
