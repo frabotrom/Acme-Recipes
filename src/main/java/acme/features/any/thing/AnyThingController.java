@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import acme.entities.thing.Thing;
+import acme.features.any.recipe.AnyRecipeThingsService;
 import acme.framework.controllers.AbstractController;
 import acme.framework.roles.Any;
 
@@ -23,6 +24,9 @@ public class AnyThingController extends AbstractController<Any, Thing>{
 	@Autowired
 	protected AnyThingShowService thingShowService;
 	
+	@Autowired
+	protected AnyRecipeThingsService anyRecipeThingsService;
+	
 
 	
 	//Constructors ----------------------------------------------------
@@ -32,6 +36,7 @@ public class AnyThingController extends AbstractController<Any, Thing>{
 		super.addCommand("show", this.thingShowService);
 		super.addCommand("list-published-kitchen-utensils","list", this.anyKitchenUtensilListService);
 		super.addCommand("list-published-ingredients","list", this.anyIngredientListService);
+		super.addCommand("list-recipe-things","list", this.anyRecipeThingsService);
 	}
 }
 

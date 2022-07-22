@@ -45,6 +45,7 @@ master.menu.anonymous.list-peeps = Lista de peeps recientes
 master.menu.anonymous.list-user-accounts = Lista de usuarios
 master.menu.anonymous.all-ingredients-published = Todos los ingredientes publicados
 master.menu.anonymous.all-kitchen-utensils-published = Todos los utensilios de cocina publicados
+master.menu.anonymous.all-recipes-published = Todas las recetas publicadas
 
 # master.menu.administrator ###################################################
 

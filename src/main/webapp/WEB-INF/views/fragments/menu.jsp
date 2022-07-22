@@ -34,6 +34,7 @@
 			<acme:menu-suboption code="master.menu.anonymous.list-user-accounts" action="/any/user-account/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.all-ingredients-published" action="/any/thing/list-published-ingredients"/>
 			<acme:menu-suboption code="master.menu.anonymous.all-kitchen-utensils-published" action="/any/thing/list-published-kitchen-utensils"/>
+			<acme:menu-suboption code="master.menu.anonymous.all-recipes-published" action="/any/recipe/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
