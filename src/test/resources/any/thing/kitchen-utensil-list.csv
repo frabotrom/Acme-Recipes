@@ -1,0 +1,8 @@
+recordIndex,thing-type,name,code,description,retail-price,info,published
+0,KITCHENUTENSIL,Colander,AA:AAA-123,"It is a kitchen utensil used to strain foods such as pasta or to rinse vegetables.",EUR 8.50,"https://en.wikipedia.org/wiki/Colander",true
+1,KITCHENUTENSIL,Frying pan,AA:AAA-126,"It is a flat-bottomed pan used for frying, searing, and browning foods.",EUR 30.00,"https://en.wikipedia.org/wiki/Frying_pan",true
+2,KITCHENUTENSIL,Immersion blender,AA:AAA-125,"Also known as a stick blender, mini blender, hand blender, or wand blender, it is a kitchen blade grinder used to blend ingredients or purée food in the container in which they are being prepared.",EUR 20.50,"https://en.wikipedia.org/wiki/Immersion_blender",true
+3,KITCHENUTENSIL,Knife,KN:IFE-732,"It is a tool or weapon with a cutting edge or blade, usually attached to a handle or hilt.",EUR 17.30,"https://en.wikipedia.org/wiki/Knife",true
+4,KITCHENUTENSIL,Stock pot,AA:AAA-127,"It is traditionally used to make stock or broth, which can be the basis for cooking more complex recipes.",EUR 45.60,"https://en.wikipedia.org/wiki/Stock_pot",true
+5,KITCHENUTENSIL,Whisk,WH:ISK-961,"It is a cooking utensil which can be used to blend ingredients smooth or to incorporate air into a mixture, in a process known as whisking or whipping.",EUR 10.70,"https://en.wikipedia.org/wiki/Whisk",true
+6,KITCHENUTENSIL,Wooden Spoon,AA:AAA-121,"It is a utensil commonly used in food preparation.",EUR 10.00,"https://en.wikipedia.org/wiki/Wooden_spoon",true
