@@ -41,6 +41,8 @@ master.menu.antsuagar.favourite-link = 20102473J: Suárez García, Antonio José
 master.menu.jualeoval = Juan José
 master.menu.jualeoval.favourite-link = 77928276K: León Valderrama, Juan José
 
+master.menu.anonymous.list-peeps = Peeps Recent list
+
 master.menu.anonymous.list-user-accounts = User accounts list
 master.menu.anonymous.all-ingredients-published = All ingredients published
 master.menu.anonymous.all-kitchen-utensils-published = All kitchen utensils published
@@ -52,6 +54,7 @@ master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
+master.menu.administrator.systemConfiguration = System Configuration
 master.menu.administrator.shut-down = Shut down
 
 # master.menu.provider ########################################################
@@ -75,6 +78,11 @@ master.menu.epicure.dashboard = Dashboard
 master.menu.chef = Chef
 master.menu.chef.ingredients = My ingredients
 master.menu.chef.kitchen-utensils = My kitchen utensils
+
+# master.menu.authenticated ########################################################
+master.menu.authenticated = Authenticated
+master.menu.authenticated.systemConfiguration = System Configuration
+
 
 # master.menu.user-account ####################################################
 

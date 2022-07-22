@@ -18,7 +18,7 @@
 
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
-		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
+		<acme:menu-option code="master.menu.anonymous">
 			<acme:menu-suboption code="master.menu.jbl0107.favourite-link" action="https://www.twitch.tv"/>
 			<acme:menu-suboption code="master.menu.frabotrom.favourite-link" action="https://www.reddit.com/r/moviescirclejerk"/>
 			
@@ -28,6 +28,9 @@
 			<acme:menu-suboption code="master.menu.jualeoval.favourite-link" action="https://matias.ma/nsfw/"/>
 			
 			<acme:menu-separator/>
+
+			<acme:menu-suboption code="master.menu.anonymous.list-peeps" action="/any/peep/list"/>
+
 			<acme:menu-suboption code="master.menu.anonymous.list-user-accounts" action="/any/user-account/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.all-ingredients-published" action="/any/thing/list-published-ingredients"/>
 			<acme:menu-suboption code="master.menu.anonymous.all-kitchen-utensils-published" action="/any/thing/list-published-kitchen-utensils"/>
@@ -38,6 +41,8 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.populate-initial" action="/administrator/populate-initial"/>
 			<acme:menu-suboption code="master.menu.administrator.populate-sample" action="/administrator/populate-sample"/>			
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.systemConfiguration" action="/administrator/system-configuration/show"/>						
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shut-down" action="/administrator/shut-down"/>
 		</acme:menu-option>
@@ -57,6 +62,10 @@
 		<acme:menu-option code="master.menu.chef" access="hasRole('Chef')">
 			<acme:menu-suboption code="master.menu.chef.ingredients" action="/chef/thing/list-own-ingredients"/>
 			<acme:menu-suboption code="master.menu.chef.kitchen-utensils" action="/chef/thing/list-own-kitchen-utensils"/>
+    </acme:menu-option>
+
+		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
+			<acme:menu-suboption code="master.menu.authenticated.systemConfiguration" action="/authenticated/system-configuration/show"/>
 		</acme:menu-option>
 	</acme:menu-left>
 	
