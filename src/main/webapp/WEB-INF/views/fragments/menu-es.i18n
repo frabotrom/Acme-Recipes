@@ -71,6 +71,11 @@ master.menu.consumer.favourite-link = Enlace favorito
 master.menu.epicure = Epicure
 master.menu.epicure.dashboard = Tablero
 
+# master.menu.chef ########################################################
+
+master.menu.chef = Cocinero
+master.menu.chef.ingredients = Mis ingredientes
+master.menu.chef.kitchen-utensils = Mis utensilios de cocina
 
 master.menu.authenticated ########################################################
 

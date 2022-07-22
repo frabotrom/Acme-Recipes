@@ -59,6 +59,11 @@
 			<acme:menu-suboption code="master.menu.epicure.dashboard" action="/epicure/epicure-dashboard/show"/>
 		</acme:menu-option>
 		
+		<acme:menu-option code="master.menu.chef" access="hasRole('Chef')">
+			<acme:menu-suboption code="master.menu.chef.ingredients" action="/chef/thing/list-own-ingredients"/>
+			<acme:menu-suboption code="master.menu.chef.kitchen-utensils" action="/chef/thing/list-own-kitchen-utensils"/>
+    </acme:menu-option>
+
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
 			<acme:menu-suboption code="master.menu.authenticated.bulletins" action="/authenticated/bulletin/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.systemConfiguration" action="/authenticated/system-configuration/show"/>
