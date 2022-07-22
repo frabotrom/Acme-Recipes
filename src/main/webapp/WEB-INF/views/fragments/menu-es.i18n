@@ -77,9 +77,10 @@ master.menu.chef = Cocinero
 master.menu.chef.ingredients = Mis ingredientes
 master.menu.chef.kitchen-utensils = Mis utensilios de cocina
 
-# master.menu.authenticated ########################################################
+master.menu.authenticated ########################################################
 
-master.menu.authenticated = Autenticado
+master.menu.authenticated = Autentificado
+master.menu.authenticated.bulletins = Boletines
 master.menu.authenticated.systemConfiguration = Configuración del Sistema
 
 # master.menu.user-account ####################################################
