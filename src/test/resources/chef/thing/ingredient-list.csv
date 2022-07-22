@@ -1,0 +1,8 @@
+recordIndex,thing-type,name,code,description,retail-price,info,published
+0,INGREDIENT,Eggs,AA:AAA-111,"They are laid by female animals of many different species, including birds, reptiles, amphibians, a few mammals, and fish, and many of these have been eaten by humans for thousands of years.",EUR 1.00,"https://en.wikipedia.org/wiki/Egg_as_food",true
+1,INGREDIENT,Flour,FL:OUR-432,"It is a powder made by grinding raw grains, roots, beans, nuts, or seeds.",EUR 5.00,"https://en.wikipedia.org/wiki/Flour",true
+2,INGREDIENT,Milk,AA:AAA-112,"It is a nutrient-rich liquid food produced by the mammary glands of mammals.",EUR 10.00,"https://en.wikipedia.org/wiki/Milk",true
+3,INGREDIENT,Olive oil,OL:OIL-764,"is a liquid fat obtained from olives, a traditional tree crop of the Mediterranean Basin, produced by pressing whole olives and extracting the oil.",EUR 8.50,"https://en.wikipedia.org/wiki/Olive_oil",false
+4,INGREDIENT,Spice,SP:ICE-928,"It is a seed, fruit, root, bark, or other plant substance primarily used for flavoring or coloring food.",EUR 0.10,"https://en.wikipedia.org/wiki/Spice",true
+5,INGREDIENT,Sugar,SU:GAR-883,"It is the generic name for sweet-tasting, soluble carbohydrates, many of which are used in food.",EUR 6.00,"https://en.wikipedia.org/wiki/Sugar",true
+
