@@ -54,6 +54,7 @@ master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
+master.menu.administrator.systemConfiguration = System Configuration
 master.menu.administrator.shut-down = Shut down
 
 # master.menu.provider ########################################################
@@ -71,6 +72,10 @@ master.menu.consumer.favourite-link = Favourite link
 
 master.menu.epicure = Epicure
 master.menu.epicure.dashboard = Dashboard
+
+# master.menu.authenticated ########################################################
+master.menu.authenticated = Authenticated
+master.menu.authenticated.systemConfiguration = System Configuration
 
 # master.menu.user-account ####################################################
 
