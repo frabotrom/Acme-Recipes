@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.TestHarness;
 
-public class ChefFineDishListTest extends TestHarness{
+public class EpicureFineDishListTest extends TestHarness{
 	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/epicure/fine-dish/fine-dishes-list.csv", encoding = "utf-8", numLinesToSkip = 1)
