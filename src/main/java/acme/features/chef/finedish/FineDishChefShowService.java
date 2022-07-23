@@ -24,10 +24,10 @@ public class FineDishChefShowService implements AbstractShowService<Chef,FineDis
 		assert request != null;
 		
 		final int id = request.getModel().getInteger("id");
-		final FineDish patronage = this.repository.findFineDishById(id);
-		final int patronId = request.getPrincipal().getActiveRoleId();
+		final FineDish finedish = this.repository.findFineDishById(id);
+		final int chefId = request.getPrincipal().getActiveRoleId();
 		
-		return patronage.getChef().getId() == patronId;
+		return finedish.getChef().getId() == chefId;
 	}
 
 	@Override
