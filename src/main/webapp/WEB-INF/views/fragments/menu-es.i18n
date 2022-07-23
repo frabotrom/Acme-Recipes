@@ -76,6 +76,7 @@ master.menu.epicure.dashboard = Tablero
 master.menu.chef = Cocinero
 master.menu.chef.ingredients = Mis ingredientes
 master.menu.chef.kitchen-utensils = Mis utensilios de cocina
+master.menu.chef.fine-dishes = Mis platos elegantes
 
 master.menu.authenticated ########################################################
 

@@ -62,6 +62,8 @@
 		<acme:menu-option code="master.menu.chef" access="hasRole('Chef')">
 			<acme:menu-suboption code="master.menu.chef.ingredients" action="/chef/thing/list-own-ingredients"/>
 			<acme:menu-suboption code="master.menu.chef.kitchen-utensils" action="/chef/thing/list-own-kitchen-utensils"/>
+			<acme:menu-suboption code="master.menu.chef.fine-dishes" action="/chef/fine-dish/list"/>
+			
     </acme:menu-option>
 
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">

@@ -79,6 +79,7 @@ master.menu.epicure.dashboard = Dashboard
 master.menu.chef = Chef
 master.menu.chef.ingredients = My ingredients
 master.menu.chef.kitchen-utensils = My kitchen utensils
+master.menu.chef.fine-dishes = My fine dishes
 
 master.menu.authenticated ########################################################
 
