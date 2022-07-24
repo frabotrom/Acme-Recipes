@@ -1,0 +1,4 @@
+recordIndex,status,code,request,budget,creation-moment,start-date,end-date,more-info
+0,ACCEPTED,JC:AQW-908,Fish and chips,EUR 120.00, 2021/07/14 19:00, 2021/07/14 19:30, 2021/07/15 10:00,http://www.example.com
+1,ACCEPTED,KC:AQW-909,Montadito de tortilla ,EUR 420.50, 2021/07/15 13:00, 2021/07/15 13:30, 2021/07/15 14:00,http://www.example.com
+2,ACCEPTED,LC:AQW-910,Patatas cuatro salsas,EUR 200.00, 2021/07/15 13:00, 2021/07/15 14:30, 2021/07/15 15:30,http://www.example.com
