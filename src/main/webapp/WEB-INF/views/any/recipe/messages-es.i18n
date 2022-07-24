@@ -1,0 +1,13 @@
+
+any.recipe.form.label.code = Código
+any.recipe.form.label.heading = Título
+any.recipe.form.label.description = Descripción
+any.recipe.form.label.preparation-notes = Notas de preparación
+any.recipe.form.label.more-info = Enlace
+any.recipe.form.label.total-price = Precio total
+any.recipe.form.button.things = Objetos
+
+
+any.recipe.list.label.code = Código
+any.recipe.list.label.heading = Título
+any.recipe.list.label.total-price = Precio total

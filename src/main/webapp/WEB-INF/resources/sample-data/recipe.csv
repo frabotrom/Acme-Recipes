@@ -1,6 +1,7 @@
 key,code,heading,description,preparationNotes,moreInfo,published,key:chef
-recipe-001,"RC:MAC-001","Macarrones carbonara","Macarrones a la carbonara","Echar los macarrones en agua...","https://ev.us.es/",false,chef-01
-recipe-002,"RC:PAP-002","Papas bravas","Patatas en salsa brava","Cortar las patatas...","https://ev.us.es/",false,chef-01
-recipe-003,"RC:SUS-003","Sushi","Maki de salmon","Preparar el arroz...",null,false,chef-01
-recipe-004,"RC:TAR-004","Tarta de queso","Tarta con queso de untar","Preparar la base de la tarta...","https://ev.us.es/",false,chef-02
-recipe-005,"RC:ARR-005","Arroz con carne","Arroz con carne y salsa de soja","Preparar el arroz...",null,false,chef-03
+recipe-001,"RC:MAC-001","Macarrones carbonara","Macarrones a la carbonara","Echar los macarrones en agua...","https://ev.us.es/",true,chef-01
+recipe-002,"RC:PAP-002","Papas bravas","Patatas en salsa brava","Cortar las patatas...","https://ev.us.es/",true,chef-01
+recipe-003,"RC:SUS-003","Sushi","Maki de salmon","Preparar el arroz...",null,true,chef-01
+recipe-004,"RC:TAR-004","Tarta de queso","Tarta con queso de untar","Preparar la base de la tarta...","https://ev.us.es/",true,chef-02
+recipe-005,"RC:ARR-005","Arroz con carne","Arroz con carne y salsa de soja","Preparar el arroz...",null,true,chef-03
+recipe-006,"RC:ARR-006","Espaguetis secretos","Son secretos porque no se ven","Ninjutsu!",null,false,chef-02
