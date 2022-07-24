@@ -13,7 +13,6 @@ public class EpicureMemorandumListTest extends TestHarness {
 	public void positiveTest(final int recordIndexFineDish, final int recordIndexMemorandum, final String code, final String status,
 		final String budget, final String creationMoment, final String report) {
 		
-		// Listado de recipes
 		super.signIn("epicure1", "epicure1");
 		super.clickOnMenu("Epicure", "My fine dishes");
 		super.checkListingExists();
@@ -22,7 +21,6 @@ public class EpicureMemorandumListTest extends TestHarness {
 		super.checkColumnHasValue(recordIndexFineDish, 1, status);
 
 		
-		// Formulario de recipes
 		super.clickOnListingRecord(recordIndexFineDish);
 		super.checkFormExists();
 		super.checkInputBoxHasValue("code", code);
@@ -34,13 +32,9 @@ public class EpicureMemorandumListTest extends TestHarness {
 		super.sortListing(0, "asc");
 		super.checkColumnHasValue(recordIndexMemorandum, 0, report);
 		
-		// Listado de things
 		super.clickOnListingRecord(recordIndexMemorandum);
 		super.checkFormExists();
-		//super.checkInputBoxHasValue("serialNumber", serialNumber);
-		//super.checkInputBoxHasValue("instantiationMoment", instantiationMoment);
 		super.checkInputBoxHasValue("report", report);
-		//super.checkInputBoxHasValue("info", info);
 
 		
 		super.clickOnButton("Return");
