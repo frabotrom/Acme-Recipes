@@ -71,20 +71,17 @@
 				<acme:message
 					code="administrator.administrator-dashboard.form.label.average-retail-price-of-ingredients-by-currency" />
 			</h3>
-
 			<table class="table table-sm">
 			<caption></caption>
 			<div class="column">
-				<jstl:forEach
-					items="${ averageRetailPriceOfIngredientByCurrency.keySet() }"
+				<jstl:forEach items="${ averageRetailPriceOfIngredientByCurrency.keySet() }"
 					var="key">
 					<tr>
-						<jstl:set
-							value="${ averageRetailPriceOfIngredientByCurrency.get(key) }"
+						<jstl:set value="${ averageRetailPriceOfIngredientByCurrency.get(key) }"
 							var="amount" />
 						<jstl:if test="${ amount>0 }">
 							<th scope="row" style="width: 15%"><acme:message
-									code="administrator.dashboard.form.status.${ key.getFirst() }" /></th>
+									code="administrator.dashboard.form.status.${ key }" /></th>
 							<td><acme:print value="${ amount }" /></td>
 						</jstl:if>
 
@@ -92,27 +89,24 @@
 				</jstl:forEach>
 				</div>
 				<div class="column-50">
-				<canvas id="average-canvas"></canvas>
+				<canvas id="avg2-canvas"></canvas>
 				</div>
 			</table>
 			<h3>
 				<acme:message
-					code="administrator.administrator-dashboard.form.label.deviation-retail-price-of-ingredients-currency" />
+					code="administrator.administrator-dashboard.form.label.deviation-retail-price-of-ingredients-by-currency" />
 			</h3>
-
 			<table class="table table-sm">
 			<caption></caption>
 			<div class="column">
-				<jstl:forEach
-					items="${ deviationRetailPriceOfIngredientByCurrency.keySet() }"
+				<jstl:forEach items="${ deviationRetailPriceOfIngredientByCurrency.keySet() }"
 					var="key">
 					<tr>
-						<jstl:set
-							value="${ deviationRetailPriceOfIngredientByCurrency.get(key) }"
+						<jstl:set value="${ deviationRetailPriceOfIngredientByCurrency.get(key) }"
 							var="amount" />
 						<jstl:if test="${ amount>0 }">
 							<th scope="row" style="width: 15%"><acme:message
-									code="administrator.dashboard.form.status.${ key.getFirst() }" /></th>
+									code="administrator.dashboard.form.status.${ key }" /></th>
 							<td><acme:print value="${ amount }" /></td>
 						</jstl:if>
 
@@ -120,15 +114,14 @@
 				</jstl:forEach>
 				</div>
 				<div class="column-50">
-				<canvas id="dev-canvas"></canvas>
+				<canvas id="avg2-canvas"></canvas>
 				</div>
 			</table>
 
 			<h3>
 				<acme:message
-					code="administrator.administrator-dashboard.form.label.minimum-retail-price-of-ingredients-currency" />
+					code="administrator.administrator-dashboard.form.label.minimum-retail-price-of-ingredients-by-currency" />
 			</h3>
-
 			<table class="table table-sm">
 			<caption></caption>
 			<div class="column">
@@ -139,7 +132,7 @@
 							var="amount" />
 						<jstl:if test="${ amount>0 }">
 							<th scope="row" style="width: 15%"><acme:message
-									code="administrator.dashboard.form.status.${ key.getFirst() }" /></th>
+									code="administrator.dashboard.form.status.${ key }" /></th>
 							<td><acme:print value="${ amount }" /></td>
 						</jstl:if>
 
@@ -147,13 +140,12 @@
 				</jstl:forEach>
 				</div>
 				<div class="column-50">
-				<canvas id="min-canvas"></canvas>
+				<canvas id="avg2-canvas"></canvas>
 				</div>
 			</table>
-
 			<h3>
 				<acme:message
-					code="administrator.administrator-dashboard.form.label.maximum-retail-price-of-ingredients-currency" />
+					code="administrator.administrator-dashboard.form.label.maximum-retail-price-of-ingredients-by-currency" />
 			</h3>
 			<table class="table table-sm">
 			<caption></caption>
@@ -165,7 +157,7 @@
 							var="amount" />
 						<jstl:if test="${ amount>0 }">
 							<th scope="row" style="width: 15%"><acme:message
-									code="administrator.dashboard.form.status.${ key.getFirst() }" /></th>
+									code="administrator.dashboard.form.status.${ key }" /></th>
 							<td><acme:print value="${ amount }" /></td>
 						</jstl:if>
 
@@ -173,7 +165,7 @@
 				</jstl:forEach>
 				</div>
 				<div class="column-50">
-				<canvas id="max-canvas"></canvas>
+				<canvas id="avg2-canvas"></canvas>
 				</div>
 			</table>
 			

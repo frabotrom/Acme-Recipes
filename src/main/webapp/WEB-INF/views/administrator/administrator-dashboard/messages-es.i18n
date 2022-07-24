@@ -1,21 +1,21 @@
-administrator.administrator-dashboard.form.label.total-number-of-components =  Número total de componentes
-administrator.administrator-dashboard.form.label.total-number-of-tools =  Número total de herramientas
-administrator.administrator-dashboard.form.label.total-number-of-patronages-by-status = Número total de patrocinios según su estado
+administrator.administrator-dashboard.form.label.total-number-of-ingredients =  Número total de ingredientes 
+administrator.administrator-dashboard.form.label.total-number-of-kitchen-utensils  =  Número total de utensilios de cocina 
+administrator.administrator-dashboard.form.label.total-number-of-fine-dishes-by-status = Número total de platos gourmets según su estado
 
-administrator.administrator-dashboard.form.label.average-retail-price-of-components-by-technology-and-currency = Precio medio de componentes según la tecnología y divisa
-administrator.administrator-dashboard.form.label.deviation-retail-price-of-components-by-technology-and-currency = Desviación del precio de componentes según la tecnología y divisa
-administrator.administrator-dashboard.form.label.minimum-retail-price-of-components-by-technology-and-currency = Precio mínimo de componentes según la tecnología y divisa
-administrator.administrator-dashboard.form.label.maximum-retail-price-of-components-by-technology-and-currency = Precio máximo de componentes según la tecnología y divisa
+administrator.administrator-dashboard.form.label.average-retail-price-of-ingredients-by-currency = Precio medio de ingredientes según la divisa
+administrator.administrator-dashboard.form.label.deviation-retail-price-of-ingredients-by-currency  = Desviación del precio de ingredientes según la divisa
+administrator.administrator-dashboard.form.label.minimum-retail-price-of-ingredients-by-currency  = Precio mínimo de ingredientes según la divisa
+administrator.administrator-dashboard.form.label.maximum-retail-price-of-ingredients-by-currency  = Precio máximo de ingredientes según la divisa
 
-administrator.administrator-dashboard.form.label.average-retail-price-of-tools-by-currency = Precio medio de herramientas según la divisa
-administrator.administrator-dashboard.form.label.deviation-retail-price-of-tools-by-currency = Desviación del precio de herramientas según la divisa
-administrator.administrator-dashboard.form.label.minimum-retail-price-of-tools-by-currency = Precio mínimo de herramientas según la divisa
-administrator.administrator-dashboard.form.label.maximum-retail-price-of-tools-by-currency = Precio máximo de herramientas según la divisa
+ administrator.administrator-dashboard.form.label.average-retail-price-of-kitchen-utensils-by-currency  = Precio medio de utensilios de cocina según la divisa
+ administrator.administrator-dashboard.form.label.deviation-retail-price-of-kitchen-utensils-by-currency  = Desviación del precio de utensilios de cocina según la divisa
+ administrator.administrator-dashboard.form.label.minimum-retail-price-of-kitchen-utensils-by-currency  = Precio mínimo de utensilios de cocina según la divisa
+administrator.administrator-dashboard.form.label.maximum-retail-price-of-kitchen-utensils-by-currency = Precio máximo de utensilios de cocina según la divisa
 
-administrator.administrator-dashboard.form.label.average-budget-patronages-by-status = Presupuesto medio de patrocinios según su estado (y divisa)
-administrator.administrator-dashboard.form.label.deviation-budget-patronages-by-status = Desviación del presupuesto de patrocinios según su estado (y divisa)
-administrator.administrator-dashboard.form.label.minimum-budget-patronages-by-status = Presupuesto mínimo de patrocinios según su estado (y divisa)
-administrator.administrator-dashboard.form.label.maximum-budget-patronages-by-status = Presupuesto máximo de patrocinios según su estado (y divisa)
+administrator.administrator-dashboard.form.label.average-budget-fine-dishes-by-status = Presupuesto medio de platos gourmets según su estado (y divisa)
+administrator.administrator-dashboard.form.label.deviation-budget-fine-dishes-by-status = Desviación del presupuesto de platos gourmets según su estado (y divisa)
+administrator.administrator-dashboard.form.label.minimum-budget-fine-dishes-by-status = Presupuesto mínimo de platos gourmets según su estado (y divisa)
+administrator.administrator-dashboard.form.label.maximum-budget-fine-dishes-by-status = Presupuesto máximo de platos gourmets según su estado (y divisa)
 
 
 
