@@ -1,0 +1,37 @@
+chef.fine-dish.list.label.status = Estado
+chef.fine-dish.list.label.code = Código
+chef.fine-dish.list.label.request = Comanda
+chef.fine-dish.list.label.budget = Presupuesto
+chef.fine-dish.list.label.creation-moment = Fecha creación
+chef.fine-dish.list.label.published = Publicado
+
+
+
+chef.fine-dish.form.label.status = Estado
+chef.fine-dish.form.label.code = Código
+chef.fine-dish.form.label.request = Comanda
+chef.fine-dish.form.label.budget = Presupuesto
+chef.fine-dish.form.label.creation-moment = Fecha creación
+chef.fine-dish.form.label.start-date = Fecha inicio
+chef.fine-dish.form.label.end-date = Fecha fin
+chef.fine-dish.form.label.more-info = Más información
+chef.fine-dish.form.label.published = Publicado
+
+chef.fine-dish.form.label.proposed = PROPUESTO
+chef.fine-dish.form.label.accepted = ACEPTADO
+chef.fine-dish.form.label.denied = DENEGADO
+
+
+
+
+chef.fine-dish.label.epicure-full-name= Nombre del sibarita
+chef.fine-dish.label.epicure-email = Email del sibarita
+chef.fine-dish.label.epicure-organisation = Compañía del sibarita
+chef.fine-dish.label.epicure-assertion = Declaración del sibarita
+
+
+chef.fine-dish.form.error.code-exists= Este código ya existe
+chef.fine-dish.form.error.budget-currency = Moneda inválida
+chef.fine-dish.form.error.budget-amount= La cantidad no puede ser negativa
+chef.fine-dish.form.error.start-date = La fecha de inicio debe comenzar al menos un mes después de la creación del patrocinio
+chef.fine-dish.form.error.end-date = La fecha fin debe tener al menos un mes de duración

@@ -71,10 +71,19 @@ master.menu.consumer.favourite-link = Enlace favorito
 
 master.menu.epicure = Epicure
 master.menu.epicure.dashboard = Tablero
+master.menu.epicure.fine-dishes = Mis platos elegantes
 
-# master.menu.authenticated ########################################################
+# master.menu.chef ########################################################
 
-master.menu.authenticated = Autenticado
+master.menu.chef = Cocinero
+master.menu.chef.ingredients = Mis ingredientes
+master.menu.chef.kitchen-utensils = Mis utensilios de cocina
+master.menu.chef.fine-dishes = Mis platos elegantes
+
+master.menu.authenticated ########################################################
+
+master.menu.authenticated = Autentificado
+master.menu.authenticated.bulletins = Boletines
 master.menu.authenticated.systemConfiguration = Configuración del Sistema
 
 # master.menu.user-account ####################################################

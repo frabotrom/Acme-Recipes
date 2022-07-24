@@ -1,27 +1,27 @@
 key,thing-type,name,code,description,retail-price,info,published,key:chef
-thing-01,INGREDIENT,Flour,FL:OUR-432,"It is a powder made by grinding raw grains, roots, beans, nuts, or seeds.",EUR 0.01,https://en.wikipedia.org/wiki/Flour,true,chef-01
-thing-02,INGREDIENT,Eggs,AA:AAA-111,"They are laid by female animals of many different species, including birds, reptiles, amphibians, a few mammals, and fish, and many of these have been eaten by humans for thousands of years.",EUR 0.2,https://en.wikipedia.org/wiki/Egg_as_food,true,chef-01
-thing-03,INGREDIENT,Sugar,SU:GAR-883,"It is the generic name for sweet-tasting, soluble carbohydrates, many of which are used in food.",EUR 0.01,https://en.wikipedia.org/wiki/Sugar,true,chef-01
-thing-04,INGREDIENT,Milk,AA:AAA-112,It is a nutrient-rich liquid food produced by the mammary glands of mammals.,EUR 0.1,https://en.wikipedia.org/wiki/Milk,true,chef-01
-thing-05,INGREDIENT,Olive oil,OL:OIL-764,"is a liquid fat obtained from olives, a traditional tree crop of the Mediterranean Basin, produced by pressing whole olives and extracting the oil.",EUR 0.3,https://en.wikipedia.org/wiki/Olive_oil,false,chef-01
-thing-06,INGREDIENT,Spice,SP:ICE-928,"It is a seed, fruit, root, bark, or other plant substance primarily used for flavoring or coloring food.",EUR 0.05,https://en.wikipedia.org/wiki/Spice,true,chef-01
-thing-07,INGREDIENT,Butter,AA:AAA-113,It is a dairy product made from the fat and protein components of churned cream.,EUR 0.05,https://en.wikipedia.org/wiki/Butter,true,chef-02
-thing-08,INGREDIENT,Salt,AA:AAA-114,It is a mineral composed primarily of sodium chloride (NaCl).,EUR 0.01,https://en.wikipedia.org/wiki/Salt,true,chef-02
-thing-09,INGREDIENT,Chicken,AA:AAA-115,It is a domesticated junglefowl species.,EUR 0.1,https://en.wikipedia.org/wiki/Chicken,true,chef-02
-thing-10,INGREDIENT,Rice,AA:AAA-116,It is the seed of the grass species Oryza sativa (Asian rice) or less commonly Oryza glaberrima (African rice).,EUR 0.01,https://en.wikipedia.org/wiki/Rice,true,chef-02
-thing-11,INGREDIENT,Pork,AA:AAA-117,It is the culinary name for the meat of the domestic pig.,EUR 0.2,https://en.wikipedia.org/wiki/Pork,false,chef-02
-thing-12,INGREDIENT,Beef,AA:AAA-118,It is the culinary name for meat from cattle.,EUR 0.3,https://en.wikipedia.org/wiki/Beef,true,chef-03
-thing-13,INGREDIENT,Cheese,PH:OTO-333,"It is a dairy product produced in wide ranges of flavors, textures, and forms by coagulation of the milk protein casein.",EUR 0.1,https://en.wikipedia.org/wiki/Cheese,true,chef-03
-thing-14,INGREDIENT,Garlic,AA:AAA-119,It is a species of bulbous flowering plant in the genus Allium.,EUR 2.1,https://en.wikipedia.org/wiki/Garlic,true,chef-03
-thing-15,INGREDIENT,Onion,ON:ION-653,It is a vegetable that is the most widely cultivated species of the genus Allium.,EUR 0.01,https://en.wikipedia.org/wiki/Onion,false,chef-03
-thing-16,INGREDIENT,Corn,AA:AAA-120,"It is a cereal grain first domesticated by indigenous peoples in southern Mexico about 10,000 years ago.",EUR 0.01,https://en.wikipedia.org/wiki/Maize,true,chef-03
-thing-17,KITCHENUTENSIL,Knife,KN:IFE-732,"It is a tool or weapon with a cutting edge or blade, usually attached to a handle or hilt.",EUR 20.0,https://en.wikipedia.org/wiki/Knife,true,chef-01
-thing-18,KITCHENUTENSIL,Wooden Spoon,AA:AAA-121,It is a utensil commonly used in food preparation.,EUR 10.0,https://en.wikipedia.org/wiki/Wooden_spoon,true,chef-01
-thing-19,KITCHENUTENSIL,Peeler,AA:AAA-122,"It is a kitchen tool, a distinct type of kitchen knife, consisting of a metal blade with a slot with a sharp edge attached to a handle, used to remove the outer layer (the",EUR 15.1,https://en.wikipedia.org/wiki/Peeler,false,chef-01
-thing-20,KITCHENUTENSIL,Whisk,WH:ISK-961,"It is a cooking utensil which can be used to blend ingredients smooth or to incorporate air into a mixture, in a process known as whisking or whipping.",EUR 10.7,https://en.wikipedia.org/wiki/Whisk,true,chef-02
-thing-21,KITCHENUTENSIL,Tongs,TO:NGS-322,They are a type of tool used to grip and lift objects instead of holding them directly with hands.,EUR 8.0,https://en.wikipedia.org/wiki/Tongs,false,chef-02
-thing-22,KITCHENUTENSIL,Colander,AA:AAA-123,It is a kitchen utensil used to strain foods such as pasta or to rinse vegetables.,EUR 8.5,https://en.wikipedia.org/wiki/Colander,true,chef-02
-thing-23,KITCHENUTENSIL,Cutting board,AA:AAA-124,It is a durable board on which to place material for cutting.,EUR 7.0,https://en.wikipedia.org/wiki/Cutting_board,false,chef-03
-thing-24,KITCHENUTENSIL,Immersion blender,AA:AAA-125,"Also known as a stick blender, mini blender, hand blender, or wand blender, it is a kitchen blade grinder used to blend ingredients or purée food in the container in which they are being prepared.",EUR 20.5,https://en.wikipedia.org/wiki/Immersion_blender,true,chef-03
-thing-25,KITCHENUTENSIL,Frying pan,AA:AAA-126,"It is a flat-bottomed pan used for frying, searing, and browning foods.",EUR 30.0,https://en.wikipedia.org/wiki/Frying_pan,true,chef-03
-thing-26,KITCHENUTENSIL,Stock pot,AA:AAA-127,"It is traditionally used to make stock or broth, which can be the basis for cooking more complex recipes.",EUR 45.6,https://en.wikipedia.org/wiki/Stock_pot,true,chef-03
+thing-01,INGREDIENT,Flour,FL:OUR-432,"It is a powder made by grinding raw grains, roots, beans, nuts, or seeds.",EUR 5.0,"https://en.wikipedia.org/wiki/Flour",true,chef-01
+thing-02,INGREDIENT,Eggs,AA:AAA-111,"They are laid by female animals of many different species, including birds, reptiles, amphibians, a few mammals, and fish, and many of these have been eaten by humans for thousands of years.",EUR 1.0,"https://en.wikipedia.org/wiki/Egg_as_food",true,chef-01
+thing-03,INGREDIENT,Sugar,SU:GAR-883,"It is the generic name for sweet-tasting, soluble carbohydrates, many of which are used in food.",EUR 6.0,"https://en.wikipedia.org/wiki/Sugar",true,chef-01
+thing-04,INGREDIENT,Milk,AA:AAA-112,"It is a nutrient-rich liquid food produced by the mammary glands of mammals.",EUR 10.0,"https://en.wikipedia.org/wiki/Milk",true,chef-01
+thing-05,INGREDIENT,Olive oil,OL:OIL-764,"is a liquid fat obtained from olives, a traditional tree crop of the Mediterranean Basin, produced by pressing whole olives and extracting the oil.",EUR 8.5,"https://en.wikipedia.org/wiki/Olive_oil",false,chef-01
+thing-06,INGREDIENT,Spice,SP:ICE-928,"It is a seed, fruit, root, bark, or other plant substance primarily used for flavoring or coloring food.",EUR 0.1,"https://en.wikipedia.org/wiki/Spice",true,chef-01
+thing-07,INGREDIENT,Butter,AA:AAA-113,"It is a dairy product made from the fat and protein components of churned cream.",EUR 9.3,"https://en.wikipedia.org/wiki/Butter",true,chef-02
+thing-08,INGREDIENT,Salt,AA:AAA-114,"It is a mineral composed primarily of sodium chloride (NaCl).",EUR 3.0,"https://en.wikipedia.org/wiki/Salt",true,chef-02
+thing-09,INGREDIENT,Chicken,AA:AAA-115,"It is a domesticated junglefowl species.",EUR 15.7,"https://en.wikipedia.org/wiki/Chicken",true,chef-02
+thing-10,INGREDIENT,Rice,AA:AAA-116,"It is the seed of the grass species Oryza sativa (Asian rice) or less commonly Oryza glaberrima (African rice).",EUR 4.6,"https://en.wikipedia.org/wiki/Rice",true,chef-02
+thing-11,INGREDIENT,Pork,AA:AAA-117,"It is the culinary name for the meat of the domestic pig.",EUR 13.6,"https://en.wikipedia.org/wiki/Pork",false,chef-02
+thing-12,INGREDIENT,Beef,AA:AAA-118,"It is the culinary name for meat from cattle.",EUR 17.5,"https://en.wikipedia.org/wiki/Beef",true,chef-03
+thing-13,INGREDIENT,Cheese,PH:OTO-333,"It is a dairy product produced in wide ranges of flavors, textures, and forms by coagulation of the milk protein casein.",EUR 12.2,"https://en.wikipedia.org/wiki/Cheese",true,chef-03
+thing-14,INGREDIENT,Garlic,AA:AAA-119,"It is a species of bulbous flowering plant in the genus Allium.",EUR 2.1,"https://en.wikipedia.org/wiki/Garlic",true,chef-03
+thing-15,INGREDIENT,Onion,ON:ION-653,"It is a vegetable that is the most widely cultivated species of the genus Allium.",EUR 2.2,"https://en.wikipedia.org/wiki/Onion",false,chef-03
+thing-16,INGREDIENT,Corn,AA:AAA-120,"It is a cereal grain first domesticated by indigenous peoples in southern Mexico about 10,000 years ago.",EUR 4.8,"https://en.wikipedia.org/wiki/Maize",true,chef-03
+thing-17,KITCHENUTENSIL,Knife,KN:IFE-732,"It is a tool or weapon with a cutting edge or blade, usually attached to a handle or hilt.",EUR 17.3,"https://en.wikipedia.org/wiki/Knife",true,chef-01
+thing-18,KITCHENUTENSIL,Wooden Spoon,AA:AAA-121,"It is a utensil commonly used in food preparation.",EUR 10.0,"https://en.wikipedia.org/wiki/Wooden_spoon",true,chef-01
+thing-19,KITCHENUTENSIL,Peeler,AA:AAA-122,"It is a kitchen tool, a distinct type of kitchen knife, consisting of a metal blade with a slot with a sharp edge attached to a handle, used to remove the outer layer (the skin or peel) of some vegetables and fruits.",EUR 15.1,"https://en.wikipedia.org/wiki/Peeler",false,chef-01
+thing-20,KITCHENUTENSIL,Whisk,WH:ISK-961,"It is a cooking utensil which can be used to blend ingredients smooth or to incorporate air into a mixture, in a process known as whisking or whipping.",EUR 10.7,"https://en.wikipedia.org/wiki/Whisk",true,chef-02
+thing-21,KITCHENUTENSIL,Tongs,TO:NGS-322,"They are a type of tool used to grip and lift objects instead of holding them directly with hands.",EUR 8.0,"https://en.wikipedia.org/wiki/Tongs",false,chef-02
+thing-22,KITCHENUTENSIL,Colander,AA:AAA-123,"It is a kitchen utensil used to strain foods such as pasta or to rinse vegetables.",EUR 8.5,"https://en.wikipedia.org/wiki/Colander",true,chef-02
+thing-23,KITCHENUTENSIL,Cutting board,AA:AAA-124,"It is a durable board on which to place material for cutting.",EUR 7.0,"https://en.wikipedia.org/wiki/Cutting_board",false,chef-03
+thing-24,KITCHENUTENSIL,Immersion blender,AA:AAA-125,"Also known as a stick blender, mini blender, hand blender, or wand blender, it is a kitchen blade grinder used to blend ingredients or purée food in the container in which they are being prepared.",EUR 20.5,"https://en.wikipedia.org/wiki/Immersion_blender",true,chef-03
+thing-25,KITCHENUTENSIL,Frying pan,AA:AAA-126,"It is a flat-bottomed pan used for frying, searing, and browning foods.",EUR 30.0,"https://en.wikipedia.org/wiki/Frying_pan",true,chef-03
+thing-26,KITCHENUTENSIL,Stock pot,AA:AAA-127,"It is traditionally used to make stock or broth, which can be the basis for cooking more complex recipes.",EUR 45.6,"https://en.wikipedia.org/wiki/Stock_pot",true,chef-03

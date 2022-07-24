@@ -1,0 +1,16 @@
+any.thing.list.label.name = Name:
+any.thing.list.label.code = Code:
+any.thing.list.label.description = Description:
+any.thing.list.label.retailPrice = Retail Price:
+
+any.thing.form.label.name = Name:
+any.thing.form.label.code = Code:
+any.thing.form.label.description = Description:
+any.thing.form.label.retailPrice = Retail Price:
+any.thing.form.label.info = More Info:
+any.thing.form.label.thingType = Type of thing:
+any.thing.form.label.published= Published:
+
+INGREDIENT = INGREDIENT
+KITCHEN UTENSIL = KITCHEN UTENSIL
+
