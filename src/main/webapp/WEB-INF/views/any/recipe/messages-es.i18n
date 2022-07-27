@@ -5,7 +5,7 @@ any.recipe.form.label.description = Descripción
 any.recipe.form.label.preparation-notes = Notas de preparación
 any.recipe.form.label.more-info = Enlace
 any.recipe.form.label.total-price = Precio total
-any.recipe.form.button.things = Objetos
+any.recipe.form.button.amounts = Cantidades
 
 
 any.recipe.list.label.code = Código

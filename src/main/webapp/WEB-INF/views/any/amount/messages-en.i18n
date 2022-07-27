@@ -1,0 +1,14 @@
+any.quantity.list.label.item.code = Code
+any.quantity.list.label.item.name = Name
+any.quantity.list.label.item.thingType = Type
+any.quantity.list.label.item.retailPrice = Price
+any.quantity.list.label.item.quantity = Quantity
+any.amount.form.label.recipe.heading = Recipe
+any.amount.form.label.thing.name = Name
+any.amount.form.label.thing.code = Code
+any.amount.form.label.item.info = Info
+any.amount.form.label.item.description = Description
+any.amount.form.label.item.retaiLPrice = Price
+any.amount.form.label.retail-price-conversion = Converted Price
+any.recipe.form.label.thing.thingType = Type
+any.amount.form.label.quantity = Quantity

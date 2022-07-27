@@ -11,7 +11,7 @@ public class AnyRecipeListTest extends TestHarness {
 	@CsvFileSource(resources = "/any/recipe/list.csv", encoding ="utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void positiveTest(final int recordIndexRecipe, final int recordIndexThing, final String code, final String heading, final String description, final String preparationNotes, final String moreInfo, final String totalPrice,
-		final String name, final String retailPrice, final String thingCode) {
+		final String name, final String retailPrice, final String thingCode, final String type, final String quantity) {
 		
 		// Listado de recipes
 		super.clickOnMenu("Any", "All published recipes");
@@ -30,17 +30,17 @@ public class AnyRecipeListTest extends TestHarness {
 		super.checkInputBoxHasValue("preparationNotes", preparationNotes);
 		super.checkInputBoxHasValue("moreInfo", moreInfo);
 		super.checkInputBoxHasValue("totalPrice", totalPrice);
-		super.clickOnButton("Things");
-		super.checkListingExists();
-		super.sortListing(0, "asc");
-		super.checkColumnHasValue(recordIndexThing, 0, name);
 		
 		// Listado de things
+		super.clickOnButton("Amounts");
+		super.checkListingExists();
 		super.clickOnListingRecord(recordIndexThing);
-		super.checkFormExists();
+		super.sortListing(1, "asc");
+		super.checkInputBoxHasValue("thingCode", thingCode);
 		super.checkInputBoxHasValue("name", name);
-		super.checkInputBoxHasValue("code", thingCode);
+		super.checkInputBoxHasValue("type", type);
 		super.checkInputBoxHasValue("retailPrice", retailPrice);
+		super.checkInputBoxHasValue("quantity", quantity);
 		
 		super.clickOnButton("Return");
 		

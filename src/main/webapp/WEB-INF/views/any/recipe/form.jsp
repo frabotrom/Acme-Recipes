@@ -12,6 +12,9 @@
 	<acme:input-url code="any.recipe.form.label.more-info" path="moreInfo"/>
 	<acme:input-money code="any.recipe.form.label.total-price" path="totalPrice"/>
 	
-	<acme:button code="any.recipe.form.button.things" action="/any/thing/list-recipe-things?id=${id}"/>
+	<jstl:if test="${command == 'show'}">
+			<acme:button code="any.recipe.form.button.amount" action="/any/amount/list?id=${id}"/>		
+	</jstl:if>
+	
 </acme:form>
 
