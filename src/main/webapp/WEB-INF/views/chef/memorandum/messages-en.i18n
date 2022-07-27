@@ -1,0 +1,9 @@
+chef.memorandum.form.label.serial-number = Serial Number:
+chef.memorandum.form.label.instantiation-moment = Instantiation Moment:
+chef.memorandum.form.label.report = Report:
+chef.memorandum.form.label.info = More info:
+
+
+
+chef.memorandum.list.label.report = Report
+chef.fine-dish.form.button.memorandum = Memorandums

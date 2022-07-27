@@ -1,0 +1,9 @@
+chef.memorandum.form.label.serial-number = Numero de serie:
+chef.memorandum.form.label.instantiation-moment = Fecha de instanciación:
+chef.memorandum.form.label.report = Informe:
+chef.memorandum.form.label.info = Más información:
+
+
+
+chef.memorandum.list.label.report = Informe
+chef.fine-dish.form.button.memorandum = Memorándums
