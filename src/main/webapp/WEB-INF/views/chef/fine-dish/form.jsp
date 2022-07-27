@@ -39,11 +39,12 @@
 			<acme:input-textbox code="chef.fine-dish.label.epicure-assertion" path="epicureAssertion" readonly="true"/>
 		</jstl:when>
 		</jstl:choose>
-
+		
+		<acme:button code="chef.fine-dish.form.button.memorandum" action="/chef/memorandum/list?masterId=${id}"/>			
+	
 	
 
 		
-	
-		
+			
 	 
 </acme:form>
