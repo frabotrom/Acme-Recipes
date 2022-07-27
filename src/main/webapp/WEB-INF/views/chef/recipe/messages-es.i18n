@@ -1,0 +1,10 @@
+chef.recipe.list.label.heading = Título
+chef.recipe.list.label.code = Código
+chef.recipe.list.label.total-price = Precio Total
+chef.recipe.form.label.code = Código
+chef.recipe.form.label.heading = Título
+chef.recipe.form.label.description = Descripción
+chef.recipe.form.label.preparation-notes = Notas de Preparación
+chef.recipe.form.label.more-info = Más Información
+chef.recipe.form.label.total-price = Precio Total
+chef.recipe.form.button.amount = Cantidades
