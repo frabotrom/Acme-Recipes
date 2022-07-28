@@ -60,7 +60,7 @@ public class AnyAmountListService implements AbstractListService<Any,Amount>{
 		final Money newRetailPrice = this.moneyExchangeQuantity(entity);
 		model.setAttribute("newRetailPrice", newRetailPrice);
 		
-		request.unbind(entity, model, "quantity", "thing.code","thing.name", "thing.retailPrice", "thing.thingType");
+		request.unbind(entity, model, "quantity", "thing.code","thing.name", "thing.retailPrice", "thing.thingType","unit");
 		int recipeId;
 		recipeId = request.getModel().getInteger("id");
 		model.setAttribute("recipeId", recipeId);

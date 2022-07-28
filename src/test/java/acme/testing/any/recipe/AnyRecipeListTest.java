@@ -11,7 +11,7 @@ public class AnyRecipeListTest extends TestHarness {
 	@CsvFileSource(resources = "/any/recipe/list.csv", encoding ="utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void positiveTest(final int recordIndexRecipe, final int recordIndexThing, final String code, final String heading, final String description, final String preparationNotes, final String moreInfo, final String totalPrice,
-		final String name, final String retailPrice, final String thingCode, final String type, final String quantity) {
+		final String name, final String retailPrice, final String thingCode, final String type, final String quantity, final String unit) {
 		
 		// Listado de recipes
 		super.clickOnMenu("Any", "All published recipes");
@@ -41,6 +41,7 @@ public class AnyRecipeListTest extends TestHarness {
 		super.checkInputBoxHasValue("type", type);
 		super.checkInputBoxHasValue("retailPrice", retailPrice);
 		super.checkInputBoxHasValue("quantity", quantity);
+		super.checkInputBoxHasValue("unit", unit);
 		
 		super.clickOnButton("Return");
 		

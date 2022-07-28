@@ -49,7 +49,7 @@ public class AnyAmountShowService implements AbstractShowService<Any,Amount>{
 		model.setAttribute("newRetailPrice", newRetailPrice);
 
 		request.unbind(entity, model, "quantity", "recipe.heading", "thing.name", "thing.code", "thing.info", "thing.description", "thing.retailPrice",
-			"thing.thingType", "thing.published");
+			"thing.thingType", "thing.published", "unit");
 		model.setAttribute("published", entity.getRecipe().isPublished());
 		
 	}

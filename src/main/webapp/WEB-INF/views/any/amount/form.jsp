@@ -21,5 +21,6 @@
 		<acme:input-textbox code="any.recipe.form.label.thing.thingType" path="thing.thingType" readonly="true"/>			
 
 	<acme:input-integer code="any.amount.form.label.quantity" path="quantity"/>
+	<acme:input-textbox code="any.amount.form.label.unit" path="unit" readonly="true"/>
 		
 </acme:form>
