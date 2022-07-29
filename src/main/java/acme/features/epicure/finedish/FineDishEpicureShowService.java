@@ -56,9 +56,8 @@ public class FineDishEpicureShowService implements AbstractShowService<Epicure,F
 		assert request != null;
 
 		final int id = request.getModel().getInteger("id");
-		final FineDish f = this.repository.findOneFineDishById(id);
-		
-		return f;	
+		return  this.repository.findOneFineDishById(id);
+	
 	}
 
 }
