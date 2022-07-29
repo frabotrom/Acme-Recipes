@@ -1,0 +1,4 @@
+recordIndex,thing-type,name,code,description,retail-price,info,published
+0,KITCHENUTENSIL,Knife,KN:IFE-732,"It is a tool or weapon with a cutting edge or blade, usually attached to a handle or hilt.",EUR 17.30,"https://en.wikipedia.org/wiki/Knife",true
+1,KITCHENUTENSIL,Peeler,AA:AAA-122,"It is a kitchen tool, a distinct type of kitchen knife, consisting of a metal blade with a slot with a sharp edge attached to a handle, used to remove the outer layer (the skin or peel) of some vegetables and fruits.",EUR 15.10,"https://en.wikipedia.org/wiki/Peeler",false
+2,KITCHENUTENSIL,Wooden Spoon,AA:AAA-121,"It is a utensil commonly used in food preparation.",EUR 10.00,"https://en.wikipedia.org/wiki/Wooden_spoon",true

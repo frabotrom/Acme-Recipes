@@ -1,0 +1,9 @@
+recordIndexRecipe,recordIndexThing,code,heading,description,preparationNotes,moreInfo,totalPrice,name,retailPrice,thingCode
+0,0,RC:ARR-005,"Arroz con carne","Arroz con carne y salsa de soja","Preparar el arroz...","",EUR 15.00,"Salt",EUR 3.00,AA:AAA-114
+1,0,RC:MAC-001,"Macarrones carbonara","Macarrones a la carbonara","Echar los macarrones en agua...","https://ev.us.es/",EUR 213.00,"Butter",EUR 9.30,AA:AAA-113 
+1,1,RC:MAC-001,"Macarrones carbonara","Macarrones a la carbonara","Echar los macarrones en agua...","https://ev.us.es/",EUR 213.00,"Eggs",EUR 1.00,AA:AAA-111 
+1,2,RC:MAC-001,"Macarrones carbonara","Macarrones a la carbonara","Echar los macarrones en agua...","https://ev.us.es/",EUR 213.00,"Salt",EUR 3.00,AA:AAA-114 
+1,3,RC:MAC-001,"Macarrones carbonara","Macarrones a la carbonara","Echar los macarrones en agua...","https://ev.us.es/",EUR 213.00,"Wooden Spoon",EUR 10.00,AA:AAA-121 
+2,0,RC:PAP-002,"Papas bravas","Patatas en salsa brava","Cortar las patatas...","https://ev.us.es/",EUR 15.00,"Salt",EUR 3.00,AA:AAA-114 
+3,0,RC:SUS-003,"Sushi","Maki de salmon","Preparar el arroz...",,EUR 15.00,"Salt",EUR 3.00,AA:AAA-114 
+4,0,RC:TAR-004,"Tarta de queso","Tarta con queso de untar","Preparar la base de la tarta...","https://ev.us.es/",EUR 15.00,"Salt",EUR 3.00,AA:AAA-114 

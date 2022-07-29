@@ -1,0 +1,14 @@
+chef.quantity.list.label.item.code = Código
+chef.quantity.list.label.item.name = Nombre
+chef.quantity.list.label.item.thingType = Tipo
+chef.quantity.list.label.item.retailPrice = Precio
+chef.quantity.list.label.item.quantity = Cantidad
+chef.amount.form.label.recipe.heading = Receta
+chef.amount.form.label.thing.name = Nombre
+chef.amount.form.label.thing.code = Código
+chef.amount.form.label.item.info = Información
+chef.amount.form.label.item.description = Descripción
+chef.amount.form.label.item.retaiLPrice = Precio
+chef.amount.form.label.retail-price-conversion = Precio Convertido
+chef.recipe.form.label.thing.thingType = Tipo
+chef.amount.form.label.quantity = Cantidad

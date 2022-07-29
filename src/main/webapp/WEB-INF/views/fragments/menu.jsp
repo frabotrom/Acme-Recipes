@@ -18,7 +18,7 @@
 
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
-		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
+		<acme:menu-option code="master.menu.anonymous">
 			<acme:menu-suboption code="master.menu.jbl0107.favourite-link" action="https://www.twitch.tv"/>
 			<acme:menu-suboption code="master.menu.frabotrom.favourite-link" action="https://www.reddit.com/r/moviescirclejerk"/>
 			
@@ -26,6 +26,15 @@
 			<acme:menu-suboption code="master.menu.juamorper2.favourite-link" action="https://playvalorant.com/es-es/"/>
 			<acme:menu-suboption code="master.menu.antsuagar.favourite-link" action="https://www.youtube.com/watch?v=_lIdodcgk24"/>
 			<acme:menu-suboption code="master.menu.jualeoval.favourite-link" action="https://matias.ma/nsfw/"/>
+			
+			<acme:menu-separator/>
+
+			<acme:menu-suboption code="master.menu.anonymous.list-peeps" action="/any/peep/list"/>
+
+			<acme:menu-suboption code="master.menu.anonymous.list-user-accounts" action="/any/user-account/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.all-ingredients-published" action="/any/thing/list-published-ingredients"/>
+			<acme:menu-suboption code="master.menu.anonymous.all-kitchen-utensils-published" action="/any/thing/list-published-kitchen-utensils"/>
+			<acme:menu-suboption code="master.menu.anonymous.all-recipes-published" action="/any/recipe/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
@@ -33,6 +42,9 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.populate-initial" action="/administrator/populate-initial"/>
 			<acme:menu-suboption code="master.menu.administrator.populate-sample" action="/administrator/populate-sample"/>			
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.systemConfiguration" action="/administrator/system-configuration/show"/>						
+			<acme:menu-suboption code="master.menu.administrator.administratorDashboard" action="/administrator/administrator-dashboard/show"/>						
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shut-down" action="/administrator/shut-down"/>
 		</acme:menu-option>
@@ -44,7 +56,28 @@
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.epicure" access="hasRole('Epicure')">
+			<acme:menu-suboption code="master.menu.epicure.dashboard" action="/epicure/epicure-dashboard/show"/>
+			<acme:menu-suboption code="master.menu.epicure.fine-dishes" action="/epicure/fine-dish/list"/>
+		
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.chef" access="hasRole('Chef')">
+			<acme:menu-suboption code="master.menu.chef.ingredients" action="/chef/thing/list-own-ingredients"/>
+			<acme:menu-suboption code="master.menu.chef.kitchen-utensils" action="/chef/thing/list-own-kitchen-utensils"/>
+			<acme:menu-suboption code="master.menu.chef.recipes" action="/chef/recipe/list"/>
+			<acme:menu-suboption code="master.menu.chef.fine-dishes" action="/chef/fine-dish/list"/>
+			
+    </acme:menu-option>
+
+		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
+			<acme:menu-suboption code="master.menu.authenticated.bulletins" action="/authenticated/bulletin/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.systemConfiguration" action="/authenticated/system-configuration/show"/>
+		</acme:menu-option>
 	</acme:menu-left>
+	
+	
 
 	<acme:menu-right>
 		<acme:menu-option code="master.menu.sign-up" action="/anonymous/user-account/create" access="isAnonymous()"/>

@@ -1,0 +1,35 @@
+epicure.fine-dish.list.label.status = Status
+epicure.fine-dish.list.label.code = Code
+epicure.fine-dish.list.label.request = Request
+epicure.fine-dish.list.label.budget = Budget
+epicure.fine-dish.list.label.creation-moment = Creation moment
+epicure.fine-dish.list.label.published = Published
+epicure.fine-dish.list.label.creation-moment = Creation moment
+
+
+epicure.fine-dish.form.label.status = Status
+epicure.fine-dish.form.label.code = Code
+epicure.fine-dish.form.label.request = Request
+epicure.fine-dish.form.label.budget = Budget
+epicure.fine-dish.form.label.creation-moment = Creation moment
+epicure.fine-dish.form.label.start-date = Start date
+epicure.fine-dish.form.label.end-date = End date
+epicure.fine-dish.form.label.more-info = More info
+epicure.fine-dish.form.label.published = Published
+
+epicure.fine-dish.form.label.proposed = PROPOSED
+epicure.fine-dish.form.label.accepted = ACCEPTED
+epicure.fine-dish.form.label.denied = DENIED
+
+
+epicure.fine-dish.label.chef-full-name= Epicure's name
+epicure.fine-dish.label.chef-email = Epicure's email
+epicure.fine-dish.label.chef-organisation = Epicure's organisation
+epicure.fine-dish.label.chef-assertion = Epicure's assertion
+
+
+epicure.fine-dish.form.error.code-exists= This code already exists
+epicure.fine-dish.form.error.budget-currency= This currency is invalid
+epicure.fine-dish.form.error.budget-amount= This amount can't be negative
+epicure.fine-dish.form.error.start-date = Start date must starting at least one month after the patronage is created
+epicure.fine-dish.form.error.end-date = End date must be at least one month long

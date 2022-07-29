@@ -17,7 +17,7 @@ master.menu.sign-out = Sign out
 
 # master.menu.anonymous #######################################################
 
-master.menu.anonymous = Anonymous
+master.menu.anonymous = Any
 master.menu.anonymous.favourite-link = Favourite link
 
 
@@ -41,6 +41,12 @@ master.menu.antsuagar.favourite-link = 20102473J: Suárez García, Antonio José
 master.menu.jualeoval = Juan José
 master.menu.jualeoval.favourite-link = 77928276K: León Valderrama, Juan José
 
+master.menu.anonymous.list-peeps = Peeps Recent list
+
+master.menu.anonymous.list-user-accounts = User accounts list
+master.menu.anonymous.all-ingredients-published = All ingredients published
+master.menu.anonymous.all-kitchen-utensils-published = All kitchen utensils published
+master.menu.anonymous.all-recipes-published = All published recipes
 
 # master.menu.administrator ###################################################
 
@@ -49,6 +55,8 @@ master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
+master.menu.administrator.systemConfiguration = System Configuration
+master.menu.administrator.administratorDashboard = Administrator Dashboard
 master.menu.administrator.shut-down = Shut down
 
 # master.menu.provider ########################################################
@@ -60,6 +68,28 @@ master.menu.provider.favourite-link = Favourite link
 
 master.menu.consumer = Consumer
 master.menu.consumer.favourite-link = Favourite link
+
+
+# master.menu.epicure ########################################################
+
+master.menu.epicure = Epicure
+master.menu.epicure.dashboard = Dashboard
+master.menu.epicure.fine-dishes = My fine dishes
+
+# master.menu.chef ########################################################
+
+master.menu.chef = Chef
+master.menu.chef.ingredients = My ingredients
+master.menu.chef.kitchen-utensils = My kitchen utensils
+master.menu.chef.recipes = My recipes
+master.menu.chef.fine-dishes = My fine dishes
+
+master.menu.authenticated ########################################################
+
+master.menu.authenticated = Authenticated
+master.menu.authenticated.bulletins = Bulletins
+master.menu.authenticated.systemConfiguration = System Configuration
+
 
 # master.menu.user-account ####################################################
 

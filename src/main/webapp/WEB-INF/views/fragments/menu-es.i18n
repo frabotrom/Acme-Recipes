@@ -40,6 +40,13 @@ master.menu.antsuagar.favourite-link = 20102473J: Suárez García, Antonio José
 master.menu.jualeoval = Juan José
 master.menu.jualeoval.favourite-link = 77928276K: León Valderrama, Juan José
 
+master.menu.anonymous.list-peeps = Lista de peeps recientes
+
+master.menu.anonymous.list-user-accounts = Lista de usuarios
+master.menu.anonymous.all-ingredients-published = Todos los ingredientes publicados
+master.menu.anonymous.all-kitchen-utensils-published = Todos los utensilios de cocina publicados
+master.menu.anonymous.all-recipes-published = Todas las recetas publicadas
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
@@ -47,6 +54,8 @@ master.menu.administrator.dashboard = Panel de indicadores
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
+master.menu.administrator.systemConfiguration = Configuración del sistema
+master.menu.administrator.administratorDashboard = Tablero del administrador
 master.menu.administrator.shut-down = Parar el sistema
 
 # master.menu.provider ########################################################
@@ -58,6 +67,26 @@ master.menu.provider.favourite-link = Enlace favorito
 
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
+
+# master.menu.epicure ########################################################
+
+master.menu.epicure = Epicure
+master.menu.epicure.dashboard = Tablero
+master.menu.epicure.fine-dishes = Mis platos gourmets
+
+# master.menu.chef ########################################################
+
+master.menu.chef = Cocinero
+master.menu.chef.ingredients = Mis ingredientes
+master.menu.chef.kitchen-utensils = Mis utensilios de cocina
+master.menu.chef.recipes = Mis recetas
+master.menu.chef.fine-dishes = Mis platos gourmets
+
+master.menu.authenticated ########################################################
+
+master.menu.authenticated = Autentificado
+master.menu.authenticated.bulletins = Boletines
+master.menu.authenticated.systemConfiguration = Configuración del Sistema
 
 # master.menu.user-account ####################################################
 

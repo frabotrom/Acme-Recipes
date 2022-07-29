@@ -1,0 +1,9 @@
+key,quantity,unit,key:recipe,key:thing
+amount-001,1,ud,recipe-001,thing-18
+amount-002,20,g,recipe-001,thing-07
+amount-003,5,g,recipe-001,thing-08
+amount-004,2,uds,recipe-001,thing-02
+amount-005,5,g,recipe-002,thing-08
+amount-006,5,g,recipe-003,thing-08
+amount-007,5,g,recipe-004,thing-08
+amount-008,5,g,recipe-005,thing-08

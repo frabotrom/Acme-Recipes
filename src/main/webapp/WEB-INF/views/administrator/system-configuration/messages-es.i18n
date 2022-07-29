@@ -1,0 +1,5 @@
+administrator.systemconfiguration.form.label.system-currency = Moneda del sistema
+administrator.systemconfiguration.form.label.accepted-currencies = Monedas aceptadas
+administrator.systemconfiguration.form.label.spam-terms-en = Términos de Spam (En)
+administrator.systemconfiguration.form.label.spam-terms-es = Términos de Spam (Es)
+administrator.systemconfiguration.form.label.spam-threshhold = Umbral de Spam
