@@ -24,11 +24,7 @@ public class AnyThingShowService implements AbstractShowService<Any, Thing>{
 		Thing thing;
 		thing = this.repository.findOneById(id);
 		
-		if (thing.isPublished()) {
-			return true;
-		} else {
-			return false;
-		}
+		return thing.isPublished();
 		
 	}
 

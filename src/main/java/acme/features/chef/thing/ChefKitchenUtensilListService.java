@@ -24,11 +24,7 @@ public class ChefKitchenUtensilListService implements AbstractListService<Chef, 
 		assert request != null;
 		final int userId = request.getPrincipal().getActiveRoleId();
 		
-		if (this.repository.findChefById(userId).isPresent()) {
-			return true;
-		} else {
-			return false;
-		}
+		return this.repository.findChefById(userId).isPresent();
 	}
 
 	@Override
