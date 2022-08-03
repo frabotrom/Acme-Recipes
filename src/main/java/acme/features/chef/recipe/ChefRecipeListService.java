@@ -43,10 +43,8 @@ public class ChefRecipeListService implements AbstractListService<Chef, Recipe> 
 		final Collection<Recipe> result = new HashSet<>();
 		recipes = this.repository.findRecipesByChefId(chefId);
 		for(final Recipe r: recipes) {
-			if(r.isPublished()) {
 			r.setTotalPrice(this.getTotalPrice(r));
 			result.add(r);
-		}
 		}
 		return result;
 	}
