@@ -36,10 +36,10 @@ public class AnyRecipeListTest extends TestHarness {
 		super.checkListingExists();
 		super.clickOnListingRecord(recordIndexThing);
 		super.sortListing(1, "asc");
-		super.checkInputBoxHasValue("thingCode", thingCode);
-		super.checkInputBoxHasValue("name", name);
-		super.checkInputBoxHasValue("type", type);
-		super.checkInputBoxHasValue("retailPrice", retailPrice);
+		super.checkInputBoxHasValue("thing.code", thingCode);
+		super.checkInputBoxHasValue("thing.name", name);
+		super.checkInputBoxHasValue("thing.thingType", type);
+		super.checkInputBoxHasValue("newRetailPrice", retailPrice);
 		super.checkInputBoxHasValue("quantity", quantity);
 		super.checkInputBoxHasValue("unit", unit);
 		
