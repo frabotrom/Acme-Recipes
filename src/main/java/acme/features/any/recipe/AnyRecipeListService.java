@@ -53,8 +53,17 @@ public class AnyRecipeListService implements AbstractListService<Any, Recipe> {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
+		
+		String payload;
 
 		request.unbind(entity, model, "code", "heading","totalPrice");
+		
+		payload = String.format(
+            "%s; %s; %s",
+            entity.getChef(),
+            this.repository.findAllThingNamesOfRecipe(entity),
+            this.repository.findAllThingCodesOfRecipe(entity));
+		model.setAttribute("payload", payload);
 
 	}
 
