@@ -26,6 +26,12 @@ public interface AnyRecipeRepository extends AbstractRepository {
 	@Query("SELECT a FROM Amount a WHERE a.recipe =:recipe")
 	Collection<Amount> findAllAmountOfRecipe(Recipe recipe);
 	
+	@Query("SELECT a.thing.name FROM Amount a WHERE a.recipe =:recipe")
+	Collection<String> findAllThingNamesOfRecipe(Recipe recipe);
+	
+	@Query("SELECT a.thing.code FROM Amount a WHERE a.recipe =:recipe")
+	Collection<String> findAllThingCodesOfRecipe(Recipe recipe);
+	
 	@Query("SELECT a FROM Amount a WHERE a.recipe.id = :recipeId")
 	Collection<Amount> findQuantitiesByRecipeId(int recipeId);
 	
