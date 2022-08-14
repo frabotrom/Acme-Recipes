@@ -3,7 +3,10 @@ epicure.memorandum.form.label.instantiation-moment = Instantiation Moment:
 epicure.memorandum.form.label.report = Report:
 epicure.memorandum.form.label.info = More info:
 
-
+epicure.memorandum.form.label.confirmation = Confirm that the Memorandum is correct
+epicure.memorandum.form.button.create = Create
 
 epicure.memorandum.list.label.report = Report
 epicure.fine-dish.form.button.memorandum = Memorandums
+
+epicure.memorandum.list.button.create = Create
