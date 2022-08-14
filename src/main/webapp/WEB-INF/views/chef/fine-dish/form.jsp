@@ -40,14 +40,10 @@
 		</jstl:when>
 		</jstl:choose>
 		
+
 		<acme:button code="chef.fine-dish.form.button.memorandum" action="/chef/memorandum/list?masterId=${id}"/>			
 	
-	<jstl:choose>
-		<jstl:when test="${acme:anyOf(command, 'show, update') && status =='PROPOSED'}">
-			<acme:submit code="chef.fine-dish.form.button.updateStatus" action="/chef/fine-dish/update-status"/>
-			
-		</jstl:when>
-	</jstl:choose>
+
 			
 	 
 </acme:form>

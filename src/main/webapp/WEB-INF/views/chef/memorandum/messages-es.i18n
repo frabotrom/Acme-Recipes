@@ -3,7 +3,11 @@ chef.memorandum.form.label.instantiation-moment = Fecha de instanciación:
 chef.memorandum.form.label.report = Informe:
 chef.memorandum.form.label.info = Más información:
 
+chef.memorandum.form.label.confirmation = Confirma que el Memorándum es correcto
+chef.memorandum.form.button.create = Crear
 
 
 chef.memorandum.list.label.report = Informe
 chef.fine-dish.form.button.memorandum = Memorándums
+
+chef.memorandum.list.button.create = Crear
