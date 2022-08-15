@@ -49,7 +49,6 @@ public class SpamDetector {
 		final Map<String,Double> spamWords = new HashMap<String,Double>();
 		
 		for(final String keyValue : spamTermsArray.split(",")) {
-			System.out.println(keyValue);
 			final String[] pair = keyValue.replace("("," ").replace(")"," ").replace("'", "").trim().split(":");
 			spamWords.put(pair[0], Double.valueOf(pair[1]));
 			}
@@ -61,45 +60,11 @@ public class SpamDetector {
 		
 		Double totalSpamWeight = 0.;
 		
-//		final StringBuilder sentenceBuilder = new StringBuilder("/");
-//		for(final String word: wordsToCheck) {
-//			sentenceBuilder.append(word.toUpperCase() + "/");
-//		}
-//		
-//		final String sentenceToCheck = sentenceBuilder.toString();
-		
-//		for(final Map.Entry<String, Double> entry : spamTerms.entrySet()) {
-//			// Queremos: comprobar si la clave de entry está contenida en sentenceToCheck, en cuyo caso sumarle el valor a totalSpamWeight
-//			if(wordsToCheck.contains(entry.getKey().toUpperCase())) {
-//				totalSpamWeight += entry.getValue();
-//			}
-//		}
-		
 		for(final String word: wordsToCheck) {
 			if(spamTerms.keySet().contains(word.toLowerCase())) {
 				totalSpamWeight += spamTerms.get(word.toLowerCase());
 			}
 		}
-		
-//		for(final List<String> spamTermsSentence: spamTermsSentencesList) {
-//			
-//			final StringBuilder spamTermBuilder = new StringBuilder("/");
-//			for(final String word: spamTermsSentence) {
-//				spamTermBuilder.append(word.toUpperCase() + "/");
-//			}
-//			
-//			final String spamTerm = spamTermBuilder.toString();
-//			String sentenceToCheckAux = sentenceToCheck;
-//			
-//			if(sentenceToCheck.contains(spamTerm)) {
-//				while (sentenceToCheckAux.indexOf(spamTerm) > -1) {
-//					
-//					sentenceToCheckAux = sentenceToCheckAux.substring(
-//						sentenceToCheckAux.indexOf(spamTerm)+spamTerm.length()-1, sentenceToCheckAux.length());
-//				    spamTermRecurrence = spamTermRecurrence + spamTermsSentence.size();
-//				}
-//			}	
-//		}
 		
 		return totalSpamWeight/wordsToCheck.size();
 	}	
