@@ -22,10 +22,10 @@ epicure.fine-dish.form.label.accepted = ACCEPTED
 epicure.fine-dish.form.label.denied = DENIED
 
 
-epicure.fine-dish.label.chef-full-name= Epicure's name
-epicure.fine-dish.label.chef-email = Epicure's email
-epicure.fine-dish.label.chef-organisation = Epicure's organisation
-epicure.fine-dish.label.chef-assertion = Epicure's assertion
+epicure.fine-dish.label.chef-full-name= Chef's name
+epicure.fine-dish.label.chef-email = Chef's email
+epicure.fine-dish.label.chef-organisation = Chef's organisation
+epicure.fine-dish.label.chef-assertion = Chef's assertion
 
 
 epicure.fine-dish.form.error.code-exists= This code already exists
