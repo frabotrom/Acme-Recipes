@@ -24,10 +24,10 @@ epicure.fine-dish.form.label.denied = DENEGADO
 
 
 
-epicure.fine-dish.label.chef-full-name= Nombre del sibarita
-epicure.fine-dish.label.chef-email = Email del sibarita
-epicure.fine-dish.label.chef-organisation = Compañía del sibarita
-epicure.fine-dish.label.chef-assertion = Declaración del sibarita
+epicure.fine-dish.label.chef-full-name= Nombre del chef
+epicure.fine-dish.label.chef-email = Email del chef
+epicure.fine-dish.label.chef-organisation = Compañía del chef
+epicure.fine-dish.label.chef-assertion = Declaración del chef
 
 
 epicure.fine-dish.form.error.code-exists= Este código ya existe
