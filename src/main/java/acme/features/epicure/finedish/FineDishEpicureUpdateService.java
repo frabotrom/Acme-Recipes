@@ -17,8 +17,6 @@ public class FineDishEpicureUpdateService implements AbstractUpdateService<Epicu
 	@Autowired
 	protected FineDishEpicureRepository repository;
 
-	// AbstractUpdateService<Patron, Patronage> -------------------------------------
-
 
 	@Override
 	public boolean authorise(final Request<FineDish> request) {

@@ -54,15 +54,15 @@
 		
 		<jstl:choose>
 	
-		<jstl:when test="${acme:anyOf(command,'show, update, delete, publish') && published == false}"> 
-			<acme:submit code="epicure.fine-dish.form.button.update" action="/epicure/fine-dish/update"/>
-			<acme:submit code="epicure.fine-dish.form.button.delete" action="/epicure/fine-dish/delete"/>
-			<acme:submit code="epicure.fine-dish.form.button.publish" action="/epicure/fine-dish/publish"/>
-		</jstl:when>
+			<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && published == false}"> 
+				<acme:submit code="epicure.fine-dish.form.button.update" action="/epicure/fine-dish/update"/>
+				<acme:submit code="epicure.fine-dish.form.button.delete" action="/epicure/fine-dish/delete"/>
+				<acme:submit code="epicure.fine-dish.form.button.publish" action="/epicure/fine-dish/publish"/>
+			</jstl:when>
 		
-		<jstl:when test="${command=='create'}">
-			<acme:submit code="epicure.fine-dish.form.button.create" action="/epicure/fine-dish/create"/>
-		</jstl:when>
+			<jstl:when test="${command=='create'}">
+				<acme:submit code="epicure.fine-dish.form.button.create" action="/epicure/fine-dish/create"/>
+			</jstl:when>
 		
 		</jstl:choose>	
 		
