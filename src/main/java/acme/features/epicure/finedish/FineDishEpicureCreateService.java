@@ -3,6 +3,7 @@ package acme.features.epicure.finedish;
 import java.util.Collection;
 import java.util.Date;
 
+import org.apache.commons.lang3.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -73,11 +74,14 @@ public class FineDishEpicureCreateService implements AbstractCreateService<Epicu
 		assert entity != null;
 		assert errors != null;
 		
-        /*if(!errors.hasErrors("code")) {
-        	
-        	final Patronage patronageByCode =  this.repository.findPatronageByCode(entity.getCode());
-        	errors.state(request, patronageByCode == null, "code", "patron.patronage.form.error.code-exists");
-        }
+		 if(!errors.hasErrors("code")) {
+	        	
+	        	final FineDish fineDishByCode =  this.repository.findFineDishByCode(entity.getCode());
+	        	if(fineDishByCode != null) {
+	        		errors.state(request, fineDishByCode.getId() == entity.getId(), "code", "epicure.fine-dish.form.error.code-exists");
+	        	}
+	        	
+	        }
         
 		if (!errors.hasErrors("budget")) {
 			
@@ -91,27 +95,27 @@ public class FineDishEpicureCreateService implements AbstractCreateService<Epicu
                 }
             }
 			
-			errors.state(request, accepted, "budget", "patron.patronage.form.error.budget-currency");
-			errors.state(request, entity.getBudget().getAmount() > 0, "budget", "patron.patronage.form.error.budget-amount");
+			errors.state(request, accepted, "budget", "epicure.fine-dish.form.error.budget-currency");
+			errors.state(request, entity.getBudget().getAmount() > 0, "budget", "epicure.fine-dish.form.error.budget-amount");
 		}
 
 
-		if(!errors.hasErrors("startDate")) {
+		 if(!errors.hasErrors("startDate")) {
 				
-			final Date startDateMin = DateUtils.addMonths(entity.getCreationMoment(), 1);
+				final Date startDateMin = DateUtils.addMonths(entity.getCreationMoment(), 1);
+				
+				errors.state(request, entity.getStartDate().after(startDateMin), "startDate", "epicure.fine-dish.form.error.start-date");			
+			}
 			
-			errors.state(request, entity.getStartDate().after(startDateMin), "startDate", "patron.patronage.form.error.start-date");			
-		}
-		
-		if(!errors.hasErrors("endDate")&& entity.getStartDate() !=null) {
-			
-			final Date periodEndDate = DateUtils.addMonths(entity.getStartDate(), 1);
-			final Date moment = entity.getEndDate();
-			
-			errors.state(request, moment.after(periodEndDate) , "endDate", "patron.patronage.form.error.end-date");
-			
-		}
-		
+			if(!errors.hasErrors("endDate")&& entity.getStartDate() !=null) {
+				
+				final Date periodEndDate = DateUtils.addMonths(entity.getStartDate(), 1);
+				final Date moment = entity.getEndDate();
+				
+				errors.state(request, moment.after(periodEndDate) , "endDate", "epicure.fine-dish.form.error.end-date");
+				
+			}
+		/*
 		if(!errors.hasErrors("legalStuff")) {
 			final boolean res;
 			final SystemConfiguration systemConfiguration = this.repository.systemConfiguration();

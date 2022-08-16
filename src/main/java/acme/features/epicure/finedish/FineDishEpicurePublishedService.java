@@ -14,13 +14,13 @@ import acme.framework.services.AbstractUpdateService;
 import acme.roles.Epicure;
 
 @Service
-public class FineDishEpicureUpdateService implements AbstractUpdateService<Epicure,FineDish>{
+public class FineDishEpicurePublishedService implements AbstractUpdateService<Epicure, FineDish>{
 	
-
+	
 	@Autowired
 	protected FineDishEpicureRepository repository;
 
-
+	
 	@Override
 	public boolean authorise(final Request<FineDish> request) {
 		assert request != null;
@@ -33,7 +33,6 @@ public class FineDishEpicureUpdateService implements AbstractUpdateService<Epicu
 		fineDish = this.repository.findOneFineDishById(fineDishId);
 
 		result = request.isPrincipal(fineDish.getEpicure()) && !fineDish.isPublished();
-		
 
 		return result;
 	}
@@ -48,7 +47,6 @@ public class FineDishEpicureUpdateService implements AbstractUpdateService<Epicu
 
 		result = this.repository.findOneFineDishById(fineDishId);
 
-		
 		return result;
 	}
 
@@ -57,7 +55,7 @@ public class FineDishEpicureUpdateService implements AbstractUpdateService<Epicu
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		
+	
 		request.bind(entity, errors, "code","status","creationMoment", "request", "budget", "startDate", "endDate", "moreInfo");
 	}
 
@@ -67,9 +65,7 @@ public class FineDishEpicureUpdateService implements AbstractUpdateService<Epicu
 		assert entity != null;
 		assert errors != null;
 		
-		
-		
-		if(!errors.hasErrors("code")) {
+        if(!errors.hasErrors("code")) {
         	
         	final FineDish fineDishByCode =  this.repository.findFineDishByCode(entity.getCode());
         	if(fineDishByCode != null) {
@@ -78,7 +74,7 @@ public class FineDishEpicureUpdateService implements AbstractUpdateService<Epicu
         	
         }
         
-if (!errors.hasErrors("budget")) {
+		if (!errors.hasErrors("budget")) {
 			
 			final String[] acceptedCurrencies = this.repository.findSystemConfiguration().getAcceptedCurrencies().split(",");
             boolean accepted = false;
@@ -110,7 +106,6 @@ if (!errors.hasErrors("budget")) {
 			errors.state(request, moment.after(periodEndDate) , "endDate", "epicure.fine-dish.form.error.end-date");
 			
 		}
-		
 
 	}
 
@@ -119,9 +114,8 @@ if (!errors.hasErrors("budget")) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		
 
-		request.unbind(entity, model,"code","status","creationMoment", "request", "budget", "startDate", "endDate", "moreInfo","published");
+		request.unbind(entity, model, "code","status","creationMoment", "request", "budget", "startDate", "endDate", "moreInfo","published");
 
 		model.setAttribute("chefs", this.repository.findChefs());
 		model.setAttribute("chefId", entity.getChef().getId());
@@ -131,17 +125,18 @@ if (!errors.hasErrors("budget")) {
 		model.setAttribute("chefFullName", entity.getChef().getIdentity().getFullName());
 		model.setAttribute("chefEmail", entity.getChef().getIdentity().getEmail());
 		model.setAttribute("chefInfo", entity.getChef().getInfo());
+		
+
 	}
 
 	@Override
 	public void update(final Request<FineDish> request, final FineDish entity) {
 		assert request != null;
 		assert entity != null;
+		entity.setPublished(true);
 
-		
 		this.repository.save(entity);
 
 	}
-
 
 }

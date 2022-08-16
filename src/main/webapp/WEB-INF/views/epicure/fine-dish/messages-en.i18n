@@ -27,9 +27,14 @@ epicure.fine-dish.label.chef-email = Epicure's email
 epicure.fine-dish.label.chef-organisation = Epicure's organisation
 epicure.fine-dish.label.chef-assertion = Epicure's assertion
 
+epicure.fine-dish.list.button.create= Create
+epicure.fine-dish.form.button.update= Update
+epicure.fine-dish.form.button.delete= Delete
+epicure.fine-dish.form.button.publish= Publish
+
 
 epicure.fine-dish.form.error.code-exists= This code already exists
 epicure.fine-dish.form.error.budget-currency= This currency is invalid
 epicure.fine-dish.form.error.budget-amount= This amount can't be negative
-epicure.fine-dish.form.error.start-date = Start date must starting at least one month after the patronage is created
+epicure.fine-dish.form.error.start-date = Start date must starting at least one month after the fine dish is created
 epicure.fine-dish.form.error.end-date = End date must be at least one month long

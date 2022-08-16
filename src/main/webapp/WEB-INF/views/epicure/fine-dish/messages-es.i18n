@@ -29,9 +29,14 @@ epicure.fine-dish.label.chef-email = Email del sibarita
 epicure.fine-dish.label.chef-organisation = Compañía del sibarita
 epicure.fine-dish.label.chef-assertion = Declaración del sibarita
 
+epicure.fine-dish.list.button.create= Crear
+epicure.fine-dish.form.button.update= Actualizar
+epicure.fine-dish.form.button.delete= Eliminar
+epicure.fine-dish.form.button.publish= Publicar
+
 
 epicure.fine-dish.form.error.code-exists= Este código ya existe
 epicure.fine-dish.form.error.budget-currency = Moneda inválida
 epicure.fine-dish.form.error.budget-amount= La cantidad no puede ser negativa
-epicure.fine-dish.form.error.start-date = La fecha de inicio debe comenzar al menos un mes después de la creación del patrocinio
+epicure.fine-dish.form.error.start-date = La fecha de inicio debe comenzar al menos un mes después de la creación del plato
 epicure.fine-dish.form.error.end-date = La fecha fin debe tener al menos un mes de duración
