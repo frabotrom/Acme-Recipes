@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import acme.entities.finedish.FineDish;
 import acme.entities.memorandum.Memorandum;
+import acme.entities.systemConfiguration.SystemConfiguration;
 import acme.framework.repositories.AbstractRepository;
 
 
@@ -27,6 +28,10 @@ import acme.framework.repositories.AbstractRepository;
 		
 		@Query("select a from Memorandum a where a.fineDish.id = :masterId")
 		Collection<Memorandum> findMemorandumsByMasterId(int masterId);
+		
+		@Query("SELECT c FROM SystemConfiguration c")
+		SystemConfiguration getSystemConfiguration();
+		
 	}
 
 
