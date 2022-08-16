@@ -9,3 +9,4 @@
 	<acme:list-column code="chef.recipe.list.label.total-price" path="totalPrice" width="25%"/>	
 	
 </acme:list>
+<acme:button code="chef.recipe.list.button.create" action="/chef/recipe/create"/>

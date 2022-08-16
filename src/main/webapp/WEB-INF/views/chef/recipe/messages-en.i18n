@@ -1,10 +1,21 @@
 chef.recipe.list.label.heading = Heading
 chef.recipe.list.label.code = Code
 chef.recipe.list.label.total-price = Total Price
+
+chef.recipe.list.button.create = Create Recipe
+
 chef.recipe.form.label.code = Code
 chef.recipe.form.label.heading = Heading
 chef.recipe.form.label.description = Description
 chef.recipe.form.label.preparation-notes = Preparation Notes
 chef.recipe.form.label.more-info = Additional Info
 chef.recipe.form.label.total-price = Total Price
-chef.recipe.form.button.amount = Amounts
+chef.recipe.form.label.published = Published
+
+chef.recipe.form.button.quantities = List Quantities
+
+chef.recipe.form.button.create = Create
+chef.recipe.form.button.update = Update
+chef.recipe.form.button.delete = Delete
+chef.recipe.form.button.publish = Publish
+chef.amount.form.button.quantities.create = Add Quantities

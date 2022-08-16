@@ -7,8 +7,10 @@ import org.springframework.stereotype.Repository;
 
 import acme.entities.amount.Amount;
 import acme.entities.recipe.Recipe;
+import acme.entities.systemConfiguration.SystemConfiguration;
 import acme.entities.thing.Thing;
 import acme.framework.repositories.AbstractRepository;
+import acme.roles.Chef;
 
 @Repository
 public interface ChefRecipeRepository extends AbstractRepository {
@@ -36,5 +38,17 @@ public interface ChefRecipeRepository extends AbstractRepository {
 	
 	@Query("SELECT r FROM Recipe r WHERE r.chef.id =:chefId")
 	Collection<Recipe> findRecipesByChefId(int chefId);
+	
+	@Query("SELECT c FROM Chef c WHERE c.id =:chefId")
+	Chef findChefById(int chefId);
+	
+	@Query("SELECT r FROM Recipe r WHERE r.code =:code")
+	Recipe findRecipeByCode(String code);
+	
+	@Query("select c from SystemConfiguration c")
+	SystemConfiguration findSystemConfiguration();
+
+
+
 
 }

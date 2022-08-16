@@ -12,3 +12,8 @@ chef.amount.form.label.item.retaiLPrice = Precio
 chef.amount.form.label.retail-price-conversion = Precio Convertido
 chef.recipe.form.label.thing.thingType = Tipo
 chef.amount.form.label.quantity = Cantidad
+chef.amount.form.label.unit = Unidad
+
+chef.amount.form.button.update = Crear
+chef.amount.form.button.update = Actualizar
+chef.amount.form.button.delete = Borrar
