@@ -29,11 +29,11 @@ public class SystemConfiguration extends AbstractEntity {
 	protected String systemCurrency;
 	
 	@NotBlank
-	@Pattern(regexp="(\\((['][a-zA-Z ’]*['])[,]([0-1].[0-9]{2})\\)[,])*")
+	@Pattern(regexp="(\\((['][a-zA-Z ’]*['])[:]([0-1].[0-9]{2})\\)[,])*")
 	protected String spamTermsEn;
 	
 	@NotBlank
-	@Pattern(regexp="(\\((['][a-zA-Z ]*['])[,]([0-1].[0-9]{2})\\)[,])*")
+	@Pattern(regexp="(\\((['][a-zA-Z ]*['])[:]([0-1].[0-9]{2})\\)[,])*")
 	protected String spamTermsEs;
 	
 	@Range(min=0,max=1)
