@@ -30,6 +30,7 @@ epicure.fine-dish.label.chef-organisation = Compañía del sibarita
 epicure.fine-dish.label.chef-assertion = Declaración del sibarita
 
 epicure.fine-dish.list.button.create= Crear
+epicure.fine-dish.form.button.create= Crear
 epicure.fine-dish.form.button.update= Actualizar
 epicure.fine-dish.form.button.delete= Eliminar
 epicure.fine-dish.form.button.publish= Publicar

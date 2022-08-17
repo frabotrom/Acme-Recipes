@@ -28,6 +28,7 @@ epicure.fine-dish.label.chef-organisation = Epicure's organisation
 epicure.fine-dish.label.chef-assertion = Epicure's assertion
 
 epicure.fine-dish.list.button.create= Create
+epicure.fine-dish.form.button.create= Create
 epicure.fine-dish.form.button.update= Update
 epicure.fine-dish.form.button.delete= Delete
 epicure.fine-dish.form.button.publish= Publish
