@@ -37,9 +37,9 @@ public class ChefRecipePublishService implements AbstractUpdateService<Chef,Reci
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "code", "title", "description", "assamblyNotes", "url","published");
+		request.bind(entity, errors, "code", "heading", "description", "preparationNotes", "moreInfo","published");
 		final Collection<Amount> amounts = this.repository.findAllAmountOfRecipe(entity);
-		errors.state(request, !amounts.isEmpty() , "published", "inventor.toolkit.form.error.published");
+		errors.state(request, !amounts.isEmpty() , "published", "chef.recipe.form.error.published");
 	}
 
 	@Override

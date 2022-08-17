@@ -1,0 +1,7 @@
+recordIndexRecipe,recordIndexAmount,code,name,price,quantity,type,recipeName,unit
+0,0,AA:AAA-111,Eggs,EUR 1.00,2,INGREDIENT,Macarrones carbonara,uds
+0,1,AA:AAA-113,Butter,EUR 9.30,20,INGREDIENT,Macarrones carbonara,g
+0,2,AA:AAA-114,Salt,EUR 3.00,5,INGREDIENT,Macarrones carbonara,g
+0,3,AA:AAA-121,Wooden Spoon, EUR 10.00,1,KITCHENUTENSIL,Macarrones carbonara,ud
+1,0,AA:AAA-114,Salt,EUR 3.00,5,INGREDIENT,Papas bravas,g
+2,0,AA:AAA-114,Salt,EUR 3.00,5,INGREDIENT,Sushi,g

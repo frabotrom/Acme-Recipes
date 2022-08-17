@@ -30,7 +30,7 @@ public class ChefRecipeCreateService implements AbstractCreateService<Chef, Reci
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "heading", "preparationNotes", "code", "totalPrice", "description", "moreInfo");
+		request.bind(entity, errors, "heading", "preparationNotes", "code", "description", "moreInfo");
 
 		
 		
@@ -42,7 +42,7 @@ public class ChefRecipeCreateService implements AbstractCreateService<Chef, Reci
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "heading", "preparationNotes", "code", "totalPrice", "description", "moreInfo");
+		request.unbind(entity, model, "heading", "preparationNotes", "code", "description", "moreInfo");
 		
 	}
 

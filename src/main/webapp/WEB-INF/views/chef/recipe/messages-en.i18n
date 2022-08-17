@@ -18,4 +18,9 @@ chef.recipe.form.button.create = Create
 chef.recipe.form.button.update = Update
 chef.recipe.form.button.delete = Delete
 chef.recipe.form.button.publish = Publish
+chef.recipe.form.button.amount = List Quantities
+
+
 chef.amount.form.button.quantities.create = Add Quantities
+
+chef.recipe.form.error.published = Can't publish a recipe without quantities
