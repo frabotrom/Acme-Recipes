@@ -63,10 +63,12 @@
 			<jstl:when test="${command=='create'}">
 				<acme:submit code="epicure.fine-dish.form.button.create" action="/epicure/fine-dish/create"/>
 			</jstl:when>
-		
+			
+			<jstl:when test="${command=='show'}">
+			<acme:button code="epicure.fine-dish.form.button.memorandum" action="/epicure/memorandum/list?masterId=${id}"/>			
+			</jstl:when>
 		</jstl:choose>	
 		
-		<acme:button code="epicure.fine-dish.form.button.memorandum" action="/epicure/memorandum/list?masterId=${id}"/>			
 		
 
 	
