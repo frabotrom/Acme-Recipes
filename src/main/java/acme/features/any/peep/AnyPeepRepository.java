@@ -16,4 +16,7 @@ public interface AnyPeepRepository extends AbstractRepository {
 	@Query("select p from Peep p where p.instantiationMoment >= :deadline")
 	Collection<Peep> findRecentPeeps(@Param("deadline") Date deadline);
 	
+	@Query("select p from Peep p where p.instantiationMoment <= :deadline")
+	Collection<Peep> findAPeepsToPatch(@Param("deadline") Date deadline);
+	
 }

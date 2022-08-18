@@ -1,11 +1,11 @@
 key,status,code,request,budget,creation-moment,start-date,end-date,more-info,key:epicure,key:chef,published
-fine-dish-01,ACCEPTED,JC:AQW-908,Fish and chips,EUR 120.00, 2021/07/14 19:00, 2021/07/14 19:30, 2021/07/15 10:00,http://www.example.com,epicure-01,chef-02,true
-fine-dish-02,ACCEPTED,KC:AQW-909,Montadito de tortilla ,EUR 420.50, 2021/07/15 13:00, 2021/07/15 13:30, 2021/07/15 14:00,http://www.example.com,epicure-01,chef-01,true
-fine-dish-03,ACCEPTED,LC:AQW-910,Patatas cuatro salsas,EUR 200.00, 2021/07/15 13:00, 2021/07/15 14:30, 2021/07/15 15:30,http://www.example.com,epicure-01,chef-01,true
-fine-dish-04,PROPOSED,ZC:AQW-911,Palomitas de queso,EUR 500.00, 2021/07/15 16:00, 2021/07/15 16:10, 2021/07/15 16:30,http://www.example.com,epicure-01,chef-02,true
-fine-dish-05,PROPOSED,XC:AQW-912,Ensalada cesar,EUR 220.00, 2021/07/15 19:00, 2021/07/15 19:30, 2021/07/15 20:30,http://www.example.com,epicure-01,chef-02,false
-fine-dish-06,DENIED,XC:AQW-913,Ensalada cesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesar,EUR 320.00, 2021/07/15 19:00, 2021/07/15 19:30, 2021/07/15 20:30,http://www.example.com,epicure-01,chef-02,false
-fine-dish-07,DENIED,XC:AQW-914,Carpaccio de atun y una vinagreta de mango agria,EUR 1320.00, 2021/07/20 19:00, 2021/07/21 10:30, 2021/07/21 20:30,http://www.example.com,epicure-02,chef-01,false
-fine-dish-08,ACCEPTED,XC:AQW-915,Tarantelo de atun de almadraba con ensalada mediterranea,EUR 5620.00, 2021/07/21 19:00, 2021/07/22 13:30, 2021/07/22 20:30,http://www.example.com,epicure-02,chef-02,true
-fine-dish-09,DENIED,XC:AQW-916,Rejos de pulpo con mojo picón,EUR 2603.00, 2021/07/21 19:00, 2021/07/22 12:30, 2021/07/22 21:30,http://www.example.com,epicure-02,chef-01,true
-fine-dish-10,PROPOSED,XC:AQW-917,Dorada a la sal con patatas a lo pobre,EUR 1500.00, 2021/07/21 19:00, 2021/07/22 12:30, 2021/07/22 21:30,http://www.example.com,epicure-02,chef-01,true
+fine-dish-01,ACCEPTED,JC:AQW-908,Fish and chips,EUR 120.00, 2021/05/14 19:00, 2021/07/14 19:30, 2021/09/15 10:00,http://www.example.com,epicure-01,chef-02,true
+fine-dish-02,ACCEPTED,KC:AQW-909,Montadito de tortilla ,EUR 420.50, 2021/05/15 13:00, 2021/07/15 13:30, 2021/09/15 14:00,http://www.example.com,epicure-01,chef-01,true
+fine-dish-03,ACCEPTED,LC:AQW-910,Patatas cuatro salsas,EUR 200.00, 2021/05/15 13:00, 2021/07/15 14:30, 2021/09/15 15:30,http://www.example.com,epicure-01,chef-01,true
+fine-dish-04,PROPOSED,ZC:AQW-911,Palomitas de queso,EUR 500.00, 2021/05/15 16:00, 2021/07/15 16:10, 2021/09/15 16:30,http://www.example.com,epicure-01,chef-02,false
+fine-dish-05,PROPOSED,XC:AQW-912,Ensalada cesar,EUR 220.00, 2021/05/15 19:00, 2021/07/15 19:30, 2021/09/15 20:30,http://www.example.com,epicure-01,chef-02,false
+fine-dish-06,DENIED,XC:AQW-913,Ensalada cesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesarcesar,EUR 320.00, 2021/05/15 19:00, 2021/07/15 19:30, 2021/09/15 20:30,http://www.example.com,epicure-01,chef-02,false
+fine-dish-07,DENIED,XC:AQW-914,Carpaccio de atun y una vinagreta de mango agria,EUR 1320.00, 2021/05/20 19:00, 2021/07/21 10:30, 2021/09/21 20:30,http://www.example.com,epicure-02,chef-01,false
+fine-dish-08,ACCEPTED,XC:AQW-915,Tarantelo de atun de almadraba con ensalada mediterranea,EUR 5620.00, 2021/05/21 19:00, 2021/07/22 13:30, 2021/09/22 20:30,http://www.example.com,epicure-02,chef-02,true
+fine-dish-09,DENIED,XC:AQW-916,Rejos de pulpo con mojo picón,EUR 2603.00, 2021/05/21 19:00, 2021/07/22 12:30, 2021/09/22 21:30,http://www.example.com,epicure-02,chef-01,true
+fine-dish-10,PROPOSED,XC:AQW-917,Dorada a la sal con patatas a lo pobre,EUR 1500.00, 2021/05/21 19:00, 2021/07/22 12:30, 2021/09/22 21:30,http://www.example.com,epicure-02,chef-01,true

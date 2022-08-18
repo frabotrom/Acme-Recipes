@@ -1,6 +1,7 @@
-recordIndex,instantiationMoment,heading,writer,text,email
-0,2022/07/08 00:00,Heading 1,Writer1,Example text,writer1@gmail.com
-1,2022/07/09 00:00,Heading 2,Writer1,Example text,writer1@gmail.com
-2,2022/07/10 00:00,Heading 3,Writer1,Example text,writer1@gmail.com
-3,2022/07/11 00:00,Heading 4,Writer1,Example text,writer1@gmail.com
-4,2022/07/12 00:00,Heading 5,Writer1,Example text,writer1@gmail.com
+recordIndex,deltaDays,heading,writer,text,email
+0,1900/01/01 00:00,Test Heading 1,Writer1,Example text,
+1,1900/01/02 00:00,Test Heading 2,Writer2,Example text,
+2,1900/01/03 00:00,Test Heading 3,Writer1,Example text,
+3,1900/01/04 00:00,Test Heading 4,Writer2,Example text,
+
+

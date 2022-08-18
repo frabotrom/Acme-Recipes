@@ -17,12 +17,15 @@ public class FineDishChefController extends AbstractController<Chef,FineDish>{
 	
 	@Autowired
 	protected FineDishChefShowService showService;
+	@Autowired
+	protected FineDishChefStatusUpdateService updateService;
 	
 	
 	@PostConstruct
 	protected void initialise() {
 		super.addCommand("list", this.listService);
 		super.addCommand("show", this.showService);
+		super.addCommand("update-status","update", this.updateService);
 		
 	}
 
