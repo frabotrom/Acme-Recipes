@@ -36,6 +36,7 @@ epicure.fine-dish.form.button.delete= Eliminar
 epicure.fine-dish.form.button.publish= Publicar
 
 
+
 epicure.fine-dish.form.error.code-exists= Este código ya existe
 epicure.fine-dish.form.error.budget-currency = Moneda inválida
 epicure.fine-dish.form.error.budget-amount= La cantidad no puede ser negativa

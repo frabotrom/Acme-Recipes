@@ -99,3 +99,7 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
+master.menu.user-account.become-chef = Become a chef
+master.menu.user-account.become-epicure = Become an epicure
+master.menu.user-account.chef = Chef data
+master.menu.user-account.epicure = Epicure data

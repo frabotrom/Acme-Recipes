@@ -27,6 +27,8 @@ chef.fine-dish.label.epicure-email = Epicure's email
 chef.fine-dish.label.epicure-organisation = Epicure's organisation
 chef.fine-dish.label.epicure-assertion = Epicure's assertion
 
+chef.fine-dish.form.button.updateStatus = Update
+
 
 chef.fine-dish.form.error.code-exists= This code already exists
 chef.fine-dish.form.error.budget-currency= This currency is invalid
