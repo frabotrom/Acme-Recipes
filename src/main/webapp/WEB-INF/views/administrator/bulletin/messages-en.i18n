@@ -5,3 +5,7 @@ administrator.bulletin.form.label.critical = Critical
 
 administrator.bulletin.form.label.confirmation = Confirmation
 administrator.bulletin.form.button.create = Create Bulletin
+
+administrator.bulletin.confirmation.error = A confirmation is required
+
+alert-message.form.spam = El texto contiene spam

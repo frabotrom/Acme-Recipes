@@ -6,8 +6,8 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.components.SpamDetector;
 import acme.entities.bulletin.Bulletin;
-import acme.entities.systemConfiguration.SystemConfiguration;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
@@ -71,29 +71,18 @@ public class AdministratorBulletinCreateService implements AbstractCreateService
 		
 		
 		confirmation = request.getModel().getBoolean("confirmation");
-		errors.state(request, confirmation, "confirmation", "administrator.announcement.confirmation.error");
+		errors.state(request, confirmation, "confirmation", "administrator.bulletin.confirmation.error");
 		
 		if(!errors.hasErrors("heading")) {
-			final boolean res;
-			final SystemConfiguration systemConfiguration = this.repository.systemConfiguration();
-			final String spamTuplesEn = systemConfiguration.getSpamTermsEn();
-			final String spamTuplesEs = systemConfiguration.getSpamTermsEs();
-			final double spamThreshold = systemConfiguration.getSpamThreshold();
-						
-			//res = SpamDetector.spamDetector(entity.getTitle(),spamTuplesEn,spamTuplesEs,spamThreshold);
-			//errors.state(request, res, "heading", "alert-message.form.spam");
+			final boolean isHeadingSpam = SpamDetector.isSpam(entity.getHeading(), this.repository.getSystemConfiguration());
+			errors.state(request, !isHeadingSpam, "heading", "alert-message.form.spam");
+				
 		}
 		
 		if(!errors.hasErrors("text")) {
-			final boolean res;
-			final SystemConfiguration systemConfiguration = this.repository.systemConfiguration();
-			final String spamTuplesEn = systemConfiguration.getSpamTermsEn();
-			final String spamTuplesEs = systemConfiguration.getSpamTermsEs();
-			final double spamThreshold = systemConfiguration.getSpamThreshold();
-			
-			
-			//res = SpamDetector.spamDetector(entity.getTitle(),spamTuplesEn,spamTuplesEs,spamThreshold);
-			//errors.state(request, res, "body", "alert-message.form.spam");
+			final boolean isTextSpam = SpamDetector.isSpam(entity.getText(), this.repository.getSystemConfiguration());
+			errors.state(request, !isTextSpam, "text", "alert-message.form.spam");
+				
 		}
 		
 	}

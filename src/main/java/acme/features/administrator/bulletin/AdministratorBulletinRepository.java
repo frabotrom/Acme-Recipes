@@ -9,7 +9,7 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AdministratorBulletinRepository extends AbstractRepository {
 	
-	@Query("SELECT s FROM SystemConfiguration s")
-	SystemConfiguration systemConfiguration();
+	@Query("SELECT c FROM SystemConfiguration c")
+	SystemConfiguration getSystemConfiguration();
 
 }
