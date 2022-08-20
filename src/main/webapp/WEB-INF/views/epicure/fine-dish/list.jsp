@@ -10,3 +10,5 @@
 	<acme:list-column code="epicure.fine-dish.list.label.creation-moment" path="creationMoment"/>
 	<acme:list-column code="epicure.fine-dish.list.label.published" path="published"/>
 </acme:list>
+
+<acme:button code="epicure.fine-dish.list.button.create" action="/epicure/fine-dish/create"/>
