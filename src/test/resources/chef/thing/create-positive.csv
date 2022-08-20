@@ -1,0 +1,8 @@
+recordIndex,thing-type,name,code,description,retail-price,info
+0,INGREDIENT,A,AA:AAE-883,Este es un ejemplo de ingrediente con el mínimo número de caracteres en el nombre,EUR 95.00,
+1,INGREDIENT,Av - Esto es un ejemplo de ingrediente con el mínimo número de caracteres en la descripción,AA:AAD-928,A,EUR 0.05,"https://en.wikipedia.org/wiki/Example"
+2,INGREDIENT,Aw - Esto es un ejemplo de ingrediente con el máximo núm de caracteres en la descripción,AA:AAC-764,Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,"EUR 1,000.50","https://en.wikipedia.org/wiki/Example"
+3,INGREDIENT,Ax aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,AA:AAB-112,Este ejemplo de ingrediente tiene el número máximo de caracteres en su nombre,EUR 10.00,"https://en.wikipedia.org/wiki/Example"
+4,INGREDIENT,Ay - Esto es un ejemplo de ingrediente,AA:AAB-432,Esto es un ejemplo de creación de ingrediente con enlace,EUR 1.00,"https://en.wikipedia.org/wiki/Example"
+5,INGREDIENT,Az - Esto es un ejemplo de ingediente,AA:AAB-111,Esto es un ejemplo de creación de ingrediente,EUR 1.00,
+
