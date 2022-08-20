@@ -3,10 +3,12 @@ package acme.features.chef.amount;
 import java.util.Collection;
 import java.util.HashSet;
 
+import org.assertj.core.util.Arrays;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.amount.Amount;
+import acme.entities.amount.Unit;
 import acme.entities.recipe.Recipe;
 import acme.entities.thing.Thing;
 import acme.features.chef.recipe.ChefRecipeRepository;
@@ -98,10 +100,14 @@ public class ChefAmountCreateService implements AbstractCreateService<Chef,Amoun
 	@Override
 	public void validate(final Request<Amount> request, final Amount entity, final Errors errors) {
 		assert request != null;
-		
 		assert entity != null;
-		
 		assert errors != null;
+		
+		if(!errors.hasErrors("unit")) {
+			final boolean isUnit = Arrays.asList(Unit.values()).contains(entity.getUnit());
+			errors.state(request, isUnit, "unit", "chef.amount.form.error.unit");
+			
+		}
 			
 		
 		

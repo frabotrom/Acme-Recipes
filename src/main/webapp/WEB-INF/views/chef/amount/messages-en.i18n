@@ -14,6 +14,8 @@ chef.amount.form.label.thing.thingType = Type
 chef.amount.form.label.quantity = Quantity
 chef.amount.form.label.unit = Unit
 
+chef.amount.form.error.unit = Must be a valid unit
+
 chef.amount.form.button.create = Create
 chef.amount.form.button.update = Update
 chef.amount.form.button.delete = Delete

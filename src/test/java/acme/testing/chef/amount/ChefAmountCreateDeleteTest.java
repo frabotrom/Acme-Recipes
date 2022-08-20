@@ -6,11 +6,11 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.TestHarness;
 
-public class ChefAmountCreateTest extends TestHarness {
+public class ChefAmountCreateDeleteTest extends TestHarness {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/chef/amount/create-positive.csv", encoding ="utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void CreateAmountPositiveTest(final int recordIndex,final int itemRecordIndex, final String quantity, final String unit) {
+	public void CreateDeleteAmountPositiveTest(final int recordIndex,final int itemRecordIndex, final String quantity, final String unit) {
 		
 		super.signIn("chef2", "chef2");
 		super.clickOnMenu("Chef", "My recipes");
@@ -35,17 +35,39 @@ public class ChefAmountCreateTest extends TestHarness {
 		super.sortListing(0, "asc");
 		super.clickOnListingRecord(itemRecordIndex);
 		
-		
 		super.checkInputBoxHasValue("quantity", quantity);
 		super.checkInputBoxHasValue("unit", unit);
 		
 		super.clickOnSubmit("Delete");
 		super.checkNotErrorsExist();
-
-		
 		
 		super.signOut();
 		
+	}
+	
+	@ParameterizedTest
+	@CsvFileSource(resources = "/chef/amount/create-negative.csv", encoding ="utf-8", numLinesToSkip = 1)
+	@Order(10)
+	public void CreateDeleteAmountNegativeTest(final int recordIndex,final int itemRecordIndex, final String quantity, final String unit) {
+
+		super.signIn("chef2", "chef2");
+		super.clickOnMenu("Chef", "My recipes");
+		super.checkListingExists();
+		super.sortListing(0, "asc");
+		super.clickOnListingRecord(recordIndex);
+		super.checkFormExists();
+		super.clickOnButton("Add Quantities");
+		super.checkFormExists();
+		
+		super.fillInputBoxIn("quantity", quantity);
+		super.fillInputBoxIn("unit", unit);
+
+		super.clickOnSubmit("Create");
+		super.checkErrorsExist();
+		
+		super.signOut();
+	
+	
 	}
 
 }

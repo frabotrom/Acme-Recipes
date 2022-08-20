@@ -8,10 +8,10 @@ import acme.testing.TestHarness;
 
 public class ChefRecipeCreateDeleteTest extends TestHarness {
 	@ParameterizedTest
-	@CsvFileSource(resources = "/chef/recipe/create.csv", encoding ="utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/chef/recipe/create-positive.csv", encoding ="utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void positiveTest(final int recordIndex, final String code, final String heading, final String description, final String preparationNotes, final String moreInfo) {
-	super.signIn("chef1", "chef1");
+		super.signIn("chef1", "chef1");
 		
 		super.clickOnMenu("Chef", "My recipes");
 		super.clickOnButton("Create Recipe");
@@ -42,5 +42,26 @@ public class ChefRecipeCreateDeleteTest extends TestHarness {
 		
 		super.signOut();
 
+	}
+	
+	@ParameterizedTest
+	@CsvFileSource(resources = "/chef/recipe/create-negative.csv", encoding ="utf-8", numLinesToSkip = 1)
+	@Order(10)
+	public void negativeTest(final int recordIndex, final String code, final String heading, final String description, final String preparationNotes, final String moreInfo) {
+		super.signIn("chef1", "chef1");
+		
+		super.clickOnMenu("Chef", "My recipes");
+		super.clickOnButton("Create Recipe");
+
+		super.fillInputBoxIn("code", code);
+		super.fillInputBoxIn("heading", heading);
+		super.fillInputBoxIn("description", description);
+		super.fillInputBoxIn("preparationNotes", preparationNotes);
+		super.fillInputBoxIn("moreInfo", moreInfo);
+		
+		super.clickOnSubmit("Create");
+		super.checkErrorsExist();
+	
+	
 	}
 }

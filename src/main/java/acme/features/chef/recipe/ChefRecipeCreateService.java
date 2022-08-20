@@ -3,6 +3,7 @@ package acme.features.chef.recipe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.components.SpamDetector;
 import acme.entities.recipe.Recipe;
 import acme.entities.systemConfiguration.SystemConfiguration;
 import acme.framework.components.models.Model;
@@ -84,38 +85,24 @@ public class ChefRecipeCreateService implements AbstractCreateService<Chef, Reci
 		
 		
 		if(!errors.hasErrors("heading")) {
-			final boolean res;
+
 			final SystemConfiguration systemConfiguration = this.repository.findSystemConfiguration();
-			final String SpamTermsEs = systemConfiguration.getSpamTermsEn();
-			final String SpamTermsEn = systemConfiguration.getSpamTermsEs();
-			final double SpamThreshold = systemConfiguration.getSpamThreshold();
-						
-			//res = SpamDetector.spamDetector(entity.getHeading(),SpamTermsEs,SpamTermsEn,SpamThreshold);
-			
-			//errors.state(request, res, "heading", "alert-message.form.spam");
+			final Boolean isSpamHeading = SpamDetector.isSpam(entity.getHeading(), systemConfiguration);	
+			errors.state(request, !isSpamHeading, "heading", "alert-message.form.spam");
+
 		}
 		
 		if(!errors.hasErrors("description")) {
-			final boolean res;
 			final SystemConfiguration systemConfiguration = this.repository.findSystemConfiguration();
-			final String SpamTermsEs = systemConfiguration.getSpamTermsEn();
-			final String SpamTermsEn = systemConfiguration.getSpamTermsEs();
-			final double SpamThreshold = systemConfiguration.getSpamThreshold();						
-			//res = SpamDetector.spamDetector(entity.getDescription(),SpamTermsEs,SpamTermsEn,SpamThreshold);
-			
-			//errors.state(request, res, "description", "alert-message.form.spam");
+			final Boolean isSpamDescription = SpamDetector.isSpam(entity.getDescription(), systemConfiguration);	
+			errors.state(request, !isSpamDescription, "description", "alert-message.form.spam");
+
 		}
 		
-		if(!errors.hasErrors("assamblyNotes")) {
-			final boolean res;
+		if(!errors.hasErrors("preparationNotes")) {
 			final SystemConfiguration systemConfiguration = this.repository.findSystemConfiguration();
-			final String SpamTermsEs = systemConfiguration.getSpamTermsEn();
-			final String SpamTermsEn = systemConfiguration.getSpamTermsEs();
-			final double SpamThreshold = systemConfiguration.getSpamThreshold();
-						
-			//res = SpamDetector.spamDetector(entity.getPreparationNotes(),SpamTermsEs,SpamTermsEn,SpamThreshold);
-			
-			//errors.state(request, res, "preparationNotes", "alert-message.form.spam");
+			final Boolean isSpamPrepNotes = SpamDetector.isSpam(entity.getPreparationNotes(), systemConfiguration);	
+			errors.state(request, !isSpamPrepNotes, "preparationNotes", "alert-message.form.spam");
 		}
 		
 	}
