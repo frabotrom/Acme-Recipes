@@ -3,3 +3,15 @@ any.peep.list.label.heading = Titulo
 any.peep.list.label.writer = Escritor
 any.peep.list.label.text = Texto
 any.peep.list.label.email = Email
+any.peep.list.button.create = Crear
+
+any.peep.form.label.instantiation-moment = Momento de creación
+any.peep.form.label.heading = Cabecera
+any.peep.form.label.writer = Escritor
+any.peep.form.label.text = Texto
+any.peep.form.label.email = Email (opcional)
+any.peep.form.label.confirmation = Confirmación
+any.peep.form.button.create = Crear
+any.peep.form.error.heading-spam = La cabecera introducida es considerada spam
+any.peep.form.error.writer-spam = El escritor introducido es considerado spam
+any.peep.form.error.text-spam = El texto introducido es considerado spam
