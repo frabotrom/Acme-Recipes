@@ -29,6 +29,8 @@ chef.fine-dish.label.epicure-email = Email del sibarita
 chef.fine-dish.label.epicure-organisation = Compañía del sibarita
 chef.fine-dish.label.epicure-assertion = Declaración del sibarita
 
+chef.fine-dish.form.button.updateStatus= Actualizar
+
 
 chef.fine-dish.form.error.code-exists= Este código ya existe
 chef.fine-dish.form.error.budget-currency = Moneda inválida

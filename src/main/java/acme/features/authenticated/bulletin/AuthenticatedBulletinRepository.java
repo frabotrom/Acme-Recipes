@@ -18,5 +18,8 @@ public interface AuthenticatedBulletinRepository extends AbstractRepository {
 	
 	@Query("select a from Bulletin a where a.instantiationMoment > :deadline")
 	Collection<Bulletin> findRecentBulletins(@Param("deadline") Date deadline);
+	
+	@Query("select a from Bulletin a where a.instantiationMoment <= :deadline")
+	Collection<Bulletin> findABulletinToPatch(@Param("deadline") Date deadline);
 
 }

@@ -17,11 +17,24 @@ public class ChefAmountController extends AbstractController<Chef, Amount> {
 	
 	@Autowired
 	protected ChefAmountShowService showService;
+	
+	@Autowired
+	protected ChefAmountCreateService createService;
+	
+	@Autowired
+	protected ChefAmountUpdateService updateService;
+	
+	@Autowired
+	protected ChefAmountDeleteService deleetService;
 
 	@PostConstruct
 	protected void initialise() {
 		super.addCommand("list", this.listService);
 		super.addCommand("show", this.showService);
+		super.addCommand("create", this.createService);
+		super.addCommand("update", this.updateService);
+		super.addCommand("delete", this.deleetService);
+
 
 		
 	}

@@ -1,0 +1,4 @@
+recordIndex,heading,text,link,critical,confirmation
+0,sex,This is a text,http://www.example.com,true,true
+0,This is a heading,viagra,http://www.example.com,true,true
+0,This is a heading,This is a text,http://www.example.com,true,false

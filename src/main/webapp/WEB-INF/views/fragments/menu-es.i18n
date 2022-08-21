@@ -56,6 +56,7 @@ master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
 master.menu.administrator.systemConfiguration = Configuración del sistema
 master.menu.administrator.administratorDashboard = Tablero del administrador
+master.menu.administrator.createBulletin = Crear Boletín
 master.menu.administrator.shut-down = Parar el sistema
 
 # master.menu.provider ########################################################
@@ -96,3 +97,8 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
+master.menu.user-account.become-chef = Hazte chef
+master.menu.user-account.become-epicure = Hazte sibarita
+master.menu.user-account.chef = Datos de chef
+master.menu.user-account.epicure = Datos de sibarita
+
