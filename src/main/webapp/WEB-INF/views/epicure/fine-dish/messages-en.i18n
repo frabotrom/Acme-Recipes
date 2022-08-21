@@ -40,3 +40,4 @@ epicure.fine-dish.form.error.budget-currency= This currency is invalid
 epicure.fine-dish.form.error.budget-amount= This amount can't be negative
 epicure.fine-dish.form.error.start-date = Start date must starting at least one month after the fine dish is created
 epicure.fine-dish.form.error.end-date = End date must be at least one month long
+epicure.fine-dish.form.error.request = The request has Spam
