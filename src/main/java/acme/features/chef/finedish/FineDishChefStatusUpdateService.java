@@ -3,6 +3,7 @@ package acme.features.chef.finedish;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.components.SpamDetector;
 import acme.entities.finedish.FineDish;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
@@ -62,54 +63,21 @@ public class FineDishChefStatusUpdateService implements AbstractUpdateService<Ch
 		assert entity != null;
 		assert errors != null;
 		
-		/*if(!errors.hasErrors("code")) {
-			final boolean res;
-			final SystemConfiguration systemConfiguration = this.repository.systemConfiguration();
-			final String StrongES = systemConfiguration.getStrongSpamTermsEn();
-			final String StrongEN = systemConfiguration.getStrongSpamTermsEn();
-			final String WeakES = systemConfiguration.getWeakSpamTermsEs();
-			final String WeakEN = systemConfiguration.getWeakSpamTermsEn();
-			
-			final double StrongT = systemConfiguration.getStrongThreshold();
-			final double WeakT = systemConfiguration.getWeakThreshold();
-						
-			res = SpamDetector.spamDetector(entity.getCode(),StrongES,StrongEN,WeakES,WeakEN,StrongT,WeakT);
-			
-			errors.state(request, res, "code", "alert-message.form.spam");
+		if(!errors.hasErrors("code")) {
+				final boolean isReportSpam = SpamDetector.isSpam(entity.getCode(), this.repo.systemConfiguration());
+				errors.state(request, !isReportSpam, "request", "epicure.fine-dish.form.error.code");
 		}
 		
-		if(!errors.hasErrors("legalStuff")) {
-			final boolean res;
-			final SystemConfiguration systemConfiguration = this.repository.systemConfiguration();
-			final String StrongES = systemConfiguration.getStrongSpamTermsEn();
-			final String StrongEN = systemConfiguration.getStrongSpamTermsEn();
-			final String WeakES = systemConfiguration.getWeakSpamTermsEs();
-			final String WeakEN = systemConfiguration.getWeakSpamTermsEn();
-			
-			final double StrongT = systemConfiguration.getStrongThreshold();
-			final double WeakT = systemConfiguration.getWeakThreshold();
-						
-			res = SpamDetector.spamDetector(entity.getLegalStuff(),StrongES,StrongEN,WeakES,WeakEN,StrongT,WeakT);
-			
-			errors.state(request, res, "legalStuff", "alert-message.form.spam");
-		}
+		if(!errors.hasErrors("request")) {
+				final boolean isReportSpam = SpamDetector.isSpam(entity.getRequest(), this.repo.systemConfiguration());
+				errors.state(request, !isReportSpam, "request", "epicure.fine-dish.form.error.request");
+			}
 		
 		if(!errors.hasErrors("moreInfo")) {
-			final boolean res;
-			final SystemConfiguration systemConfiguration = this.repository.systemConfiguration();
-			final String StrongES = systemConfiguration.getStrongSpamTermsEn();
-			final String StrongEN = systemConfiguration.getStrongSpamTermsEn();
-			final String WeakES = systemConfiguration.getWeakSpamTermsEs();
-			final String WeakEN = systemConfiguration.getWeakSpamTermsEn();
-			
-			final double StrongT = systemConfiguration.getStrongThreshold();
-			final double WeakT = systemConfiguration.getWeakThreshold();
-						
-			res = SpamDetector.spamDetector(entity.getMoreInfo(),StrongES,StrongEN,WeakES,WeakEN,StrongT,WeakT);
-			
-			errors.state(request, res, "moreInfo", "alert-message.form.spam");
+			final boolean isReportSpam = SpamDetector.isSpam(entity.getMoreInfo(), this.repo.systemConfiguration());
+			errors.state(request, !isReportSpam, "request", "epicure.fine-dish.form.error.moreinfo");
 		}
-		*/
+		
 	}
 
 	@Override
