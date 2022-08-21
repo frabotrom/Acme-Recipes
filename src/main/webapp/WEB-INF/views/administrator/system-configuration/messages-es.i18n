@@ -3,3 +3,7 @@ administrator.systemconfiguration.form.label.accepted-currencies = Monedas acept
 administrator.systemconfiguration.form.label.spam-terms-en = Términos de Spam (En)
 administrator.systemconfiguration.form.label.spam-terms-es = Términos de Spam (Es)
 administrator.systemconfiguration.form.label.spam-threshhold = Umbral de Spam
+administrator.systemconfiguration.form.button.update = Actualizar
+
+administrator.systemconfiguration.form.error.systemCurrency = La Moneda del sistema debe estar contenida en las monedas aceptadas
+administrator.systemconfiguration.invalid-currency.error = La moneda introducida no es válida
