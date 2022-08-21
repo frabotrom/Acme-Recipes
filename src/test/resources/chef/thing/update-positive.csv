@@ -1,0 +1,7 @@
+recordIndex,thing-type,name,code,description,retail-price,info
+0,INGREDIENT,A - Ejemplo con el nombre actualizado,AA:AAA-764,Esto es un ejemplo para actualizar,EUR 8.50,"https://en.wikipedia.org/wiki/Example"
+1,INGREDIENT,A - Ejemplo con el nombre y código actualizados,AA:AAB-764,Esto es un ejemplo para actualizar,EUR 8.50,"https://en.wikipedia.org/wiki/Example"
+2,INGREDIENT,A - Ejemplo con el nombre actualizado,AA:AAB-764,Además también tiene la descripción y el código actualizados,EUR 8.50,"https://en.wikipedia.org/wiki/Example"
+3,INGREDIENT,A - Ejemplo con el nombre actualizado,AA:AAB-764,"Además también tiene la descripción, el código y el precio actualizados",EUR 100.00,"https://en.wikipedia.org/wiki/Example"
+4,INGREDIENT,A - Ejemplo con el nombre actualizado,AA:AAB-764,"Además también tiene la descripción, el código, el precio y el enlace con información adicional actualizados",EUR 100.00,"https://en.wikipedia.org/wiki/ExampleModified"
+

@@ -1,0 +1,11 @@
+recordIndex,thing-type,name,code,description,retail-price,info
+0,INGREDIENT,,AA:AAX-111,Esto es un ejemplo de creación de ingrediente sin nombre,EUR 10.00,"https://en.wikipedia.org/wiki/Example"
+1,KITCHENUTENSIL,Esto es un ejemplo de utensilio de cocina sin descripción,AA:AAX-112,,EUR 15.00,"https://en.wikipedia.org/wiki/Example"
+2,INGREDIENT,Ingrediente código,AA:AABZ-112,Este ejemplo de ingrediente tiene un patrón de código incorrecto,EUR 20.00,"https://en.wikipedia.org/wiki/Example"
+3,KITCHENUTENSIL,Este ejemplo excede el número máximo de caracteres en la descripción,AA:AAX-113,Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,EUR 25.00,"https://en.wikipedia.org/wiki/Example"
+4,INGREDIENT,Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,AA:AAX-114,Este ejemplo excede el número máximo de caracteres en el nombre,EUR 30.00,"https://en.wikipedia.org/wiki/Example"
+5,INGREDIENT,Ingrediente divisa,AA:AAX-115,Este ejemplo contiene una divisa no registrada en el sistema,ABC 35.00,
+6,KITCHENUTENSIL,Utensilio de cocina precio negativo,AA:AAX-116,Este ejemplo tiene un precio negativo,EUR -40.00,"https://en.wikipedia.org/wiki/Example"
+7,INGREDIENT,Ingrediente sin código,,Esto es un ejemplo de creación de ingrediente sin código,EUR 45.00,"https://en.wikipedia.org/wiki/Example"
+8,KITCHENUTENSIL,Utensilio de cocina sin precio,AA:AAX-117,Esto es un ejemplo de creación de utensilio de cocina sin precio,,"https://en.wikipedia.org/wiki/Example"
+ 
