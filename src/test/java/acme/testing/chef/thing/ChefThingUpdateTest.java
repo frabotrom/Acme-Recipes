@@ -22,6 +22,8 @@ public class ChefThingUpdateTest extends TestHarness{
 		super.fillInputBoxIn("info", "https://en.wikipedia.org/wiki/Example");
 		super.fillInputBoxIn("thingType", "INGREDIENT");
 		super.clickOnSubmit("Create");
+		
+		super.signOut();
 	}
 	
 	@ParameterizedTest
