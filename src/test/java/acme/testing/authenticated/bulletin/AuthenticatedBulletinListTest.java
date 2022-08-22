@@ -49,6 +49,8 @@ public class AuthenticatedBulletinListTest extends TestHarness {
 		res = Calendar.getInstance();
 		final int deltaDays = instantiationMoment.getDate();
 		res.add(Calendar.DATE, -deltaDays);
+		res.set(Calendar.MINUTE, 0);
+		res.set(Calendar.SECOND, 0);
 		return res.getTime();
 	}
 
