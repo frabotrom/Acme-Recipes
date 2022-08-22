@@ -7,6 +7,7 @@ import org.apache.commons.lang3.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.components.SpamDetector;
 import acme.entities.finedish.FineDish;
 import acme.entities.finedish.Status;
 import acme.framework.components.models.Model;
@@ -115,22 +116,11 @@ public class FineDishEpicureCreateService implements AbstractCreateService<Epicu
 				errors.state(request, moment.after(periodEndDate) , "endDate", "epicure.fine-dish.form.error.end-date");
 				
 			}
-		/*
-		if(!errors.hasErrors("legalStuff")) {
-			final boolean res;
-			final SystemConfiguration systemConfiguration = this.repository.systemConfiguration();
-			final String StrongES = systemConfiguration.getStrongSpamTermsEn();
-			final String StrongEN = systemConfiguration.getStrongSpamTermsEn();
-			final String WeakES = systemConfiguration.getWeakSpamTermsEs();
-			final String WeakEN = systemConfiguration.getWeakSpamTermsEn();
-
-			final double StrongT = systemConfiguration.getStrongThreshold();
-			final double WeakT = systemConfiguration.getWeakThreshold();
-
-			res = SpamDetector.spamDetector(entity.getLegalStuff(),StrongES,StrongEN,WeakES,WeakEN,StrongT,WeakT);
-
-			errors.state(request, res, "legalStuff", "alert-message.form.spam");
-		}*/
+		
+			if(!errors.hasErrors("request")) {
+				final boolean isReportSpam = SpamDetector.isSpam(entity.getRequest(), this.repository.systemConfiguration());
+				errors.state(request, !isReportSpam, "request", "epicure.fine-dish.form.error.request");
+			}
 		
 	}	
 	

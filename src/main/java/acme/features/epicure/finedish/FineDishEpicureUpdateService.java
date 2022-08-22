@@ -6,6 +6,7 @@ import org.apache.commons.lang3.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.components.SpamDetector;
 import acme.entities.finedish.FineDish;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
@@ -67,7 +68,10 @@ public class FineDishEpicureUpdateService implements AbstractUpdateService<Epicu
 		assert entity != null;
 		assert errors != null;
 		
-		
+		if(!errors.hasErrors("request")) {
+			final boolean isReportSpam = SpamDetector.isSpam(entity.getRequest(), this.repository.systemConfiguration());
+			errors.state(request, !isReportSpam, "request", "epicure.fine-dish.form.error.request");
+		}
 		
 		if(!errors.hasErrors("code")) {
         	

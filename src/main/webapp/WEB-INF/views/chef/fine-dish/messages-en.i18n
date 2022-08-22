@@ -35,3 +35,6 @@ chef.fine-dish.form.error.budget-currency= This currency is invalid
 chef.fine-dish.form.error.budget-amount= This amount can't be negative
 chef.fine-dish.form.error.start-date = Start date must starting at least one month after the patronage is created
 chef.fine-dish.form.error.end-date = End date must be at least one month long
+epicure.fine-dish.form.error.request = The request has Spam
+epicure.fine-dish.form.error.code = The code has Spam
+epicure.fine-dish.form.error.moreinfi = The More Info has Spam
