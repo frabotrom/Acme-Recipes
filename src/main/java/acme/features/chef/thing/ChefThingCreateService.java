@@ -7,7 +7,7 @@ import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-//import acme.components.SpamDetector;
+import acme.components.SpamDetector;
 import acme.entities.thing.Thing;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
@@ -93,7 +93,7 @@ public class ChefThingCreateService implements AbstractCreateService<Chef, Thing
 			errors.state(request, validCurrency, "retailPrice", "chef.thing.form.error.retail-price-currency-invalid");
 		}
 		
-		/*if(!errors.hasErrors("name")) {
+		if(!errors.hasErrors("name")) {
 			final boolean isNameSpam = SpamDetector.isSpam(entity.getName(), this.repository.getSystemConfiguration());
 			errors.state(request, !isNameSpam, "name", "name.form.spam");
 		}
@@ -102,7 +102,7 @@ public class ChefThingCreateService implements AbstractCreateService<Chef, Thing
 			final boolean isDescriptionSpam = SpamDetector.isSpam(entity.getName(), this.repository.getSystemConfiguration());
 			errors.state(request, !isDescriptionSpam, "description", "description.form.spam");
 		}
-		*/
+		
 	}
 	
 	@Override
