@@ -24,6 +24,7 @@ public class AdministratorBulletinCreateTest extends TestHarness {
 		super.fillInputBoxIn("critical", critical);
 		super.fillInputBoxIn("confirmation", confirmation);
 		super.clickOnSubmit("Create Bulletin");
+		super.checkNotErrorsExist();
 
 		super.clickOnMenu("Authenticated", "Bulletins");
 		super.checkListingExists();
