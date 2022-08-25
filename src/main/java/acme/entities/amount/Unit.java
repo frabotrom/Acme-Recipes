@@ -2,5 +2,5 @@ package acme.entities.amount;
 
 
 public enum Unit {
-	g, kg, l, ml, ud, uds
+	G, KG, L, ML, UD, UDS
 }

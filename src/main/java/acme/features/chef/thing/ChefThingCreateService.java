@@ -41,10 +41,14 @@ public class ChefThingCreateService implements AbstractCreateService<Chef, Thing
 	public Thing instantiate(final Request<Thing> request) {
 		assert request != null;
 		
-		final Chef chef;
+		Chef chef = null;
 		final Thing result;
 		
-		chef = this.repository.findChefById(request.getPrincipal().getActiveRoleId()).get();
+		try {
+			chef = this.repository.findChefById(request.getPrincipal().getActiveRoleId()).orElseThrow(() -> new Exception("Chef not found - " + request.getPrincipal().getUsername()));
+		} catch (final Exception e) {
+			e.printStackTrace();
+		}
 		result = new Thing();
 		result.setChef(chef);
 		result.setName("");
