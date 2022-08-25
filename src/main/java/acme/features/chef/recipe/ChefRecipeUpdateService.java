@@ -3,7 +3,6 @@ package acme.features.chef.recipe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.components.SpamDetector;
 import acme.entities.recipe.Recipe;
 import acme.entities.systemConfiguration.SystemConfiguration;
 import acme.framework.components.models.Model;
@@ -11,6 +10,7 @@ import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
 import acme.framework.services.AbstractUpdateService;
 import acme.roles.Chef;
+import spamDetector.SpamDetector;
 
 @Service
 public class ChefRecipeUpdateService implements AbstractUpdateService<Chef,Recipe> {

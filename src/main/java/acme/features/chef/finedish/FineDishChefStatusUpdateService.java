@@ -3,13 +3,13 @@ package acme.features.chef.finedish;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.components.SpamDetector;
 import acme.entities.finedish.FineDish;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
 import acme.framework.services.AbstractUpdateService;
 import acme.roles.Chef;
+import spamDetector.SpamDetector;
 @Service
 public class FineDishChefStatusUpdateService implements AbstractUpdateService<Chef,FineDish>{
 	
