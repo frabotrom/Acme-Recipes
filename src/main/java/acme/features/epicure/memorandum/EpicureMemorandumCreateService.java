@@ -7,7 +7,6 @@ import java.util.Random;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.components.SpamDetector;
 import acme.entities.finedish.FineDish;
 import acme.entities.memorandum.Memorandum;
 import acme.framework.components.models.Model;
@@ -15,6 +14,7 @@ import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
 import acme.framework.services.AbstractCreateService;
 import acme.roles.Epicure;
+import spamDetector.SpamDetector;
 
 @Service
 public class EpicureMemorandumCreateService implements AbstractCreateService<Epicure, Memorandum> {

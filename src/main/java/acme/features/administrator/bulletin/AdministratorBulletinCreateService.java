@@ -6,13 +6,13 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.components.SpamDetector;
 import acme.entities.bulletin.Bulletin;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
 import acme.framework.roles.Administrator;
 import acme.framework.services.AbstractCreateService;
+import spamDetector.SpamDetector;
 
 @Service
 public class AdministratorBulletinCreateService implements AbstractCreateService<Administrator, Bulletin>{
