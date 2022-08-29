@@ -11,7 +11,12 @@
 	<acme:input-money code="chef.thing.form.label.retailPrice" path="retailPrice"/>
 	<acme:input-url code="chef.thing.form.label.info" path="info"/>
 	
-	
+	<jstl:choose>
+		<jstl:when test="${command == 'show'&& newRetailPrice.getCurrency()!=retailPrice.getCurrency()}">
+            <acme:input-money code="chef.thing.form.label.retail-price-conversion" path="newRetailPrice" readonly="true"/>
+    	</jstl:when>
+    </jstl:choose>
+    
 	<acme:input-select code="chef.thing.form.label.thingType" path="thingType">
 		<acme:input-option code="INGREDIENT" value="INGREDIENT" selected="${thingType == 'INGREDIENT'}"/>
 		<acme:input-option code="KITCHEN UTENSIL" value="KITCHENUTENSIL" selected="${thingType == 'KITCHENUTENSIL'}"/>

@@ -12,6 +12,12 @@
 	<acme:input-money code="any.thing.form.label.retailPrice" path="retailPrice"/>
 	<acme:input-url code="any.thing.form.label.info" path="info"/>
 	
+	<jstl:choose>
+		<jstl:when test="${command == 'show'&& newRetailPrice.getCurrency()!=retailPrice.getCurrency()}">
+            <acme:input-money code="any.thing.form.label.retail-price-conversion" path="newRetailPrice" readonly="true"/>
+    	</jstl:when>
+    </jstl:choose>
+	
 	
 	<acme:input-select code="any.thing.form.label.thingType" path="thingType">
 		<acme:input-option code="INGREDIENT" value="INGREDIENT" selected="${thingType == 'INGREDIENT'}"/>

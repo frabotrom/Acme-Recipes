@@ -11,6 +11,7 @@ chef.thing.form.label.retailPrice = Precio al por menor:
 chef.thing.form.label.info = Información adicional:
 chef.thing.form.label.thingType = Tipo de cosa:
 chef.thing.form.label.published= Publicado:
+chef.thing.form.label.retail-price-conversion = Precio convertido:
 
 INGREDIENT = INGREDIENTE 
 KITCHEN UTENSIL = UTENSILIO DE COCINA
