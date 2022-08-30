@@ -12,7 +12,7 @@ public class ChefMemorandumCreateTest extends TestHarness {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/chef/memorandum/create-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positivePatronageReportTest(final int recordIndex, final String report, final String info) {
+	public void positiveMemorandumTest(final int recordIndex, final String report, final String info) {
 		super.signIn("chef2", "chef2");
 		super.clickOnMenu("Chef", "My fine dishes");
 		super.checkListingExists();
@@ -36,7 +36,7 @@ public class ChefMemorandumCreateTest extends TestHarness {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/chef/memorandum/create-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void negativeChirpTest(final int recordIndex, final String report, final String info) {
+	public void negativeMemorandumTest(final int recordIndex, final String report, final String info) {
 
 		super.signIn("chef2", "chef2");
 		super.clickOnMenu("Chef", "My fine dishes");
