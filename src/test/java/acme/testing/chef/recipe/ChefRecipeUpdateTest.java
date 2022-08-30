@@ -34,6 +34,7 @@ public class ChefRecipeUpdateTest extends TestHarness{
 		super.checkInputBoxHasValue("preparationNotes", preparationNotes);
 		super.checkInputBoxHasValue("moreInfo", moreInfo);
 		
+		super.signOut();
 	}
 	
 	@ParameterizedTest
@@ -53,7 +54,7 @@ public class ChefRecipeUpdateTest extends TestHarness{
 		super.clickOnSubmit("Update");
 		super.checkErrorsExist();
 		
-		
+		super.signOut();
 	}	
 		
 	

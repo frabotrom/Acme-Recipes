@@ -73,5 +73,6 @@ public class ChefAmountUpdateTest extends TestHarness {
 		super.clickOnSubmit("Update");
 		super.checkErrorsExist();
 	
+		super.signOut();
 	}
 }
