@@ -1,4 +1,4 @@
 recordIndex,status,code,request,budget,creation-moment,start-date,end-date,more-info
-0,ACCEPTED,KC:AQW-909,Montadito de tortilla,EUR420.50,2021/07/15 13:00, 2021/07/15 13:30, 2021/07/15 14:00,http://www.example.com
-1,ACCEPTED,LC:AQW-910,Patatas cuatro salsas,EUR 200.00, 2021/07/15 13:00, 2021/07/15 14:30, 2021/07/15 15:30,http://www.example.com
-2,DENIED,XC:AQW-914,Carpaccio de atun y una vinagreta de mango agria,EUR 1320.00, 2021/07/20 19:00, 2021/07/21 10:30, 2021/07/21 20:30,http://www.example.com
+0,ACCEPTED,KC:AQW-909,Montadito de tortilla,EUR420.50,2021/05/15 13:00, 2021/07/15 13:30, 2021/09/15 14:00,http://www.example.com
+1,ACCEPTED,LC:AQW-910,Patatas cuatro salsas,EUR 200.00, 2021/05/15 13:00, 2021/07/15 14:30, 2021/09/15 15:30,http://www.example.com
+2,DENIED,XC:AQW-914,Carpaccio de atun y una vinagreta de mango agria,EUR 1320.00, 2021/05/20 19:00, 2021/07/21 10:30, 2021/09/21 20:30,http://www.example.com

@@ -1,15 +1,28 @@
-any.thing.list.label.name = Nombre:
-any.thing.list.label.code = Código:
-any.thing.list.label.description = Descripción:
-any.thing.list.label.retailPrice = Precio al por menor:
+chef.thing.list.label.name = Nombre:
+chef.thing.list.label.code = Código:
+chef.thing.list.label.description = Descripción:
+chef.thing.list.label.retailPrice = Precio al por menor:
+chef.thing.list.button.create = Crear
 
-any.thing.form.label.name = Nombre:
-any.thing.form.label.code = Código:
-any.thing.form.label.description = Descripción:
-any.thing.form.label.retailPrice = Precio al por menor:
-any.thing.form.label.info = Información adicional:
-any.thing.form.label.thingType = Tipo de cosa:
-any.thing.form.label.published= Publicado:
+chef.thing.form.label.name = Nombre:
+chef.thing.form.label.code = Código:
+chef.thing.form.label.description = Descripción:
+chef.thing.form.label.retailPrice = Precio al por menor:
+chef.thing.form.label.info = Información adicional:
+chef.thing.form.label.thingType = Tipo de cosa:
+chef.thing.form.label.published= Publicado:
+chef.thing.form.label.retail-price-conversion = Precio convertido:
 
 INGREDIENT = INGREDIENTE 
 KITCHEN UTENSIL = UTENSILIO DE COCINA
+
+chef.thing.form.button.update = Actualizar
+chef.thing.form.button.delete = Eliminar
+chef.thing.form.button.publish = Publicar
+chef.thing.form.button.create = Crear
+
+chef.thing.form.error.duplicated-code = No puedes introducir este código porque ya existe en la base de datos
+chef.thing.form.error.retail-price-amount-negative-or-zero = Debes introducir una cantidad positiva
+chef.thing.form.error.retail-price-currency-invalid = Esta moneda no está recogida por el sistema
+name.form.spam = El nombre introducido es considerado es spam
+description.form.spam = La descripción introducida es considerada es spam

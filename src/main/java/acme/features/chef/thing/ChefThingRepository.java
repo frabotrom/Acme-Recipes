@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import acme.entities.systemConfiguration.SystemConfiguration;
 import acme.entities.thing.Thing;
 import acme.framework.repositories.AbstractRepository;
 import acme.roles.Chef;
@@ -24,4 +25,13 @@ public interface ChefThingRepository extends AbstractRepository{
 	
 	@Query("SELECT t FROM Thing t WHERE t.id = :id")
 	Thing findThingById(int id);
+	
+	@Query("SELECT t from Thing t where t.code = :code")
+	Thing findThingByCode(String code);
+	
+	@Query("SELECT sc.acceptedCurrencies from SystemConfiguration sc")
+	String findAcceptedCurrencies();
+	
+	@Query("select sc from SystemConfiguration sc")
+	SystemConfiguration getSystemConfiguration();
 }

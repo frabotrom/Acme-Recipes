@@ -1,16 +1,30 @@
-any.thing.list.label.name = Name:
-any.thing.list.label.code = Code:
-any.thing.list.label.description = Description:
-any.thing.list.label.retailPrice = Retail Price:
+chef.thing.list.label.name = Name:
+chef.thing.list.label.code = Code:
+chef.thing.list.label.description = Description:
+chef.thing.list.label.retailPrice = Retail Price:
+chef.thing.list.button.create = Create
 
-any.thing.form.label.name = Name:
-any.thing.form.label.code = Code:
-any.thing.form.label.description = Description:
-any.thing.form.label.retailPrice = Retail Price:
-any.thing.form.label.info = More Info:
-any.thing.form.label.thingType = Type of thing:
-any.thing.form.label.published= Published:
+chef.thing.form.label.name = Name:
+chef.thing.form.label.code = Code:
+chef.thing.form.label.description = Description:
+chef.thing.form.label.retailPrice = Retail Price:
+chef.thing.form.label.info = More Info:
+chef.thing.form.label.thingType = Type of thing:
+chef.thing.form.label.published= Published:
+chef.thing.form.label.retail-price-conversion = Converted price:
 
 INGREDIENT = INGREDIENT
 KITCHEN UTENSIL = KITCHEN UTENSIL
+
+chef.thing.form.button.update = Update
+chef.thing.form.button.delete = Delete
+chef.thing.form.button.publish = Publish
+chef.thing.form.button.create = Create
+
+
+chef.thing.form.error.duplicated-code = You can´t enter this code because it already exists in the database
+chef.thing.form.error.retail-price-amount-negative-or-zero = You have to enter a positive amount
+chef.thing.form.error.retail-price-currency-invalid = This currency isn´t allowed by the system
+name.form.spam = The name introduced is considered spam
+description.form.spam = The description introduced is considered spam
 

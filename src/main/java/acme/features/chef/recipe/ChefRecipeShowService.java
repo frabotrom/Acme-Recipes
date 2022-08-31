@@ -60,7 +60,10 @@ public class ChefRecipeShowService implements AbstractShowService<Chef, Recipe> 
 		assert model != null;
 
 		request.unbind(entity, model, "heading", "preparationNotes", "code", "totalPrice", "description", "moreInfo","published");
-		model.setAttribute("readonly", true);
+		Collection<Amount> amounts;
+		amounts = this.repository.findAllAmountOfRecipe(entity);
+		model.setAttribute("isEmpty", amounts.isEmpty());
+	
 		
 	}
 

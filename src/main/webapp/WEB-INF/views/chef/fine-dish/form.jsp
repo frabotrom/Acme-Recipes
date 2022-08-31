@@ -8,11 +8,11 @@
 	
 
 	<acme:input-textbox code="chef.fine-dish.form.label.code" path="code"/>
-	<jstl:choose>
-    	<jstl:when test="${command != 'create'}">
-			<acme:input-textarea code="chef.fine-dish.form.label.status" path="status" readonly="true"/>
-		</jstl:when>
-	</jstl:choose>
+	<acme:input-select code="chef.fine-dish.form.label.status" path="status">
+		<acme:input-option code="PROPOSED" value="PROPOSED" selected="${status == 'PROPOSED'}"/>
+		<acme:input-option code="ACCEPTED" value="ACCEPTED" selected="${status == 'ACCEPTED'}"/>
+		<acme:input-option code="DENIED" value="DENIED" selected="${status == 'DENIED'}"/>
+	</acme:input-select>
 	<acme:input-textarea code="chef.fine-dish.form.label.request" path="request" />
 	<acme:input-money code="chef.fine-dish.form.label.budget" path="budget"/>
     
@@ -40,11 +40,18 @@
 		</jstl:when>
 		</jstl:choose>
 		
+		<jstl:choose>
+		<jstl:when test="${acme:anyOf(command, 'show, update') && status =='PROPOSED'}">
+			<acme:submit code="chef.fine-dish.form.button.updateStatus" action="/chef/fine-dish/update-status"/>
+			
+		</jstl:when>
+		
+		</jstl:choose>
+		
+
 		<acme:button code="chef.fine-dish.form.button.memorandum" action="/chef/memorandum/list?masterId=${id}"/>			
 	
-	
 
-		
 			
 	 
 </acme:form>

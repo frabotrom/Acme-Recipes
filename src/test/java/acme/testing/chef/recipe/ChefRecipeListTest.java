@@ -31,7 +31,7 @@ public class ChefRecipeListTest extends TestHarness {
 		super.checkInputBoxHasValue("preparationNotes", preparationNotes);
 		super.checkInputBoxHasValue("moreInfo", moreInfo);
 		super.checkInputBoxHasValue("totalPrice", totalPrice);
-		super.clickOnButton("Amounts");
+		super.clickOnButton("List Quantities");
 		super.checkListingExists();
 		
 	}

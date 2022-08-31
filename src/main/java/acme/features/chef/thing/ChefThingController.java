@@ -22,6 +22,18 @@ public class ChefThingController extends AbstractController<Chef, Thing>{
 		
 	@Autowired
 	protected ChefThingShowService chefThingShowService;
+	
+	@Autowired
+	protected ChefThingCreateService chefThingCreateService;
+	
+	@Autowired
+	protected ChefThingUpdateService chefThingUpdateService;
+	
+	@Autowired
+	protected ChefThingDeleteService chefThingDeleteService;
+	
+	@Autowired
+	protected ChefThingPublishService chefThingPublishService;
 		
 
 	//Constructors ----------------------------------------------------
@@ -31,5 +43,9 @@ public class ChefThingController extends AbstractController<Chef, Thing>{
 		super.addCommand("show", this.chefThingShowService);
 		super.addCommand("list-own-kitchen-utensils","list", this.chefKitchenUtensilListService);
 		super.addCommand("list-own-ingredients","list", this.chefIngredientListService);
+		super.addCommand("create", this.chefThingCreateService);
+		super.addCommand("update", this.chefThingUpdateService);
+		super.addCommand("delete", this.chefThingDeleteService);
+		super.addCommand("publish", "update", this.chefThingPublishService);
 	}
 }

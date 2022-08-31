@@ -39,7 +39,7 @@ public class EpicureMemorandumListTest extends TestHarness {
 		
 		super.clickOnButton("Return");
 		
-		
+		super.signOut();
 		
 		
 	}

@@ -25,5 +25,7 @@ public class AdministratorSystemConfigurationShowTest extends TestHarness {
 		super.checkInputBoxHasValue("spamTermsEn", spamTermsEn);
 		super.checkInputBoxHasValue("spamThreshold", spamThreshold);
 
+		super.signOut();
+		
 }
 }

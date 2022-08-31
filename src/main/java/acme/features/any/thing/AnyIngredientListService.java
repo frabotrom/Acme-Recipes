@@ -5,9 +5,13 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.moneyExchange.MoneyExchange;
 import acme.entities.thing.Thing;
+import acme.features.authenticated.moneyExchange.AuthenticatedMoneyExchangePerformService;
+import acme.features.authenticated.systemConfiguration.AuthenticatedSystemConfigurationRepository;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
+import acme.framework.datatypes.Money;
 import acme.framework.roles.Any;
 import acme.framework.services.AbstractListService;
 
@@ -15,6 +19,8 @@ import acme.framework.services.AbstractListService;
 public class AnyIngredientListService implements AbstractListService<Any, Thing>{
 	@Autowired
 	protected AnyThingRepository repository;
+	@Autowired
+	protected AuthenticatedSystemConfigurationRepository systemConfigRepository;
 
 	@Override
 	public boolean authorise(final Request<Thing> request) {
@@ -37,8 +43,33 @@ public class AnyIngredientListService implements AbstractListService<Any, Thing>
 		assert entity != null;
 		assert model != null;
 		
+		final Money newRetailPrice = this.moneyExchangeIngredients(entity);
+		model.setAttribute("newRetailPrice", newRetailPrice);
+		
 		request.unbind(entity, model,"name", "code", "description", "retailPrice");
 		
 	}
 	
+	public Money moneyExchangeIngredients(final Thing t) {
+		final String thingCurrency = t.getRetailPrice().getCurrency();
+			
+		final AuthenticatedMoneyExchangePerformService moneyExchange = new AuthenticatedMoneyExchangePerformService();
+		final String systemCurrency = this.systemConfigRepository.findSystemConfiguration().getSystemCurrency();
+		final Double conversionAmount;
+				
+		if(!systemCurrency.equals(thingCurrency)) {
+			MoneyExchange conversion;
+			conversion = moneyExchange.computeMoneyExchange(t.getRetailPrice(), systemCurrency);
+			conversionAmount = conversion.getTarget().getAmount();	
+		}
+		else {
+			conversionAmount = t.getRetailPrice().getAmount();
+		}
+			
+		final Money newBudget = new Money();
+		newBudget.setAmount(conversionAmount);
+		newBudget.setCurrency(systemCurrency);
+			
+		return newBudget;
+	}
 }

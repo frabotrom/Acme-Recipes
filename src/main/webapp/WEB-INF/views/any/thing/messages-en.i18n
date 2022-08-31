@@ -10,6 +10,7 @@ any.thing.form.label.retailPrice = Retail Price:
 any.thing.form.label.info = More Info:
 any.thing.form.label.thingType = Type of thing:
 any.thing.form.label.published= Published:
+any.thing.form.label.retail-price-conversion = Converted price:
 
 INGREDIENT = INGREDIENT
 KITCHEN UTENSIL = KITCHEN UTENSIL
