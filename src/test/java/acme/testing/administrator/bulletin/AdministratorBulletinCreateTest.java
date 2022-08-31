@@ -26,16 +26,6 @@ public class AdministratorBulletinCreateTest extends TestHarness {
 		super.clickOnSubmit("Create Bulletin");
 		super.checkNotErrorsExist();
 
-		super.clickOnMenu("Authenticated", "Bulletins");
-		super.checkListingExists();
-		super.sortListing(0, "desc");
-		super.checkColumnHasValue(recordIndex, 1, heading);
-		super.clickOnListingRecord(recordIndex);
-
-		super.checkFormExists();
-		super.checkInputBoxHasValue("heading", heading);
-		super.checkInputBoxHasValue("text", text);
-		super.checkInputBoxHasValue("link", link);
 
 		super.signOut();
 	}
