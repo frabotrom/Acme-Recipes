@@ -64,4 +64,21 @@ public interface AdministratorDashboardRepository extends AbstractRepository{
 	@Query("SELECT f.budget.currency, max(f.budget.amount) FROM FineDish f WHERE f.status = :status GROUP BY f.budget.currency")
 	Collection<Tuple> maximumBudgetPatronagesByStatus(Status status);
 
+	
+	//Pimpam
+	@Query("SELECT count(c) FROM Thing c WHERE c.pimpam != null")
+	Integer getTotalPimpams();
+	
+	@Query("SELECT avg(i.pimpam.budget.amount) FROM Thing i WHERE (i.pimpam.budget.currency = :currency AND i.pimpam != null)")
+	Double averageBudgetOfPimpamsIByCurrency(String currency);
+	
+	@Query("SELECT stddev(i.pimpam.budget.amount) FROM Thing i WHERE (i.pimpam.budget.currency = :currency AND i.pimpam != null)")
+	Double deviationBudgetOfPimpamsIByCurrency(String currency);
+
+	@Query("SELECT max(i.pimpam.budget.amount) FROM Thing i WHERE (i.pimpam.budget.currency = :currency AND i.pimpam != null)")
+	Double maximumBudgetOfPimpamsIByCurrency(String currency);
+	
+	@Query("SELECT min(i.pimpam.budget.amount) FROM Thing i WHERE (i.pimpam.budget.currency = :currency AND i.pimpam != null)")
+	Double minimumBudgetOfPimpamsIByCurrency(String currency);
+
 }
