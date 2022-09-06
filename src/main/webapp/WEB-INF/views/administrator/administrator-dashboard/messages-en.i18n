@@ -26,3 +26,9 @@ administrator.dashboard.form.status.PROPOSED = Proposed
 administrator.dashboard.form.status.USD = USD
 administrator.dashboard.form.status.EUR = EUR
 administrator.dashboard.form.status.GBP = GBP
+
+administrator.administrator-dashboard.form.label.ratio-of-things-with-pimpam = Ratio of pimpams
+administrator.administrator-dashboard.form.label.average-budget-of-pimpams-by-currency = Average budget of pimpams by currency
+administrator.administrator-dashboard.form.label.deviation-budget-of-pimpams-by-currency = Deviation budget of pimpams by currency
+administrator.administrator-dashboard.form.label.minimum-budget-of-pimpams-by-currency = Minimum budget of pimpams by currency
+administrator.administrator-dashboard.form.label.maximum-budget-of-pimpams-by-currency = Maximum budget of pimpams by currency

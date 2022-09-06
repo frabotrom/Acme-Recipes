@@ -393,6 +393,120 @@
 			</table>
 			<br> <br>
 		</div>
+		
+		<h3>
+			<acme:message code="administrator.administrator-dashboard.form.label.ratio-of-things-with-pimpam"/>
+		</h3>
+		<table>
+			<caption></caption>
+			<tr>
+				<th id="ratioOfThingsWithPimpamId">
+					<acme:print value="${ratioOfThingsWithPimpam}"/>
+				</th>
+			</tr>
+		</table>
+	
+		<h3>
+			<acme:message
+					code="administrator.administrator-dashboard.form.label.average-budget-of-pimpams-by-currency" />
+		</h3>
+		<table class="table table-sm">
+			<caption></caption>
+			<div class="column">
+				<jstl:forEach items="${ averageBudgetOfPimpamsByCurrency.keySet() }"
+					var="key">
+					<tr>
+						<jstl:set value="${ averageBudgetOfPimpamsByCurrency.get(key) }"
+							var="amount" />
+						<jstl:if test="${ amount>0 }">
+							<th scope="row" style="width: 15%"><acme:message
+									code="administrator.dashboard.form.status.${ key }" /></th>
+							<td><acme:print value="${ amount }" /></td>
+						</jstl:if>
+					</tr>
+				</jstl:forEach>
+			</div>
+				<div class="column-50">
+					<canvas id="avg-canvas-pimpam"></canvas>
+				</div>
+			</table>
+			
+			<h3>
+				<acme:message
+					code="administrator.administrator-dashboard.form.label.deviation-budget-of-pimpams-by-currency" />
+			</h3>
+			<table class="table table-sm">
+			<caption></caption>
+			<div class="column">
+				<jstl:forEach items="${ deviationBudgetOfPimpamsByCurrency.keySet() }"
+					var="key">
+					<tr>
+						<jstl:set value="${ deviationBudgetOfPimpamsByCurrency.get(key) }"
+							var="amount" />
+						<jstl:if test="${ amount>0 }">
+							<th scope="row" style="width: 15%"><acme:message
+									code="administrator.dashboard.form.status.${ key }" /></th>
+							<td><acme:print value="${ amount }" /></td>
+						</jstl:if>
+
+					</tr>
+				</jstl:forEach>
+				</div>
+				<div class="column-50">
+				<canvas id="dev-canvas-pimpam"></canvas>
+				</div>
+			</table>
+
+			<h3>
+				<acme:message
+					code="administrator.administrator-dashboard.form.label.minimum-budget-of-pimpams-by-currency" />
+			</h3>
+			<table class="table table-sm">
+			<caption></caption>
+			<div class="column">
+				<jstl:forEach items="${ minimumBudgetOfPimpamsByCurrency.keySet() }"
+					var="key">
+					<tr>
+						<jstl:set value="${ minimumBudgetOfPimpamsByCurrency.get(key) }"
+							var="amount" />
+						<jstl:if test="${ amount>0 }">
+							<th scope="row" style="width: 15%"><acme:message
+									code="administrator.dashboard.form.status.${ key }" /></th>
+							<td><acme:print value="${ amount }" /></td>
+						</jstl:if>
+
+					</tr>
+				</jstl:forEach>
+				</div>
+				<div class="column-50">
+				<canvas id="min-canvas-pimpam"></canvas>
+				</div>
+			</table>
+			<h3>
+				<acme:message
+					code="administrator.administrator-dashboard.form.label.maximum-budget-of-pimpams-by-currency" />
+			</h3>
+			<table class="table table-sm">
+			<caption></caption>
+			<div class="column">
+				<jstl:forEach items="${ maximumBudgetOfPimpamsByCurrency.keySet() }"
+					var="key">
+					<tr>
+						<jstl:set value="${ maximumBudgetOfPimpamsByCurrency.get(key) }"
+							var="amount" />
+						<jstl:if test="${ amount>0 }">
+							<th scope="row" style="width: 15%"><acme:message
+									code="administrator.dashboard.form.status.${ key }" /></th>
+							<td><acme:print value="${ amount }" /></td>
+						</jstl:if>
+
+					</tr>
+				</jstl:forEach>
+				</div>
+				<div class="column-50">
+				<canvas id="max-canvas-pimpam"></canvas>
+				</div>
+			</table>
 </acme:form>
 
 <script type="text/javascript">
@@ -836,6 +950,119 @@
    new Chart(context, {
    	type : "pie",
    	data : max3_data,
+   	options: options
+   });
+</script>
+
+<script type="text/javascript">
+   var averageBudgetOfPimpamsByCurrency = {
+   	   	<jstl:forEach items="${averageBudgetOfPimpamsByCurrency}" var="item" varStatus="loop">
+   	   	      "${item.key}": '${item.value}' ${not loop.last ? ',' : ''}
+   	   	</jstl:forEach>
+   	   };
+   
+   const average_data_pp = {
+    labels: Object.keys(averageBudgetOfPimpamsByCurrency),
+    datasets: [{
+      data: Object.values(averageBudgetOfPimpamsByCurrency),
+      backgroundColor: [
+    	  'rgb(254, 136, 127)',
+    	  'rgb(136, 255, 114)',
+    	  'rgb(71, 130, 255)'
+          
+        ]
+    }]
+   };
+   
+   var canvas = document.getElementById("avg-canvas-pimpam");
+   var context = canvas.getContext("2d");
+   new Chart(context, {
+   	type : "bar",
+   	data : average_data_pp,
+   	options: options
+   });
+</script>
+
+<script type="text/javascript">
+   var deviationBudgetOfPimpamsByCurrency = {
+   	   	<jstl:forEach items="${deviationBudgetOfPimpamsByCurrency}" var="item" varStatus="loop">
+   	   	      "${item.key}": '${item.value}' ${not loop.last ? ',' : ''}
+   	   	</jstl:forEach>
+   	   };
+   
+   const dev_data_pp = {
+    labels: Object.keys(deviationBudgetOfPimpamsByCurrency),
+    datasets: [{
+      data: Object.values(deviationBudgetOfPimpamsByCurrency),
+      backgroundColor: [
+    	  'rgb(254, 136, 127)',
+    	  'rgb(136, 255, 114)',
+    	  'rgb(71, 130, 255)'
+        ]
+    }]
+   };
+   
+   var canvas = document.getElementById("dev-canvas-pimpam");
+   var context = canvas.getContext("2d");
+   new Chart(context, {
+   	type : "bar",
+   	data : dev_data_pp,
+   	options: options
+   });
+</script>
+
+<script type="text/javascript">
+   var minimumBudgetOfPimpamsByCurrency = {
+   	   	<jstl:forEach items="${minimumBudgetOfPimpamsByCurrency}" var="item" varStatus="loop">
+   	   	      "${item.key}": '${item.value}' ${not loop.last ? ',' : ''}
+   	   	</jstl:forEach>
+   	   };
+   
+   const min_data_pp = {
+    labels: Object.keys(minimumBudgetOfPimpamsByCurrency),
+    datasets: [{
+      data: Object.values(minimumBudgetOfPimpamsByCurrency),
+      backgroundColor: [
+    	  'rgb(254, 136, 127)',
+    	  'rgb(136, 255, 114)',
+    	  'rgb(71, 130, 255)'
+        ]
+    }]
+   };
+   
+   var canvas = document.getElementById("min-canvas-pimpam");
+   var context = canvas.getContext("2d");
+   new Chart(context, {
+   	type : "bar",
+   	data : min_data_pp,
+   	options: options
+   });
+</script>
+
+<script type="text/javascript">
+   var maximumBudgetOfPimpamsByCurrency = {
+   	   	<jstl:forEach items="${maximumBudgetOfPimpamsByCurrency}" var="item" varStatus="loop">
+   	   	      "${item.key}": '${item.value}' ${not loop.last ? ',' : ''}
+   	   	</jstl:forEach>
+   	   };
+   
+   const max_data_pp = {
+    labels: Object.keys(maximumBudgetOfPimpamsByCurrency),
+    datasets: [{
+      data: Object.values(maximumBudgetOfPimpamsByCurrency),
+      backgroundColor: [
+    	  'rgb(254, 136, 127)',
+    	  'rgb(136, 255, 114)',
+    	  'rgb(71, 130, 255)'
+        ]
+    }]
+   };
+   
+   var canvas = document.getElementById("max-canvas-pimpam");
+   var context = canvas.getContext("2d");
+   new Chart(context, {
+   	type : "bar",
+   	data : max_data_pp,
    	options: options
    });
 </script>

@@ -57,8 +57,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		final Map<Pair<Status, String>, Double> averageBudgetFineDishesByStatus = new HashMap<Pair<Status, String>, Double>();
 		final Map<Pair<Status, String>, Double> deviationBudgetFineDishesByStatus = new HashMap<Pair<Status, String>, Double>();
 		final Map<Pair<Status, String>, Double> minimumBudgetFineDishesByStatus = new HashMap<Pair<Status, String>, Double>();
-		final Map<Pair<Status, String>, Double> maximumBudgetFineDishesByStatus = new HashMap<Pair<Status, String>, Double>();
-
+		final Map<Pair<Status, String>, Double> maximumBudgetFineDishesByStatus = new HashMap<Pair<Status, String>, Double>();		
+	
 		totalNumberOfIngredients = this.repository.totalNumberOfIngredients();
 		totalNumberOfKitchenUtensils = this.repository.totalNumberOfKitchenUtensils();
 		
@@ -174,6 +174,35 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 				Pair.of(Status.DENIED, x.get(0).toString()),
 				Double.parseDouble(x.get(1).toString())));
 		
+		//Pimpam
+		final Double ratioOfThingsWithPimpam;
+		final Map<String, Double> averageBudgetOfPimpamsByCurrency = new HashMap<String, Double>();
+		final Map<String, Double> deviationBudgetOfPimpamsByCurrency = new HashMap<String, Double>();
+		final Map<String, Double> minimumBudgetOfPimpamsByCurrency = new HashMap<String, Double>();
+		final Map<String, Double> maximumBudgetOfPimpamsByCurrency =new HashMap<String, Double>();
+		
+		//IMPORTANTE
+		//En el control check se puede pedir que pimpam tenga relación con ingredientes, utensilios o ambas, en este caso lo he 
+		//hecho con ingredientes, si no fuera así solo habría que cambiar la siguiente linea y en la que se calcula el ratio
+		final Integer totalThings = this.repository.totalNumberOfIngredients();
+		final Integer totalPimpams = this.repository.getTotalPimpams();
+		ratioOfThingsWithPimpam = (double) totalPimpams / totalThings;
+		
+		for(final String currency: currencies) {
+			final Double averageBudgetOfPimpamsByX =  this.repository.averageBudgetOfPimpamsIByCurrency(currency);
+			averageBudgetOfPimpamsByCurrency.put(currency, averageBudgetOfPimpamsByX);
+			
+			final Double deviationBudgetOfPimpamsByX = this.repository.deviationBudgetOfPimpamsIByCurrency(currency);
+			deviationBudgetOfPimpamsByCurrency.put(currency, deviationBudgetOfPimpamsByX);
+			
+			final Double minimumBudgetOfPimpamsByX = this.repository.minimumBudgetOfPimpamsIByCurrency(currency);
+			minimumBudgetOfPimpamsByCurrency.put(currency, minimumBudgetOfPimpamsByX);
+			
+			final Double maximumBudgetOfPimpamsByX = this.repository.maximumBudgetOfPimpamsIByCurrency(currency);
+			maximumBudgetOfPimpamsByCurrency.put(currency, maximumBudgetOfPimpamsByX);
+		}
+		
+		
 		
 		result = new AdministratorDashboard();
 		
@@ -196,6 +225,14 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setMinimumBudgetFineDishesByStatus(minimumBudgetFineDishesByStatus);
 		result.setMaximumBudgetFineDishesByStatus(maximumBudgetFineDishesByStatus);
 		
+		//Pimpam
+		result.setRatioOfThingsWithPimpam(ratioOfThingsWithPimpam);
+		result.setAverageBudgetOfPimpamsByCurrency(averageBudgetOfPimpamsByCurrency);
+		result.setDeviationBudgetOfPimpamsByCurrency(deviationBudgetOfPimpamsByCurrency);
+		result.setMinimumBudgetOfPimpamsByCurrency(minimumBudgetOfPimpamsByCurrency);
+		result.setMaximumBudgetOfPimpamsByCurrency(maximumBudgetOfPimpamsByCurrency);
+		
+		
 		return result;
 		
 				
@@ -212,7 +249,12 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 			"minimumRetailPriceOfIngredientByCurrency", "maximumRetailPriceOfIngredientByCurrency",
 			"averageRetailPriceOfKitchenUtensilsByCurrency", "deviationRetailPriceOfKitchenUtensilsByCurrency", "minimumRetailPriceOfKitchenUtensilsByCurrency",
 			"maximumRetailPriceOfKitchenUtensilsByCurrency", "averageBudgetFineDishesByStatus", "deviationBudgetFineDishesByStatus",
-			"minimumBudgetFineDishesByStatus", "maximumBudgetFineDishesByStatus");
+			"minimumBudgetFineDishesByStatus", "maximumBudgetFineDishesByStatus",
+			
+			//Pimpam
+			"ratioOfThingsWithPimpam", "averageBudgetOfPimpamsByCurrency","deviationBudgetOfPimpamsByCurrency","maximumBudgetOfPimpamsByCurrency","minimumBudgetOfPimpamsByCurrency"
+			
+			);
 	}
 	
 	
