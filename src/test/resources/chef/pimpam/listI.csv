@@ -1,0 +1,3 @@
+recordIndex,title,code,budget,instantiationMoment,startDate,endDate,link,period,artefactName,artefactCode,artefactDescription,artefactRetailPrice,artefactLink,artefactType,artefactVisible
+0,Titulo 5,22-05-01,EUR 67.50,2022/05/01 00:00,2022/06/08 00:00,2022/07/16 00:00,http://www.example.com,38,Butter,AA:AAA-113,It is a dairy product made from the fat and protein components of churned cream.,EUR 9.30,https://en.wikipedia.org/wiki/Butter,INGREDIENT,TRUE
+1,Titulo 8,22-08-01,GBP 44.00,2022/08/01 00:00,2022/09/08 00:00,2022/10/16 00:00,http://www.example.com,38,Pork,AA:AAA-117,It is the culinary name for the meat of the domestic pig.,EUR 13.60,https://en.wikipedia.org/wiki/Pork,INGREDIENT,FALSE

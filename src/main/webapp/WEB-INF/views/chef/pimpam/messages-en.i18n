@@ -23,9 +23,11 @@ chef.pimpam.form.label.artefactVisible = Published
 
 chef.pimpam.form.button.update = Update
 chef.pimpam.form.button.delete = Delete
+chef.pimpam.form.button.create = Create
+
 
 chef.pimpam.form.error.budget = Budget must be greater than 0
 chef.pimpam.form.error.startDate = Start date must be before today
 chef.pimpam.form.error.period = Period must be greater than a week
 chef.pimpam.form.error.finalDate = End date must be after start date
-chef.pimpam.form.error.instantiationMoment = Start date must be at least a week after the instantiation moment
+chef.pimpam.form.error.instantiationMoment = Start date must be at least a month after the instantiation moment

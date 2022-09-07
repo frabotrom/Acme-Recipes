@@ -43,6 +43,9 @@
 		<jstl:when test="${command == 'show' && pimpam==null && thingType=='INGREDIENT' && published==false}">
 			<acme:button code="chef.thing.form.button.create-pimpam" action="/chef/pimpam/create?thingId=${thingId}"/>
 		</jstl:when>
+		<jstl:when test="${command == 'show' && pimpam!=null && thingType=='INGREDIENT'}">
+			<acme:button code="chef.thing.form.button.go-pimpam" action="/chef/pimpam/show?id=${pimpam.id}"/>
+		</jstl:when>
 	</jstl:choose>
 	
 	

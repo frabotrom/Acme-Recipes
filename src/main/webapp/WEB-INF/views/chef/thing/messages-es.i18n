@@ -28,3 +28,4 @@ name.form.spam = El nombre introducido es considerado es spam
 description.form.spam = La descripción introducida es considerada es spam
 
 chef.thing.form.button.create-pimpam = Crear Pimpam
+chef.thing.form.button.go-pimpam = Pimpam

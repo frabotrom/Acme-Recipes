@@ -1,0 +1,6 @@
+recordIndex,title,code,description,budget,startDate,endDate,link
+5,,,Desc,GBP 50.00,2022/10/25 12:00,2022/12/28 00:00,http://www.exampleCreated.com
+5,Titulo 99,,,GBP 50.00,2022/10/25 12:00,2022/12/28 00:00,http://www.exampleCreated.com
+5,Titulo 99,,Desc,GBP -2,2022/10/25 12:00,2022/12/28 00:00,http://www.exampleCreated.com
+5,Titulo 99,22-08-07,Desc,GBP 50.00,2022/10/09 12:00,2022/12/28 00:00,http://www.exampleCreated.com
+5,Titulo 99,,Desc,GBP 50.00,2022/10/25 12:00,2022/10/28 00:00,pimpam

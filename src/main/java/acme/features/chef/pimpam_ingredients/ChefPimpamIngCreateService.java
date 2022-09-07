@@ -31,15 +31,15 @@ public class ChefPimpamIngCreateService implements AbstractCreateService<Chef, P
 		
 		assert request != null;
 		
-		
 		boolean result;
 		final Thing thing;
 		
 		int thingId;		
 		thingId = request.getModel().getInteger("thingId");
 		thing = this.repository.findThingByThingId(thingId);
-		
-		result = thing!= null  && thing.getPimpam() == null && thing.getThingType()==ThingType.INGREDIENT && !thing.isPublished();
+		final int chefId = request.getPrincipal().getActiveRoleId();
+
+		result = thing!= null  && thing.getPimpam() == null && thing.getThingType()==ThingType.INGREDIENT && !thing.isPublished() && chefId==thing.getChef().getId();
 		
 		return result;
 	}
@@ -117,7 +117,6 @@ public class ChefPimpamIngCreateService implements AbstractCreateService<Chef, P
 		}
 		
 		if (!errors.hasErrors("endDate")) {	
-			System.out.println(entity.period());
 			errors.state(request, entity.period()>=7, "endDate", "inventor.chimpum.form.error.period");
 			errors.state(request, entity.getEndDate().after(entity.getStartDate()), "endDate", "inventor.chimpum.form.error.finalDate");
 		}
@@ -147,7 +146,6 @@ public class ChefPimpamIngCreateService implements AbstractCreateService<Chef, P
 		int thingId;
 		thingId = request.getModel().getInteger("thingId");
 		
-		// Para asegurar que es tipo Tool
 		thing = this.repository.findThingByThingId(thingId);
 		thing.setPimpam(entity);
 
