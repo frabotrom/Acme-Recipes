@@ -68,8 +68,6 @@ public class Pimpam extends AbstractEntity {
 	@Transient
 	public Integer period() {
 		final long result = this.endDate.getTime() - this.startDate.getTime();
-		System.out.println(this.endDate);
-		System.out.println(this.startDate);
 		final long resultDays = result/(1000*60*60*24);
 		return (int) resultDays;
 	}

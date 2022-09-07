@@ -4,3 +4,8 @@ pimpam-002,22-02-01,2022/02/01 00:00,Titulo 2,Descripcion 2,2022/03/08 00:00,202
 pimpam-003,22-03-01,2022/03/01 00:00,Titulo 3,Descripcion 3,2022/04/08 00:00,2022/04/16 00:00,EUR 58.25,http://www.example.com
 pimpam-004,22-04-01,2022/04/01 00:00,Titulo 4,Descripcion 4,2022/05/08 00:00,2022/05/16 00:00,EUR 29.50,http://www.example.com
 pimpam-005,22-05-01,2022/05/01 00:00,Titulo 5,Descripcion 5,2022/06/08 00:00,2022/07/16 00:00,EUR 67.50,http://www.example.com
+pimpam-006,22-06-01,2022/06/01 00:00,Titulo 6,Descripcion 6,2022/07/08 00:00,2022/08/16 00:00,USD 67.50,http://www.example.com
+pimpam-007,22-07-01,2022/07/01 00:00,Titulo 7,Descripcion 7,2022/08/08 00:00,2022/09/16 00:00,USD 400.25,http://www.example.com
+pimpam-008,22-08-01,2022/08/01 00:00,Titulo 8,Descripcion 8,2022/09/08 00:00,2022/10/16 00:00,GBP 44.00,http://www.example.com
+pimpam-009,22-09-01,2022/09/01 00:00,Titulo 9,Descripcion 9,2022/10/08 00:00,2022/11/16 00:00,GBP 150.20,http://www.example.com
+pimpam-010,22-09-02,2022/09/02 00:00,Titulo 10,Descripcion 10,2022/11/08 00:00,2022/12/16 00:00,GBP 12.50,http://www.example.com
