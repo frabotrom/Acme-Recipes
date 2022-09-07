@@ -69,6 +69,7 @@
 			<acme:menu-suboption code="master.menu.chef.kitchen-utensils" action="/chef/thing/list-own-kitchen-utensils"/>
 			<acme:menu-suboption code="master.menu.chef.recipes" action="/chef/recipe/list"/>
 			<acme:menu-suboption code="master.menu.chef.fine-dishes" action="/chef/fine-dish/list"/>
+			<acme:menu-suboption code="master.menu.chef.pimpams" action="/chef/pimpam/list"/>
 			
     </acme:menu-option>
 

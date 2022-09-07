@@ -28,3 +28,4 @@ chef.thing.form.error.retail-price-currency-invalid = This currency isn´t allow
 name.form.spam = The name introduced is considered spam
 description.form.spam = The description introduced is considered spam
 
+chef.thing.form.button.create-pimpam = Create Pimpam

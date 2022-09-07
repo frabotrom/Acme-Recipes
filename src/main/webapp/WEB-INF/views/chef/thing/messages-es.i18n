@@ -26,3 +26,5 @@ chef.thing.form.error.retail-price-amount-negative-or-zero = Debes introducir un
 chef.thing.form.error.retail-price-currency-invalid = Esta moneda no está recogida por el sistema
 name.form.spam = El nombre introducido es considerado es spam
 description.form.spam = La descripción introducida es considerada es spam
+
+chef.thing.form.button.create-pimpam = Crear Pimpam
