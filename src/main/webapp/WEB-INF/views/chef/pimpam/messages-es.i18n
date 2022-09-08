@@ -1,0 +1,33 @@
+chef.pimpam.list.label.title = Título
+chef.pimpam.list.label.code = Código
+chef.pimpam.list.label.budget = Presupuesto
+
+chef.pimpam.form.label.code = Código
+chef.pimpam.form.label.title = Título
+chef.pimpam.form.label.budget = Presupuesto
+chef.pimpam.form.label.description = Descripción
+chef.pimpam.form.label.instantiationMoment = Momento de Creación
+chef.pimpam.form.label.startDate = Fecha de Inicio
+chef.pimpam.form.label.endDate = Fecha de Fin
+chef.pimpam.form.label.link = Enlace
+chef.pimpam.form.label.period = Periodo
+
+chef.pimpam.form.label.artefact.title = Título del artefacto
+chef.pimpam.form.label.artefactName = Nombre
+chef.pimpam.form.label.artefactCode = Código
+chef.pimpam.form.label.artefactDescription = Descripción
+chef.pimpam.form.label.artefactRetailPrice = Precio
+chef.pimpam.form.label.artefactLink = Enlace
+chef.pimpam.form.label.artefactType = Tipo
+chef.pimpam.form.label.artefactVisible = Publicado
+
+chef.pimpam.form.button.update = Actualizar
+chef.pimpam.form.button.delete = Borrar
+chef.pimpam.form.button.create = Crear
+
+
+chef.pimpam.form.error.budget = El presupuesto debe ser mayor a 0
+chef.pimpam.form.error.startDate = La fecha de inicio debe ser anterior a la actual
+chef.pimpam.form.error.period = El periodo debe ser mayor que una semana
+chef.pimpam.form.error.finalDate = La fecha de fin sebe ser posterior a la fecha de inicio
+chef.pimpam.form.error.instantiationMoment = La fecha de inicio debe ser al menos un mes después que el momento de creación

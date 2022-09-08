@@ -1,0 +1,33 @@
+chef.pimpam.list.label.title = Title
+chef.pimpam.list.label.code = Code
+chef.pimpam.list.label.budget = Budget
+
+chef.pimpam.form.label.code = Code
+chef.pimpam.form.label.title = Title
+chef.pimpam.form.label.budget = Budget
+chef.pimpam.form.label.description = Description
+chef.pimpam.form.label.instantiationMoment = Instatiation Moment
+chef.pimpam.form.label.startDate = Start Date
+chef.pimpam.form.label.endDate = End Date
+chef.pimpam.form.label.link = Link
+chef.pimpam.form.label.period = Period
+
+chef.pimpam.form.label.artefact.title = Artefact Title
+chef.pimpam.form.label.artefactName = Name
+chef.pimpam.form.label.artefactCode = Code
+chef.pimpam.form.label.artefactDescription = Description
+chef.pimpam.form.label.artefactRetailPrice = Price
+chef.pimpam.form.label.artefactLink = Link
+chef.pimpam.form.label.artefactType = Type
+chef.pimpam.form.label.artefactVisible = Published
+
+chef.pimpam.form.button.update = Update
+chef.pimpam.form.button.delete = Delete
+chef.pimpam.form.button.create = Create
+
+
+chef.pimpam.form.error.budget = Budget must be greater than 0
+chef.pimpam.form.error.startDate = Start date must be before today
+chef.pimpam.form.error.period = Period must be greater than a week
+chef.pimpam.form.error.finalDate = End date must be after start date
+chef.pimpam.form.error.instantiationMoment = Start date must be at least a month after the instantiation moment

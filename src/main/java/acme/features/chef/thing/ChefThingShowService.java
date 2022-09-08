@@ -42,6 +42,8 @@ public class ChefThingShowService implements AbstractShowService<Chef, Thing>{
 
 		final Money newRetailPrice = this.moneyExchangeThings(entity);
 		model.setAttribute("newRetailPrice", newRetailPrice);
+		model.setAttribute("pimpam", entity.getPimpam());
+		model.setAttribute("thingId", entity.getId());
 		
 		request.unbind(entity, model, "thingType", "name", "code","description","retailPrice", "info", "published");
 	}

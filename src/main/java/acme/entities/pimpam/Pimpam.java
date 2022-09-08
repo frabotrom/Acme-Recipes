@@ -1,6 +1,5 @@
 package acme.entities.pimpam;
 
-import java.time.Period;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -67,11 +66,12 @@ public class Pimpam extends AbstractEntity {
 	
 	// Derived attributes -----------------------------------------------------
 	@Transient
-	public Period period() {
-		final Integer result = (int) (this.endDate.getTime() - this.startDate.getTime()); 
-		final Integer resultDays = result/(1000*60*60*24);
-		return Period.ofDays(resultDays);
+	public Integer period() {
+		final long result = this.endDate.getTime() - this.startDate.getTime();
+		final long resultDays = result/(1000*60*60*24);
+		return (int) resultDays;
 	}
+
 	
 	
 }
